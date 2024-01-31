@@ -1,0 +1,9 @@
+# Ignorer les fichiers temporaires
+*~
+
+# Ignorer les fichiers de compilation
+*.o
+*.out
+
+# Fichier Visual Studio
+*.vsidx
