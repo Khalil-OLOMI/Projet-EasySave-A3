@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasySaveConsole.Services
+namespace EasySaveConsole.Models
 {
-    class LogService
+    class Config
     {
+        public string Language { get; set; }
     }
 }

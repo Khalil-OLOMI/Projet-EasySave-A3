@@ -6,19 +6,15 @@ using System.Threading.Tasks;
 
 namespace EasySaveConsole.Models
 {
-    class Sauvegarde
+    class CompletBackup : IBackup
     {
         public string Name { get; set; }
         public string Source { get; set; }
         public string Cible { get; set; }
-        public string Type { get; set; }
 
-        public Sauvegarde(string name, string source, string cible, string type)
+        public void Copy()
         {
-            this.Name = name;
-            this.Source = source;
-            this.Cible = cible;
-            this.Type = type;
+            
         }
     }
 }
