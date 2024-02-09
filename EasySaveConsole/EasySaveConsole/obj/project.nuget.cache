@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZarOaQzefkQ4LngxhZxT/Pj+c6Nj4mOHGSraA+uwhfdSD+AJdoyb+sIusffpMaiN1q38fnH3vvRx8Kw950Vg2A==",
+  "dgSpecHash": "VUCUsKPrXzjOQToT55+ppzP1tfY64hfLwSL5zSe/Ku9sg8R0xTQeJa5RcfxJwG3fDKnGhEAnIqExnxlL9Ry9xQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\euphr\\Documents\\CESI\\CER\\Programmation Système\\Dev\\Projet-EasySave-A3\\EasySaveConsole\\EasySaveConsole\\EasySaveConsole.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\euphr\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
+    "C:\\Users\\euphr\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

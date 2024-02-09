@@ -13,3 +13,7 @@ C:\Users\euphr\Documents\CESI\CER\Programmation Système\Dev\Projet-EasySave-A3\
 C:\Users\euphr\Documents\CESI\CER\Programmation Système\Dev\Projet-EasySave-A3\EasySaveConsole\EasySaveConsole\obj\Debug\net8.0\EasySaveConsole.pdb
 C:\Users\euphr\Documents\CESI\CER\Programmation Système\Dev\Projet-EasySave-A3\EasySaveConsole\EasySaveConsole\obj\Debug\net8.0\EasySaveConsole.genruntimeconfig.cache
 C:\Users\euphr\Documents\CESI\CER\Programmation Système\Dev\Projet-EasySave-A3\EasySaveConsole\EasySaveConsole\obj\Debug\net8.0\ref\EasySaveConsole.dll
+C:\Users\euphr\Documents\CESI\CER\Programmation Système\Dev\Projet-EasySave-A3\EasySaveConsole\EasySaveConsole\bin\Debug\net8.0\Json.Net.dll
+C:\Users\euphr\Documents\CESI\CER\Programmation Système\Dev\Projet-EasySave-A3\EasySaveConsole\EasySaveConsole\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\euphr\Documents\CESI\CER\Programmation Système\Dev\Projet-EasySave-A3\EasySaveConsole\EasySaveConsole\obj\Debug\net8.0\EasySaveConsole.csproj.AssemblyReference.cache
+C:\Users\euphr\Documents\CESI\CER\Programmation Système\Dev\Projet-EasySave-A3\EasySaveConsole\EasySaveConsole\obj\Debug\net8.0\EasySaveConsole.csproj.CopyComplete

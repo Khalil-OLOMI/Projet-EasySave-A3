@@ -18,11 +18,5 @@ namespace EasySaveConsole.Models
         public int NbFilesLeftToDo { get; set; }
         public int Progression { get; set; }
 
-        public State(string name, DateTime horodatage) 
-        {
-            this.Name = name;
-            this.Horodatage = horodatage;
-        }
-
     }
 }

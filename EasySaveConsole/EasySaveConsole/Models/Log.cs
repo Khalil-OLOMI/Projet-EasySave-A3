@@ -14,12 +14,5 @@ namespace EasySaveConsole.Models
         public string FileTarget { get; set; }
         public int FileSize { get; set; }
         public float FileTransferTime { get; set; }
-
-        public Log(string name, DateTime horodatage) 
-        {
-            this.Name = name;
-            this.Horodatage = horodatage;
-        }
-
     }
 }
