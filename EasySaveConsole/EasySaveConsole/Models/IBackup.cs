@@ -11,6 +11,6 @@ namespace EasySaveConsole.Models
         string Name { get; set; }
         string Source { get; set; }
         string Cible { get; set; }
-        void Copy();
+        void Copy(string Source, string Cible);
     }
 }
