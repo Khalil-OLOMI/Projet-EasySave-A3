@@ -17,7 +17,7 @@ namespace EasySaveConsole
         static void Menu()
         {
             // Title of application
-            Console.WriteLine("*********EasySave******");
+            Console.WriteLine("\r\n  ______                     _____                    \r\n |  ____|                   / ____|                   \r\n | |__    __ _  ___  _   _ | (___    __ _ __   __ ___ \r\n |  __|  / _` |/ __|| | | | \\___ \\  / _` |\\ \\ / // _ \\\r\n | |____| (_| |\\__ \\| |_| | ____) || (_| | \\ V /|  __/\r\n |______|\\__,_||___/ \\__, ||_____/  \\__,_|  \\_/  \\___|\r\n                      __/ |                           \r\n                     |___/                            \r\n");
 
             // Languages chosing if is null in sys config
             /*if (LanguageService.GetLanguage == null)
@@ -69,6 +69,7 @@ namespace EasySaveConsole
                     BackupViewModel.GetBackupList();
                     break;
                 case 3:
+               
                     break;
                 case 4:
                     break;
