@@ -60,9 +60,7 @@ namespace EasySaveConsole
             // Title of application
 
             Console.WriteLine("\r\n    ______                    _____                   \r\n   / ____/____ _ _____ __  __/ ___/ ____ _ _   __ ___ \r\n  / __/  / __ `// ___// / / /\\__ \\ / __ `/| | / // _ \\\r\n / /___ / /_/ /(__  )/ /_/ /___/ // /_/ / | |/ //  __/\r\n/_____/ \\__,_//____/ \\__, //____/ \\__,_/  |___/ \\___/ \r\n                    /____/                            \r\n");
-            // Application title
-            Console.WriteLine("EasySaveConsole");
-
+           
             // Display menu options
             Console.WriteLine(await translator.TranslateAsync("Que voulez-vous faire ?"));
             Console.WriteLine(await translator.TranslateAsync("1- Ajouter un travail de sauvegarde"));
@@ -104,6 +102,7 @@ namespace EasySaveConsole
                     BackupViewModel.DeleteBackup();
                     break;
                 case "5":
+                    StateViewModel.ReadStateFile();
                     break;
                 case "6":
                     LogViewModel.ReadLogFile();
