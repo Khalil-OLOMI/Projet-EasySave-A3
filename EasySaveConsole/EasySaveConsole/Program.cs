@@ -85,21 +85,21 @@ namespace EasySaveConsole
                     switch (backupChoice)
                     {
                         case "1":
-                            BackupViewModel.AddBackup("Complet");
+                            await BackupViewModel.AddBackup("Complet");
                             break;
                         case "2":
-                            BackupViewModel.AddBackup("Differential");
+                            await BackupViewModel.AddBackup("Differential");
                             break;
                     }
                     break;
                 case "2":
-                    BackupViewModel.GetBackupList();
+                    await BackupViewModel.GetBackupList();
                     break;
                 case "3":
-                    BackupViewModel.ExcuteBackups();
+                    await BackupViewModel.ExcuteBackups();
                     break;
                 case "4":
-                    BackupViewModel.DeleteBackup();
+                    await BackupViewModel.DeleteBackup();
                     break;
                 case "5":
                     StateViewModel.ReadStateFile();
