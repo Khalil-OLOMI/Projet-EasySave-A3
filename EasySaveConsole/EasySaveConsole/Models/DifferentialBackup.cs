@@ -13,12 +13,13 @@ namespace EasySaveConsole.Models
         public string Source { get; set; } // Répertoire source
         public string Cible { get; set; } // Répertoire cible
 
+        int nbre_file = 0;
         // Méthode pour effectuer une sauvegarde différentielle
         public void Copy(string source, string cible)
         {
             // Obtenir la liste des fichiers dans le répertoire source
             string[] sourceFiles = Directory.GetFiles(source, "*", SearchOption.AllDirectories);
-            int nbre_file = 0;
+            
 
             // Parcourir chaque fichier dans le répertoire source
             foreach (string sourceFile in sourceFiles)
@@ -58,11 +59,9 @@ namespace EasySaveConsole.Models
                             Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
                         };
                         StateViewModel.WriteState(state);
-                        StateViewModel.WriteState(state);
                         Console.SetCursorPosition(0, Console.CursorTop);
                         Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
                         Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
-                        nbre_file++;
                     }
                 }
                 else
@@ -86,11 +85,9 @@ namespace EasySaveConsole.Models
                         Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
                     };
                     StateViewModel.WriteState(state);
-                    StateViewModel.WriteState(state);
                     Console.SetCursorPosition(0, Console.CursorTop);
                     Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
-                    Console.Write("Progression: " + nbre_file + "/" + StateViewModel.GetDirectorySize(source));
-                    nbre_file++;
+                    Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
                 }
             }
         }

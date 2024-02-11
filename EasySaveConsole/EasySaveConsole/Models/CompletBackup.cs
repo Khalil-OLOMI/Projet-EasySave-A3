@@ -13,12 +13,11 @@ namespace EasySaveConsole.Models
         public string Name { get; set; }
         public string Source { get; set; }
         public string Cible { get; set; }
-
+        int nbre_file = 0;
         public void Copy(string source, string cible)
         {
             DirectoryInfo dir = new DirectoryInfo(source);
-            int nbre_file = 0;
-
+            
             if (!dir.Exists)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -29,7 +28,17 @@ namespace EasySaveConsole.Models
             {
                 if (!Directory.Exists(cible))
                 {
-                    Directory.CreateDirectory(cible);
+                    try
+                    {
+                        Directory.CreateDirectory(cible);
+                    }
+                    catch (Exception ex)
+                    {
+                        // Handle any exceptions that occur during directory creation
+                        Console.WriteLine("An error occurred while creating the directory:");
+                        Console.WriteLine(ex.Message);
+                    }
+                }
                 }
                 foreach (string file in Directory.GetFiles(source))
                 {
@@ -61,4 +70,4 @@ namespace EasySaveConsole.Models
             }
         }
     }
-}
+

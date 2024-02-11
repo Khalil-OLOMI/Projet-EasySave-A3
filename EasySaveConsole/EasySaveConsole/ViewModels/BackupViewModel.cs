@@ -23,32 +23,50 @@ namespace EasySaveConsole.Services
             Console.WriteLine(await translator.TranslateAsync("Enter source directory address:")); // Entrer l'adresse du repertoire source
             string Source = Console.ReadLine();
             Console.WriteLine(await translator.TranslateAsync("Enter target directory address:")); // Entrer l'adresse du repertoire cible
-
             string Cible = Console.ReadLine();
-            switch (type)
+            if(Source == Cible)
             {
-                case "Complet":
-                    IBackup completBackup = new CompletBackup();
-                    completBackup.Name = Name;
-                    completBackup.Source = Source;
-                    completBackup.Cible = Cible;
-                    backupList.Add(completBackup);
-                    break;
-                case "Differential":
-                    IBackup diffBackup = new DifferentialBackup();
-                    diffBackup.Name = Name;
-                    diffBackup.Source = Source;
-                    diffBackup.Cible = Cible;
-                    backupList.Add(diffBackup);
-                    break;
-                default:
-                    Console.WriteLine(await translator.TranslateAsync("Incorrect choice.")); // Choix incorrect
-                    break;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(await translator.TranslateAsync("Error :Target directory is the same as source directory"));
+                Console.ResetColor();
             }
+            else
+            {
+                switch (type)
+                {
+                    case "Complet":
+                        IBackup completBackup = new CompletBackup();
+                        completBackup.Name = Name;
+                        completBackup.Source = Source;
+                        completBackup.Cible = Cible;
+                        backupList.Add(completBackup);
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(await translator.TranslateAsync("Success : Backup created"));
+                        Console.ResetColor();
+                        break;
+                    case "Differential":
+                        IBackup diffBackup = new DifferentialBackup();
+                        diffBackup.Name = Name;
+                        diffBackup.Source = Source;
+                        diffBackup.Cible = Cible;
+                        backupList.Add(diffBackup);
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(await translator.TranslateAsync("Success : Backup created"));
+                        Console.ResetColor();
+                        break;
+                    default:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(await translator.TranslateAsync("Incorrect choice.")); // Choix incorrect
+                        Console.ResetColor();
+                        break;
+                }
+            }
+            
         }
 
         public static async Task GetBackupList()
         {
+            translator = new DeepLTranslator(Config.ApiKey);
             Console.WriteLine(await translator.TranslateAsync("Backup list:")); // Backup list
             int nbre = 1;
             foreach (IBackup backup in backupList)
@@ -60,6 +78,7 @@ namespace EasySaveConsole.Services
 
         public static async Task ExcuteBackups()
         {
+            translator = new DeepLTranslator(Config.ApiKey);
             Console.WriteLine(await translator.TranslateAsync("Choose Backup:")); // Choose Backup:
             int nbre = 1;
             foreach (IBackup bkp in backupList)
@@ -67,7 +86,6 @@ namespace EasySaveConsole.Services
                 Console.WriteLine(nbre.ToString() + "-" + bkp.Name);
                 nbre++;
             }
-            //int choice = Convert.ToInt32(Console.ReadLine());
             string input = Console.ReadLine();
             string[] segments = input.Split(';');
             foreach (var segment in segments)
@@ -82,7 +100,7 @@ namespace EasySaveConsole.Services
                         {
                             if (i > 0 && i <= backupList.Count())
                             {
-                                ExecuteBackup(backupList[i - 1]);
+                                await ExecuteBackup(backupList[i - 1]);
                             }
                             else
                             {
@@ -102,7 +120,7 @@ namespace EasySaveConsole.Services
                     {
                         if (number > 0 && number <= backupList.Count())
                         {
-                            ExecuteBackup(backupList[number - 1]);
+                            await ExecuteBackup(backupList[number - 1]);
                         }
                         else
                         {
@@ -119,6 +137,7 @@ namespace EasySaveConsole.Services
 
         static async Task ExecuteBackup(IBackup backup)
         {
+            translator = new DeepLTranslator(Config.ApiKey);
             Console.WriteLine(await translator.TranslateAsync("Backup in progress...")); // Backup in progress...
             DateTime start = DateTime.Now;
             backup.Copy(backup.Source, backup.Cible);
@@ -126,11 +145,13 @@ namespace EasySaveConsole.Services
             TimeSpan timeSpan = end - start;
             long duration = Convert.ToInt64(timeSpan.TotalSeconds);
             LogViewModel.WriteLog(backup, duration);
+            Console.WriteLine();
             Console.WriteLine(await translator.TranslateAsync("Backup completed.")); // Backup completed.
         }
 
         public static async Task DeleteBackup()
         {
+            translator = new DeepLTranslator(Config.ApiKey);
             Console.WriteLine(await translator.TranslateAsync("Choose Backup:")); // Choose Backup:
             int nbre = 1;
             foreach (IBackup bkp in backupList)

@@ -8,7 +8,6 @@ namespace EasySaveConsole
 {
     class Program
     {
-        public static List<IBackup> backupList = new List<IBackup>();
         public static DeepLTranslator translator;
 
         static async Task Main()
@@ -77,6 +76,13 @@ namespace EasySaveConsole
             switch (menuChoice)
             {
                 case "1":
+                    if(BackupViewModel.backupList.Count == 5)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(await translator.TranslateAsync("Nombre maximal de sauvegarde atteint."));
+                        Console.ResetColor();
+                        break;
+                    }
                     Console.WriteLine(await translator.TranslateAsync("What type of backup job do you want to create?"));
                     Console.WriteLine(await translator.TranslateAsync("1- Full"));
                     Console.WriteLine(await translator.TranslateAsync("2- Differential"));
@@ -116,7 +122,9 @@ namespace EasySaveConsole
                     Environment.Exit(0);
                     break;
                 default:
-                    Console.WriteLine(await translator.TranslateAsync("Choix incorrect"));
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(await translator.TranslateAsync("Incorrect choice.")); // Choix incorrect
+                    Console.ResetColor();
                     break;
             }
             await Menu();
