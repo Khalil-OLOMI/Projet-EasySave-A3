@@ -9,7 +9,7 @@ namespace EasySaveConsole
     class Program
     {
         public static List<IBackup> backupList = new List<IBackup>();
-        static DeepLTranslator translator;
+        public static DeepLTranslator translator;
 
         static async Task Main()
         {
@@ -38,16 +38,16 @@ namespace EasySaveConsole
             Console.WriteLine("2. French");
             Console.WriteLine("3. Spanish");
             Console.WriteLine("4. Italian");
-            int languageChoice = Convert.ToInt32(Console.ReadLine());
+            string languageChoice = Console.ReadLine();
             switch (languageChoice)
             {
-                case 1:
+                case "1":
                     return "EN";
-                case 2:
+                case "2":
                     return "FR";
-                case 3:
+                case "3":
                     return "ES";
-                case 4:
+                case "4":
                     return "IT";
                 default:
                     Console.WriteLine("Invalid choice. Defaulting to English.");
@@ -68,38 +68,55 @@ namespace EasySaveConsole
             Console.WriteLine(await translator.TranslateAsync("1- Ajouter un travail de sauvegarde"));
             Console.WriteLine(await translator.TranslateAsync("2- Voir la liste des travaux de sauvegarde"));
             Console.WriteLine(await translator.TranslateAsync("3- Exécuter un travail de sauvegarde"));
-            Console.WriteLine(await translator.TranslateAsync("4- Consulter les logs d'un travail de sauvegarde"));
-            Console.WriteLine(await translator.TranslateAsync("5- Historique des travaux de sauvegarde"));
+            Console.WriteLine(await translator.TranslateAsync("4- Supprimer un travail de sauvegarde"));
+            Console.WriteLine(await translator.TranslateAsync("5- Consulter l'historique de sauvegarde en temps réel"));
+            Console.WriteLine(await translator.TranslateAsync("6- Consulter l'historique des travaux de sauvegarde"));
+            Console.WriteLine(await translator.TranslateAsync("7- Modifier la langue"));
+            Console.WriteLine(await translator.TranslateAsync("8- Close"));
 
-            int menuChoice = Convert.ToInt32(Console.ReadLine());
+            string menuChoice = Console.ReadLine();
 
             switch (menuChoice)
             {
-                case 1:
+                case "1":
                     Console.WriteLine(await translator.TranslateAsync("What type of backup job do you want to create?"));
                     Console.WriteLine(await translator.TranslateAsync("1- Full"));
                     Console.WriteLine(await translator.TranslateAsync("2- Differential"));
 
-                    int backupChoice = Convert.ToInt32(Console.ReadLine());
+                    string backupChoice = Console.ReadLine();
                     switch (backupChoice)
                     {
-                        case 1:
+                        case "1":
                             BackupViewModel.AddBackup("Complet");
                             break;
-                        case 2:
+                        case "2":
                             BackupViewModel.AddBackup("Differential");
                             break;
                     }
                     break;
-                case 2:
+                case "2":
                     BackupViewModel.GetBackupList();
                     break;
-                case 3:
-               
+                case "3":
+                    BackupViewModel.ExcuteBackups();
                     break;
-                case 4:
+                case "4":
+                    BackupViewModel.DeleteBackup();
                     break;
-                case 5:
+                case "5":
+                    break;
+                case "6":
+                    break;
+                case "7":
+                    Config config = new Config();
+                    config.TargetLanguage = await ChooseLanguage();
+                    config.SaveConfig();
+                    break;
+                case "8":
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine(await translator.TranslateAsync("Choix incorrect"));
                     break;
             }
             await Menu();

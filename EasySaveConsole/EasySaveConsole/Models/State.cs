@@ -14,9 +14,9 @@ namespace EasySaveConsole.Models
         public string FileSource { get; set; }
         public string FileTarget { get; set; }
         public int TotalFilesToCopy { get; set; }
-        public int TotalFilesSize { get; set; }
+        public long TotalFilesSize { get; set; }
         public int NbFilesLeftToDo { get; set; }
-        public int Progression { get; set; }
+        public double Progression { get; set; }
 
     }
 }
