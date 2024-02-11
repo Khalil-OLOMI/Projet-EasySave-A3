@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasySaveConsole.Services;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
@@ -12,20 +13,22 @@ namespace EasySaveConsole.Models
         public string Source { get; set; } // Répertoire source
         public string Cible { get; set; } // Répertoire cible
 
+        int nbre_file = 0;
         // Méthode pour effectuer une sauvegarde différentielle
-        public void Copy(string Source, string Cible)
+        public void Copy(string source, string cible)
         {
             // Obtenir la liste des fichiers dans le répertoire source
-            string[] sourceFiles = Directory.GetFiles(Source, "*", SearchOption.AllDirectories);
+            string[] sourceFiles = Directory.GetFiles(source, "*", SearchOption.AllDirectories);
+            
 
             // Parcourir chaque fichier dans le répertoire source
             foreach (string sourceFile in sourceFiles)
             {
                 // Obtenir le chemin relatif du fichier
-                string relativePath = sourceFile.Substring(Source.Length + 1);
+                string relativePath = sourceFile.Substring(source.Length + 1);
 
                 // Construire le chemin du fichier cible
-                string targetFile = Path.Combine(Cible, relativePath);
+                string targetFile = Path.Combine(cible, relativePath);
 
                 // Vérifier si le fichier source existe dans le répertoire cible
                 if (File.Exists(targetFile))
@@ -42,6 +45,23 @@ namespace EasySaveConsole.Models
 
                         // Copier le fichier
                         File.Copy(sourceFile, targetFile, true);
+                        nbre_file++;
+                        State state = new State()
+                        {
+                            Name = this.Name,
+                            Horodatage = DateTime.Now,
+                            Status = "ACTIVE",
+                            FileSource = sourceFile,
+                            FileTarget = targetFile,
+                            TotalFilesToCopy = StateViewModel.FileNbre(source),
+                            TotalFilesSize = StateViewModel.GetDirectorySize(source),
+                            NbFilesLeftToDo = StateViewModel.FileNbre(source) - nbre_file,
+                            Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
+                        };
+                        StateViewModel.WriteState(state);
+                        Console.SetCursorPosition(0, Console.CursorTop);
+                        Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
+                        Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
                     }
                 }
                 else
@@ -51,6 +71,23 @@ namespace EasySaveConsole.Models
 
                     // Copier le fichier
                     File.Copy(sourceFile, targetFile);
+                    nbre_file++;
+                    State state = new State()
+                    {
+                        Name = this.Name,
+                        Horodatage = DateTime.Now,
+                        Status = "ACTIVE",
+                        FileSource = sourceFile,
+                        FileTarget = targetFile,
+                        TotalFilesToCopy = StateViewModel.FileNbre(source),
+                        TotalFilesSize = StateViewModel.GetDirectorySize(source),
+                        NbFilesLeftToDo = StateViewModel.FileNbre(source) - nbre_file,
+                        Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
+                    };
+                    StateViewModel.WriteState(state);
+                    Console.SetCursorPosition(0, Console.CursorTop);
+                    Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
+                    Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
                 }
             }
         }

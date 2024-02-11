@@ -1,0 +1,35 @@
+[
+  {
+    "Horodatage": "11/02/2024 20:53:30",
+    "Name": "T4",
+    "Status": "ACTIVE",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots\\Capture d'écran 2024-02-07 105544.png",
+    "FileTarget": "C:\\Users\\euphr\\Pictures\\T4\\Capture d'écran 2024-02-07 105544.png",
+    "TotalFilesToCopy": 18,
+    "TotalFilesSize": 2917694,
+    "NbFilesLeftToDo": -15,
+    "Progression": 183.33333333333331
+  },
+  {
+    "Horodatage": "11/02/2024 20:53:30",
+    "Name": "T4",
+    "Status": "ACTIVE",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots\\Capture d'écran 2024-02-07 105736.png",
+    "FileTarget": "C:\\Users\\euphr\\Pictures\\T4\\Capture d'écran 2024-02-07 105736.png",
+    "TotalFilesToCopy": 18,
+    "TotalFilesSize": 2917694,
+    "NbFilesLeftToDo": -16,
+    "Progression": 188.88888888888889
+  },
+  {
+    "Horodatage": "11/02/2024 20:53:30",
+    "Name": "T4",
+    "Status": "ACTIVE",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots\\desktop.ini",
+    "FileTarget": "C:\\Users\\euphr\\Pictures\\T4\\desktop.ini",
+    "TotalFilesToCopy": 18,
+    "TotalFilesSize": 2917694,
+    "NbFilesLeftToDo": -17,
+    "Progression": 194.44444444444443
+  }
+]
