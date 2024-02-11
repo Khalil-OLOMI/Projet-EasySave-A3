@@ -206,5 +206,13 @@
     "FileTarget": "C:\\Users\\euphr\\Pictures\\t1",
     "FileSize": 2917694,
     "FileTransferTime": 5
+  },
+  {
+    "Horodatage": "2024-02-11T14:58:06.0104661+01:00",
+    "Name": "SD",
+    "FileSource": "C:\\Users\\Rock BAMENOU\\OneDrive\\Images\\Nouveau dossier",
+    "FileTarget": "C:\\TEST",
+    "FileSize": 1255687,
+    "FileTransferTime": 4
   }
 ]

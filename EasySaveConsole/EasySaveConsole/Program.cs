@@ -106,6 +106,7 @@ namespace EasySaveConsole
                 case "5":
                     break;
                 case "6":
+                    LogViewModel.ReadLogFile();
                     break;
                 case "7":
                     Config config = new Config();

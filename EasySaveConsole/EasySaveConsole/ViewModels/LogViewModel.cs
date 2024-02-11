@@ -12,6 +12,41 @@ namespace EasySaveConsole.Services
     class LogViewModel
     {
         static string log_file = Directory.GetCurrentDirectory() + "\\log\\log.json";
+
+        public static void ReadLogFile()
+        {
+            try
+            {
+                // Vérifier si le fichier existe
+                if (!File.Exists(log_file))
+                {
+                    Console.WriteLine("Le fichier journal spécifié n'existe pas.");
+                    return;
+                }
+
+                // Lire le contenu du fichier
+                string jsonContent = File.ReadAllText(log_file);
+
+                // Désérialiser le contenu JSON en objets
+                List<Log> logEntries = JsonConvert.DeserializeObject<List<Log>>(jsonContent);
+
+                // Afficher les entrées du journal
+                foreach (var entry in logEntries)
+                {
+                    Console.WriteLine($"Horodatage: {entry.Horodatage}");
+                    Console.WriteLine($"Nom de sauvegarde: {entry.Name}");
+                    Console.WriteLine($"Source: {entry.FileSource}");
+                    Console.WriteLine($"Destination: {entry.FileTarget}");
+                    Console.WriteLine($"Taille du fichier: {entry.FileSize}");
+                    Console.WriteLine($"Temps de transfert: {entry.FileTransferTime}");
+                    Console.WriteLine();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Une erreur s'est produite lors de la lecture du fichier journal : {ex.Message}");
+            }
+        }
         public static void WriteLog(IBackup backup, long duration)
         {
             Log log = new Log
