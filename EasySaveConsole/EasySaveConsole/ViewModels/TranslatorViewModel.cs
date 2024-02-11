@@ -1,46 +1,68 @@
-﻿using EasySaveConsole.Models;
-using System;
-using System.Text.Json;
+﻿using System;
+using System.IO;
+using System.Threading.Tasks;
+using EasySaveConsole.Models;
+using Newtonsoft.Json;
 
-namespace EasySaveConsole.Services
+// Classe pour la traduction avec DeepL
+public class DeepLTranslator
 {
-    class TranslatorViewModel
+    private readonly HttpClient _httpClient;
+    private readonly string _apiKey;
+
+    // Constructeur prenant une clé API en argument
+    public DeepLTranslator(string apiKey)
     {
-        private static string config_path = Directory.GetCurrentDirectory() + "\\config";
-        private static string config_file = Directory.GetCurrentDirectory() + "\\config\\config.json";
-        public static void InitConfig()
+        _httpClient = new HttpClient();
+        _apiKey = apiKey;
+
+        // Définir l'en-tête d'autorisation pendant l'initialisation
+        _httpClient.DefaultRequestHeaders.Add("Authorization", "DeepL-Auth-Key " + _apiKey);
+    }
+
+    // Méthode asynchrone pour traduire le texte
+    public async Task<string> TranslateAsync(string text)
+    {
+        try
         {
-            if (Directory.Exists(config_path) == false)
+            // Obtenir la langue cible à partir de la configuration
+            var config = Config.LoadConfig();
+            string targetLang = config.TargetLanguage;
+
+            // Construire la requête
+            var requestData = new FormUrlEncodedContent(new[]
             {
-                Directory.CreateDirectory(config_path);
-            }
+                new KeyValuePair<string, string>("text", text),
+                new KeyValuePair<string, string>("target_lang", targetLang)
+            });
 
-            //Créer le fichier de log s'il n'existe pas déjà
+            // Envoyer la requête à l'API DeepL
+            var response = await _httpClient.PostAsync("https://api-free.deepl.com/v2/translate", requestData);
+            response.EnsureSuccessStatusCode();
 
-            if (!File.Exists(config_file))
-            {
-                Config config = new Config();
-                config.Language = null;
-                string json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
-                File.WriteAllText(config_file, json);
-            }
+            // Lire et retourner le texte traduit
+            var responseBody = await response.Content.ReadAsStringAsync();
+            var translationResponse = JsonConvert.DeserializeObject<DeepLTranslationResponse>(responseBody);
+            return translationResponse.Translations[0].Text;
         }
-
-        public static void UpdateConfig(string language)
+        catch (Exception ex)
         {
-            InitConfig();
-            Config config = new Config() { Language = language };
-            string modifiedJson = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(config_file, modifiedJson);
-        }
-
-        public static string GetLanguage()
-        {
-            InitConfig();
-            Config config;
-            using FileStream json = File.OpenRead(config_file);
-            config = JsonSerializer.Deserialize<Config>(json);
-            return config.Language;
+            Console.WriteLine($"Erreur de traduction : {ex.Message}");
+            return null;
         }
     }
+}
+
+// Classe représentant la réponse de traduction de DeepL
+public class DeepLTranslationResponse
+{
+    [JsonProperty("translations")]
+    public DeepLTranslation[] Translations { get; set; }
+}
+
+// Classe représentant une traduction individuelle
+public class DeepLTranslation
+{
+    [JsonProperty("text")]
+    public string Text { get; set; }
 }

@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\EasySaveConsole",
-    "\\EasySaveConsole\\EasySaveConsole"
+    "\\EasySaveConsole\\bin",
+    "\\EasySaveConsole\\EasySaveConsole",
+    "\\EasySaveConsole\\EasySaveConsole\\Models",
+    "\\EasySaveConsole\\EasySaveConsole\\ViewModels"
   ],
   "SelectedNode": "\\EasySaveConsole\\EasySaveConsole\\Program.cs",
   "PreviewInSolutionExplorer": false

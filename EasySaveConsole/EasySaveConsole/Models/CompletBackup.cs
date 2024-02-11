@@ -12,7 +12,7 @@ namespace EasySaveConsole.Models
         public string Source { get; set; }
         public string Cible { get; set; }
 
-        public void Copy()
+        public void Copy(string Source, string Cible)
         {
             
         }
