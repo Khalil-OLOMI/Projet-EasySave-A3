@@ -47,6 +47,7 @@ namespace EasySaveConsole.Models
                 {
                     string targetFile = Path.Combine(cible, Path.GetFileName(file));
                     File.Copy(file, targetFile, true);
+                    nbre_file++;
                     State state = new State()
                     {
                         Name = this.Name,
@@ -63,7 +64,7 @@ namespace EasySaveConsole.Models
                     Console.SetCursorPosition(0, Console.CursorTop);
                     Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
                     Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
-                    nbre_file++;
+                    
                 }
                 foreach (string subdir in Directory.GetDirectories(source))
                 {

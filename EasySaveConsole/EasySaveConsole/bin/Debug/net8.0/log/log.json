@@ -206,5 +206,21 @@
     "FileTarget": "C:\\Users\\euphr\\Pictures\\Scr",
     "FileSize": 2917694,
     "FileTransferTime": 4
+  },
+  {
+    "Horodatage": "12/02/2024 13:54:52",
+    "Name": "test",
+    "FileSource": "C:\\Users\\KHALIL\\Desktop\\A3\\Programmation",
+    "FileTarget": "c:\\Cible",
+    "FileSize": 9030658,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "12/02/2024 13:55:58",
+    "Name": "test",
+    "FileSource": "C:\\Users\\KHALIL\\Desktop\\A3\\Programmation",
+    "FileTarget": "c:\\Cible",
+    "FileSize": 9030658,
+    "FileTransferTime": 0
   }
 ]
