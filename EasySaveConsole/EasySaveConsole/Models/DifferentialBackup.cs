@@ -95,6 +95,7 @@ namespace EasySaveConsole.Models
         // Méthode pour calculer le hash d'un fichier
         private string CalculateFileHash(string filePath)
         {
+            // JB: Pourquoi avoir utilisé un hash ici? on peut vérifier la date de modification du fichier?
             using (var md5 = MD5.Create())
             {
                 using (var stream = File.OpenRead(filePath))

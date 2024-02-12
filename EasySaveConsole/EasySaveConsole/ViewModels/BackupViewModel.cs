@@ -32,7 +32,7 @@ namespace EasySaveConsole.Services
             }
             else
             {
-                switch (type)
+                switch (type) // JB: on pourrait avoir un type enum pour le type mais c'est du détail
                 {
                     case "Complet":
                         IBackup completBackup = new CompletBackup();
@@ -90,6 +90,8 @@ namespace EasySaveConsole.Services
             string[] segments = input.Split(';');
             foreach (var segment in segments)
             {
+                // JB: ici le code est un peu difficile à lire, on peut ajouter des méthodes pour
+                // Améliorer la lecture du code
                 if (segment.Contains('-'))
                 {
                     // Si l'utilisateur spécifie une plage de numéros (Ex: 1-3)

@@ -1,5 +1,4 @@
 ﻿using EasySaveConsole.Services;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,16 +7,20 @@ using System.Threading.Tasks;
 
 namespace EasySaveConsole.Models
 {
+    // JB: ajouter public
     class CompletBackup : IBackup
     {
         public string Name { get; set; }
         public string Source { get; set; }
         public string Cible { get; set; }
         int nbre_file = 0;
+
+        // JB: Ici on a deux responsabilités qu'on pourrait séparer:
+        // D'un coté le modèle avec les propriétés et de l'autre la classe permettant de créer une sauvegarde
         public void Copy(string source, string cible)
         {
             DirectoryInfo dir = new DirectoryInfo(source);
-            
+
             if (!dir.Exists)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -39,7 +42,7 @@ namespace EasySaveConsole.Models
                         Console.WriteLine(ex.Message);
                     }
                 }
-                }
+
                 foreach (string file in Directory.GetFiles(source))
                 {
                     string targetFile = Path.Combine(cible, Path.GetFileName(file));
@@ -59,7 +62,7 @@ namespace EasySaveConsole.Models
                     StateViewModel.WriteState(state);
                     Console.SetCursorPosition(0, Console.CursorTop);
                     Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
-                    Console.Write("Progression: " + nbre_file +"/" + state.TotalFilesToCopy);
+                    Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
                     nbre_file++;
                 }
                 foreach (string subdir in Directory.GetDirectories(Source))
@@ -70,4 +73,4 @@ namespace EasySaveConsole.Models
             }
         }
     }
-
+}

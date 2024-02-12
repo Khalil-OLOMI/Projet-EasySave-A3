@@ -9,11 +9,16 @@ using System.Threading.Tasks;
 
 namespace EasySaveConsole.Models
 {
+    // JB: pour les modèles c'est une bonne pratique d'ajouter le suffixe Model
+    // On peut aussi ajouter des description pour chaque propriété
     class Log
     {
         [JsonProperty("Horodatage")]
         [JsonConverter(typeof(CustomDateTimeConverter))]
         public DateTime Horodatage { get; set; }
+        /// <summary>
+        /// Ajouter des descriptions
+        /// </summary>
         public string Name { get; set; }
         public string FileSource { get; set; }
         public string FileTarget { get; set; }

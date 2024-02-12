@@ -15,6 +15,7 @@ public class Config
 
     public Config()  // Déclare un constructeur par défaut de la classe Config.
     {
+        // JB: on peut mettre string? ligne 10
         TargetLanguage = null; // Initialisez la langue cible à null par défaut.
     }
 

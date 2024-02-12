@@ -53,6 +53,7 @@ public class DeepLTranslator
     }
 }
 
+// JB: C'est mieux d'avoir des fichiers séparés ici
 // Classe représentant la réponse de traduction de DeepL
 public class DeepLTranslationResponse
 {

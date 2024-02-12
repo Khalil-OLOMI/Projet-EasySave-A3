@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace EasySaveConsole.Models
 {
+    // JB: public?
     class State
     {
         [JsonProperty("Horodatage")]
