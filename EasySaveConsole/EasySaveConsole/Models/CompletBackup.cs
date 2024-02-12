@@ -65,7 +65,7 @@ namespace EasySaveConsole.Models
                     Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
                     nbre_file++;
                 }
-                foreach (string subdir in Directory.GetDirectories(Source))
+                foreach (string subdir in Directory.GetDirectories(source))
                 {
                     string targetSubDir = Path.Combine(cible, Path.GetFileName(subdir));
                     Copy(subdir, targetSubDir);
@@ -74,3 +74,4 @@ namespace EasySaveConsole.Models
         }
     }
 }
+
