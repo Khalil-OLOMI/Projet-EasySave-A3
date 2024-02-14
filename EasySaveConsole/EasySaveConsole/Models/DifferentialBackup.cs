@@ -13,10 +13,11 @@ namespace EasySaveConsole.Models
         public string Source { get; set; } // Répertoire source
         public string Cible { get; set; } // Répertoire cible
 
-        int nbre_file = 0;
+        
         // Méthode pour effectuer une sauvegarde différentielle
         public void Copy(string source, string cible)
         {
+            int nbre_file = 0;
             // Obtenir la liste des fichiers dans le répertoire source
             string[] sourceFiles = Directory.GetFiles(source, "*", SearchOption.AllDirectories);
             

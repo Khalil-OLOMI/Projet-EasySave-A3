@@ -13,12 +13,13 @@ namespace EasySaveConsole.Models
         public string Name { get; set; }
         public string Source { get; set; }
         public string Cible { get; set; }
-        int nbre_file = 0;
+        
 
         // JB: Ici on a deux responsabilités qu'on pourrait séparer:
         // D'un coté le modèle avec les propriétés et de l'autre la classe permettant de créer une sauvegarde
         public void Copy(string source, string cible)
         {
+            int nbre_file = 0;
             DirectoryInfo dir = new DirectoryInfo(source);
 
             if (!dir.Exists)

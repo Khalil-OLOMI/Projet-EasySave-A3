@@ -1,0 +1,7 @@
+C:\Users\KHALIL\Desktop\EasySave-1.0\EasySaveConsole.exe
+C:\Users\KHALIL\Desktop\EasySave-1.0\EasySaveConsole.dll
+C:\Users\KHALIL\Desktop\EasySave-1.0\EasySaveConsole.deps.json
+C:\Users\KHALIL\Desktop\EasySave-1.0\EasySaveConsole.runtimeconfig.json
+C:\Users\KHALIL\Desktop\EasySave-1.0\EasySaveConsole.pdb
+C:\Users\KHALIL\Desktop\EasySave-1.0\Json.Net.dll
+C:\Users\KHALIL\Desktop\EasySave-1.0\Newtonsoft.Json.dll
