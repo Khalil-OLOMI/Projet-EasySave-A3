@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using EasySave.Views;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,24 @@ namespace EasySave
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new DashboardView();
         }
+        private void NavDashbord(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new DashboardView();
+        }
+        private void NavBackups(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new BackupView();
+        }
+        private void NavLogs(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new LogView();
+        }
+        private void NavSettings(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new SettingView();
+        }
+
     }
 }

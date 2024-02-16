@@ -57,9 +57,8 @@ namespace EasySaveConsole
         static async Task Menu()
         {
             // Title of application
-
             Console.WriteLine("\r\n    ______                    _____                   \r\n   / ____/____ _ _____ __  __/ ___/ ____ _ _   __ ___ \r\n  / __/  / __ `// ___// / / /\\__ \\ / __ `/| | / // _ \\\r\n / /___ / /_/ /(__  )/ /_/ /___/ // /_/ / | |/ //  __/\r\n/_____/ \\__,_//____/ \\__, //____/ \\__,_/  |___/ \\___/ \r\n                    /____/                            \r\n");
-           
+
             // Display menu options
             Console.WriteLine(await translator.TranslateAsync("Que voulez-vous faire ?"));
             Console.WriteLine(await translator.TranslateAsync("1- Ajouter un travail de sauvegarde"));
@@ -68,7 +67,7 @@ namespace EasySaveConsole
             Console.WriteLine(await translator.TranslateAsync("4- Supprimer un travail de sauvegarde"));
             Console.WriteLine(await translator.TranslateAsync("5- Consulter l'historique de sauvegarde en temps réel"));
             Console.WriteLine(await translator.TranslateAsync("6- Consulter l'historique des travaux de sauvegarde"));
-            Console.WriteLine(await translator.TranslateAsync("7- Modifier la langue"));
+            Console.WriteLine(await translator.TranslateAsync("7- Modifier la configuration"));
             Console.WriteLine(await translator.TranslateAsync("8- Close"));
 
             string menuChoice = Console.ReadLine();
@@ -76,7 +75,8 @@ namespace EasySaveConsole
             switch (menuChoice)
             {
                 case "1":
-                    if(BackupViewModel.backupList.Count == 5)
+                    // Add backup job
+                    if (BackupViewModel.backupList.Count == 5)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine(await translator.TranslateAsync("Nombre maximal de sauvegarde atteint."));
@@ -99,26 +99,31 @@ namespace EasySaveConsole
                     }
                     break;
                 case "2":
+                    // View backup list
                     await BackupViewModel.GetBackupList();
                     break;
                 case "3":
+                    // Execute backups
                     await BackupViewModel.ExcuteBackups();
                     break;
                 case "4":
+                    // Delete backup
                     await BackupViewModel.DeleteBackup();
                     break;
                 case "5":
+                    // Real-time backup history
                     StateViewModel.ReadStateFile();
                     break;
                 case "6":
+                    // View backup job history
                     LogViewModel.ReadLogFile();
                     break;
                 case "7":
-                    Config config = new Config();
-                    config.TargetLanguage = await ChooseLanguage();
-                    config.SaveConfig();
+                    // Modify configuration
+                    await ModifyConfiguration();
                     break;
                 case "8":
+                    // Close application
                     Environment.Exit(0);
                     break;
                 default:
@@ -128,6 +133,50 @@ namespace EasySaveConsole
                     break;
             }
             await Menu();
+        }
+
+        static async Task ModifyConfiguration()
+        {
+            Console.WriteLine(await translator.TranslateAsync("Modify Configuration:"));
+            Console.WriteLine(await translator.TranslateAsync("1. Set Target Language"));
+            Console.WriteLine("2. Add Encrypted File Extension");
+            Console.WriteLine("3. Set Process Name");
+            Console.WriteLine("4. Set Log Type");
+
+            string configChoice = Console.ReadLine();
+            Config config = Config.LoadConfig();
+
+            switch (configChoice)
+            {
+                case "1":
+                    // Set Target Language
+                    config.TargetLanguage = await ChooseLanguage();
+                    break;
+                case "2":
+                    // Add Encrypted File Extension
+                    Console.WriteLine("Enter Encrypted File Extension:");
+                    string extension = Console.ReadLine();
+                    config.EncryptedFileExtensions.Add(extension);
+                    break;
+                case "3":
+                    // Set Process Name
+                    Console.WriteLine("Enter Process Name:");
+                    config.ProcessName = Console.ReadLine();
+                    break;
+                case "4":
+                    // Set Log Type
+                    Console.WriteLine("Enter Log Type (XML or JSON):");
+                    string logType = Console.ReadLine();
+                    config.LogType = logType;
+                    break;
+                default:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(await translator.TranslateAsync("Invalid choice."));
+                    Console.ResetColor();
+                    break;
+            }
+
+            config.SaveConfig(); // Save the modified configuration
         }
     }
 }
