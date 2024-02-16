@@ -1,0 +1,5 @@
+C:\Users\KHALIL\source\repos\EASY-1.1-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.AssemblyReference.cache
+C:\Users\KHALIL\source\repos\EASY-1.1-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\KHALIL\source\repos\EASY-1.1-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\KHALIL\source\repos\EASY-1.1-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
+C:\Users\KHALIL\source\repos\EASY-1.1-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
