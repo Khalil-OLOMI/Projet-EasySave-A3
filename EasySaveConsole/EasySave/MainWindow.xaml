@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasySave"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize" WindowState="Normal"
+        Height="450" Width="800">
     <Grid>
+        <!-- Sidebar -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border Background="#FF0F52BA" Grid.Column="0" Width="150">
+            <Grid>
+                <Label Content="EasySave" Foreground="White" FontFamily="Bahnschrift Light" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,362"></Label>
+            <!-- Sidebar content goes here -->
+                <StackPanel Margin="0,40,0,100">
+                    
+                    <Button Click="NavDashbord" Content="Dashboard" Background="White" Height="35" FontFamily="Bahnschrift Light" FontSize="16"/>
+                    <Button Click="NavBackups" Content="Backups" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
+                    <Button Click="NavLogs" Content="Logs" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
+                    <Button Click="NavSettings" Content="Settings" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
+                    <Button Content="Docs" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
+                    <!-- Add more buttons or navigation elements as needed -->
+                </StackPanel>
+                <Label Content="Version 2.0" Foreground="White" FontSize="16" FontFamily="Bahnschrift Light" Margin="0,365,0,0" HorizontalAlignment="Center"/>
+            </Grid>
+        </Border>
 
+        <!-- Main Content -->
+        <Grid Grid.Column="1">
+            <Frame Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        </Grid>
     </Grid>
 </Window>
