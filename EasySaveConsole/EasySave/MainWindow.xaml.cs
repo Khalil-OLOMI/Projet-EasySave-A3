@@ -36,7 +36,7 @@ namespace EasySave
         }
         private void NavSettings(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new SettingView();
+            MainFrame.Content = new ConfigView();
         }
 
     }

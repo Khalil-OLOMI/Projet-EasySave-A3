@@ -1,0 +1,73 @@
+﻿<Page x:Class="EasySave.Views.ConfigView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:EasySave.Views"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ConfigView">
+    <Grid>
+        <Grid.Resources>
+            <!-- Any additional resources can be defined here -->
+        </Grid.Resources>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="781*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="2" Margin="20,38,20,20" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+            <!-- Language Selection -->
+            <TextBlock Text="{Binding TargetLanguageText}" FontWeight="Bold" Margin="0 0 0 10"/>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+                <RadioButton Content="English" IsChecked="{Binding IsEnglish, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
+                <RadioButton Content="French" IsChecked="{Binding IsFrench, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
+                <RadioButton Content="Spanish" IsChecked="{Binding IsSpanish, Mode=TwoWay}" GroupName="Language" Width="80"/>
+            </StackPanel>
+
+            <!-- Encrypted File Extensions with ScrollViewer -->
+            <TextBlock Text="{Binding Extension}" FontWeight="Bold" Margin="0 0 0 10"/>
+            <ScrollViewer Height="100" VerticalScrollBarVisibility="Visible" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <!-- Define as many rows as necessary -->
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <DataGrid Grid.Row="0" ItemsSource="{Binding EncryptedFileExtensions}" AutoGenerateColumns="False" Background="White" Margin="0,0,0,-100" SelectionChanged="DataGrid_SelectionChanged" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding}" Width="*" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </ScrollViewer>
+
+            <!-- Add New Extension -->
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
+                <TextBox Text="{Binding NewExtensionToAdd}" Width="400" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+                <Button Content="{Binding AddText}" Command="{Binding AddExtensionCommand}" Width="120" Margin="10 0 0 0" Background="#FF33A4E3"/>
+            </StackPanel>
+
+            <!-- Process Name -->
+            <TextBlock Text="{Binding Logi}" FontWeight="Bold" Margin="0 0 0 10"/>
+            <TextBox Text="{Binding ProcessName}" Width="500" Margin="0 0 0 10" HorizontalAlignment="Left"/>
+
+            <!-- Log Type -->
+            <TextBlock Text="{Binding Logtype}" FontWeight="Bold" Margin="0 0 0 10"/>
+            <ComboBox SelectedItem="{Binding SelectedLogType, Mode=TwoWay}" Width="150" Margin="0 0 0 10" HorizontalAlignment="Left">
+                <ComboBoxItem Content="XML"/>
+                <ComboBoxItem Content="JSON"/>
+            </ComboBox>
+
+            <!-- Save Button -->
+            <Button Content="{Binding SaveText}" Command="{Binding SaveCommand}" Width="100" Background="#FF33A4E3"/>
+        </StackPanel>
+    </Grid>
+
+
+</Page>

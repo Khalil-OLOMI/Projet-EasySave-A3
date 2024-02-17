@@ -10,13 +10,13 @@
     <Compile Update="Views\BackupView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ConfigView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\DashboardView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\LogView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\SettingView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -27,13 +27,13 @@
     <Page Update="Views\BackupView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\ConfigView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\DashboardView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\LogView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\SettingView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
