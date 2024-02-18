@@ -114,21 +114,23 @@ namespace EasySave.Services
             }
             else
             {
-                switch (Type)
+                switch (Type.ToLower())
                 {
-                    case "Complet":
+                    case "complet":
                         IBackup completBackup = new CompletBackup();
                         completBackup.Name = Name;
                         completBackup.Source = Source;
                         completBackup.Cible = Cible;
+                        completBackup.Type = Type;
                         backups.Add(completBackup);
                         SaveBackup();
                         break;
-                    case "Differential":
+                    case "differential":
                         IBackup diffBackup = new DifferentialBackup();
                         diffBackup.Name = Name;
                         diffBackup.Source = Source;
                         diffBackup.Cible = Cible;
+                        diffBackup.Type = Type;
                         backups.Add(diffBackup);
                         SaveBackup();
                         break;

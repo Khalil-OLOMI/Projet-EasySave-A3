@@ -101,3 +101,5 @@ C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\n
 C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
 C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
 C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml

@@ -30,10 +30,15 @@ namespace EasySave.Views
 
         private void AddBackupForm(object sender, RoutedEventArgs e)
         {
-            // Open the AddbackupView window
-            AddbackupView addForm = new AddbackupView();
-            addForm.ShowDialog(); // Use Show() for non-modal window
+            AddbackupView addBackupView = new AddbackupView((BackupViewModel)DataContext);
+            addBackupView.ShowDialog();
         }
+        //private void AddBackupForm(object sender, RoutedEventArgs e)
+        //{
+        //    // Open the AddbackupView window
+        //    AddbackupView addForm = new AddbackupView();
+        //    addForm.ShowDialog(); // Use Show() for non-modal window
+        //}
 
     }
 }

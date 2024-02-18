@@ -6,9 +6,15 @@
         xmlns:local="clr-namespace:EasySave.Views"
         mc:Ignorable="d"
         ResizeMode="NoResize" WindowState="Normal"
-        Title="AddbackupView" Height="300" Width="400">
-    <Grid>
+        Title="Add Backup" Height="300" Width="400"
+        DataContext="{Binding}">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -17,18 +23,25 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Name:" Grid.Row="0"/>
-        <TextBox x:Name="Name" Grid.Row="0" Margin="5"/>
+        <Label Content="Name:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="Name" Grid.Row="0" Grid.Column="1" Margin="5"/>
 
-        <Label Content="Source:" Grid.Row="1"/>
-        <TextBox x:Name="Source" Grid.Row="1" Margin="5"/>
+        <Label Content="Source:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="Source" Grid.Row="1" Grid.Column="1" Margin="5"/>
 
-        <Label Content="Cible:" Grid.Row="2"/>
-        <TextBox x:Name="Cible" Grid.Row="2" Margin="5"/>
+        <Label Content="Cible:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="Cible" Grid.Row="2" Grid.Column="1" Margin="5"/>
 
-        <Label Content="Type:" Grid.Row="3"/>
-        <TextBox x:Name="Type" Grid.Row="3" Margin="5"/>
+        <Label Content="Type:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="Type" Text="{Binding Type, Mode=TwoWay}" Grid.Row="3" Grid.Column="1" Margin="5"/>
 
-        <Button Content="Save" Grid.Row="4" Margin="5"/>
+        <Button x:Name="SaveButton" Content="Save" Grid.Row="4" Grid.Column="1" Margin="5" Click="SaveButton_Click"
+                HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+        <!-- Add some spacing -->
+        <Border Grid.Row="5" Grid.ColumnSpan="2" Height="10"/>
+
+        <!-- Add a line separator -->
+        <Line X1="0" Y1="0" X2="1" Y2="0" Stroke="DarkGray" StrokeThickness="1" Grid.Row="6" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

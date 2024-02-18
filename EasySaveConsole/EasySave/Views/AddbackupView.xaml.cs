@@ -21,10 +21,23 @@ namespace EasySave.Views
     /// </summary>
     public partial class AddbackupView : Window
     {
-        public AddbackupView()
+        private BackupViewModel viewModel;
+
+        public AddbackupView(BackupViewModel backupViewModel)
         {
             InitializeComponent();
+            viewModel = backupViewModel;
         }
 
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            string name = Name.Text;
+            string source = Source.Text;
+            string cible = Cible.Text;
+            string type = Type.Text;
+
+            viewModel.AddBackup(name, source, cible, type);
+            Close(); 
+        }
     }
 }
