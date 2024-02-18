@@ -1,4 +1,4 @@
-﻿using EasySave.Helpers;
+﻿using RelayCommandSET = EasySave.Helpers.RelayCommand;
 using EasySave.Models;
 using System;
 using System.Collections.Generic;
@@ -216,8 +216,8 @@ namespace EasySave.Services
             // Initialize encrypted file extensions
             EncryptedFileExtensions = new ObservableCollection<string>(_config.EncryptedFileExtensions);
 
-            SaveCommand = new RelayCommand(SaveConfig);
-            AddExtensionCommand = new RelayCommand(AddExtension);
+            SaveCommand = new RelayCommandSET(SaveConfig);
+            AddExtensionCommand = new RelayCommandSET(AddExtension);
             TranslateText();
         }
         public async Task TranslateText()

@@ -1,170 +1,168 @@
-﻿using EasySave.Models;
+﻿using EasySave.Helpers;
+using EasySave.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
 using System.Xml.Linq;
 
 namespace EasySave.Services
 {
-    class BackupViewModel
+    public class BackupViewModel : INotifyPropertyChanged
     {
-        public static List<IBackup> backupList = new List<IBackup>();
-        static DeepLTranslator translator; // Ajout de la classe de traduction
+        private string backupFile = "backups.json";
+        private DeepLTranslator translator; // Ajout de la classe de traduction
+        private ObservableCollection<IBackup> backups;
+        public ICommand PlayCommand { get; private set; }
+        public ICommand DeleteCommand { get; private set; }
 
-        public static async Task AddBackup(string type)
+        private IBackup selectedBackup;
+
+        public IBackup SelectedBackup
         {
-            translator = new DeepLTranslator(Config.ApiKey); // Initialisation du traducteur
-
-            Console.WriteLine(await translator.TranslateAsync("Enter backup name:")); // Entrer le nom de la sauvegarde
-            string Name = Console.ReadLine();
-            Console.WriteLine(await translator.TranslateAsync("Enter source directory address:")); // Entrer l'adresse du repertoire source
-            string Source = Console.ReadLine();
-            Console.WriteLine(await translator.TranslateAsync("Enter target directory address:")); // Entrer l'adresse du repertoire cible
-            string Cible = Console.ReadLine();
-            if(Source == Cible)
+            get { return selectedBackup; }
+            set
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(await translator.TranslateAsync("Error :Target directory is the same as source directory"));
-                Console.ResetColor();
+                if (selectedBackup != value)
+                {
+                    selectedBackup = value;
+                    OnPropertyChanged(nameof(SelectedBackup));
+                }
+            }
+        }
+        public void InitBackup()
+        {
+            if (!File.Exists(backupFile))
+            {
+                File.Create(backupFile).Close();
+                string json = JsonConvert.SerializeObject(backups, Formatting.Indented);
+                File.WriteAllText(backupFile, json);
+            }
+        }
+        public ObservableCollection<IBackup> Backups
+        {
+            get { return backups; }
+            set
+            {
+                if (backups != value)
+                {
+                    backups = value;
+                    OnPropertyChanged(nameof(Backups));
+                }
+            }
+        }
+        public BackupViewModel()
+        {
+            InitBackup();
+            Backups = GetBackups();
+            PlayCommand = new RelayCommand(Play, CanPlay);
+            DeleteCommand = new RelayCommand(Delete, CanDelete);
+        }
+
+        public ObservableCollection<IBackup> GetBackups()
+        {
+            string json = File.ReadAllText(backupFile);
+            return JsonConvert.DeserializeObject<ObservableCollection<IBackup>>(json, new JsonSerializerSettings
+            {
+                Converters = new List<JsonConverter> { new BackupConverter() }
+            });
+        }
+        private void Play(object parameter)
+        {
+            if (SelectedBackup != null)
+            {
+                ExecuteBackup(SelectedBackup);
+                MessageBox.Show("Backup finish");
+            }
+        }
+        private bool CanPlay(object parameter)
+        {
+            return SelectedBackup != null;
+        }
+        private void Delete(object parameter)
+        {
+            if (SelectedBackup != null)
+            {
+                DeleteBackup(SelectedBackup);
+                MessageBox.Show("Backup deleted");
+            }
+        }
+        private bool CanDelete(object parameter)
+        {
+            return SelectedBackup != null;
+        }
+        private void SaveBackup()
+        {
+            string json = JsonConvert.SerializeObject(backups, Formatting.Indented);
+            File.WriteAllText(this.backupFile, json);
+        }
+        public void AddBackup(string Name, string Source, string Cible, string Type)
+        {
+            if (Source == Cible)
+            {
+                MessageBox.Show("Source identique à la destination.");
             }
             else
             {
-                switch (type) // JB: on pourrait avoir un type enum pour le type mais c'est du détail
+                switch (Type)
                 {
                     case "Complet":
                         IBackup completBackup = new CompletBackup();
                         completBackup.Name = Name;
                         completBackup.Source = Source;
                         completBackup.Cible = Cible;
-                        backupList.Add(completBackup);
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine(await translator.TranslateAsync("Success : Backup created"));
-                        Console.ResetColor();
+                        backups.Add(completBackup);
+                        SaveBackup();
                         break;
                     case "Differential":
                         IBackup diffBackup = new DifferentialBackup();
                         diffBackup.Name = Name;
                         diffBackup.Source = Source;
                         diffBackup.Cible = Cible;
-                        backupList.Add(diffBackup);
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine(await translator.TranslateAsync("Success : Backup created"));
-                        Console.ResetColor();
+                        backups.Add(diffBackup);
+                        SaveBackup();
                         break;
                     default:
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine(await translator.TranslateAsync("Incorrect choice.")); // Choix incorrect
-                        Console.ResetColor();
                         break;
                 }
             }
-            
-        }
 
-        public static async Task GetBackupList()
+        }
+        public void ExcuteBackups(ObservableCollection<IBackup> backupToExecute)
         {
-            translator = new DeepLTranslator(Config.ApiKey);
-            Console.WriteLine(await translator.TranslateAsync("Backup list:")); // Backup list
-            int nbre = 1;
-            foreach (IBackup backup in backupList)
+            foreach (IBackup bkp in backupToExecute)
             {
-                Console.WriteLine(nbre.ToString() + "- " + backup.Name);
-                nbre++;
+                ExecuteBackup(bkp);
             }
         }
-
-        public static async Task ExcuteBackups()
+        public void ExecuteBackup(IBackup backup)
         {
-            translator = new DeepLTranslator(Config.ApiKey);
-            Console.WriteLine(await translator.TranslateAsync("Choose Backup:")); // Choose Backup:
-            int nbre = 1;
-            foreach (IBackup bkp in backupList)
-            {
-                Console.WriteLine(nbre.ToString() + "-" + bkp.Name);
-                nbre++;
-            }
-            string input = Console.ReadLine();
-            string[] segments = input.Split(';');
-            foreach (var segment in segments)
-            {
-                // JB: ici le code est un peu difficile à lire, on peut ajouter des méthodes pour
-                // Améliorer la lecture du code
-                if (segment.Contains('-'))
-                {
-                    // Si l'utilisateur spécifie une plage de numéros (Ex: 1-3)
-                    string[] range = segment.Split('-');
-                    if (range.Length == 2 && int.TryParse(range[0], out int start) && int.TryParse(range[1], out int end))
-                    {
-                        for (int i = start; i <= end; i++)
-                        {
-                            if (i > 0 && i <= backupList.Count())
-                            {
-                                await ExecuteBackup(backupList[i - 1]);
-                            }
-                            else
-                            {
-                                Console.WriteLine(await translator.TranslateAsync($"Backup {i} does not exist.")); // La sauvegarde {i} n'existe pas.
-                            }
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine(await translator.TranslateAsync($"Invalid range format: {segment}")); // Format de plage invalide : {segment}
-                    }
-                }
-                else
-                {
-                    // Si l'utilisateur spécifie un numéro de sauvegarde individuel
-                    if (int.TryParse(segment, out int number))
-                    {
-                        if (number > 0 && number <= backupList.Count())
-                        {
-                            await ExecuteBackup(backupList[number - 1]);
-                        }
-                        else
-                        {
-                            Console.WriteLine(await translator.TranslateAsync($"Backup {number} does not exist.")); // La sauvegarde {number} n'existe pas.
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine(await translator.TranslateAsync($"Invalid format: {segment}")); // Format invalide : {segment}
-                    }
-                }
-            }
-        }
-
-        static async Task ExecuteBackup(IBackup backup)
-        {
-            translator = new DeepLTranslator(Config.ApiKey);
-            Console.WriteLine(await translator.TranslateAsync("Backup in progress...")); // Backup in progress...
             DateTime start = DateTime.Now;
             backup.Copy(backup.Source, backup.Cible);
             DateTime end = DateTime.Now;
             TimeSpan timeSpan = end - start;
             long duration = Convert.ToInt64(timeSpan.TotalSeconds);
-            LogViewModel.WriteLog(backup, duration);
-            Console.WriteLine();
-            Console.WriteLine(await translator.TranslateAsync("Backup completed.")); // Backup completed.
+            new LogViewModel().WriteLog(backup, duration);
         }
-
-        public static async Task DeleteBackup()
+        public void DeleteBackup(IBackup backup)
         {
-            translator = new DeepLTranslator(Config.ApiKey);
-            Console.WriteLine(await translator.TranslateAsync("Choose Backup:")); // Choose Backup:
-            int nbre = 1;
-            foreach (IBackup bkp in backupList)
-            {
-                Console.WriteLine(nbre.ToString() + "-" + bkp.Name);
-                nbre++;
-            }
-            int choice = Convert.ToInt32(Console.ReadLine());
-            IBackup backup = backupList[choice - 1];
-            backupList.Remove(backup);
-
+            backups.Remove(backup);
+            SaveBackup();
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

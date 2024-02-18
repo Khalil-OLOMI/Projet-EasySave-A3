@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace EasySave.Models
 {
-    interface IBackup
+    public interface IBackup
     {
         string Name { get; set; }
         string Source { get; set; }
         string Cible { get; set; }
+        string Type { get; set; }
+        string Status { get; set; }
         void Copy(string source, string cible);
     }
 }

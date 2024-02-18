@@ -11,7 +11,7 @@ namespace EasySave.Models
 {
     // JB: pour les modèles c'est une bonne pratique d'ajouter le suffixe Model
     // On peut aussi ajouter des description pour chaque propriété
-    class Log
+    public class Log
     {
         [JsonProperty("Horodatage")]
         [JsonConverter(typeof(CustomDateTimeConverter))]

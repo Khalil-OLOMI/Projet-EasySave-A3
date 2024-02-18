@@ -3,6 +3,7 @@ using EasySave.Services;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
+using System.Windows.Input;
 
 namespace EasySave.Models
 {
@@ -12,15 +13,16 @@ namespace EasySave.Models
         public string Name { get; set; } // Nom de la sauvegarde
         public string Source { get; set; } // Répertoire source
         public string Cible { get; set; } // Répertoire cible
+        public string Type { get; set; } //Type of backup
+        public string Status { get; set; } // Status of backup
 
-        
         // Méthode pour effectuer une sauvegarde différentielle
         public void Copy(string source, string cible)
         {
             int nbre_file = 0;
             // Obtenir la liste des fichiers dans le répertoire source
             string[] sourceFiles = Directory.GetFiles(source, "*", SearchOption.AllDirectories);
-            
+
 
             // Parcourir chaque fichier dans le répertoire source
             foreach (string sourceFile in sourceFiles)
@@ -59,10 +61,8 @@ namespace EasySave.Models
                             NbFilesLeftToDo = StateViewModel.FileNbre(source) - nbre_file,
                             Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
                         };
-                        StateViewModel.WriteState(state);
-                        Console.SetCursorPosition(0, Console.CursorTop);
-                        Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
-                        Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
+                        new StateViewModel().WriteState(state);
+                        
                     }
                 }
                 else
@@ -85,10 +85,7 @@ namespace EasySave.Models
                         NbFilesLeftToDo = StateViewModel.FileNbre(source) - nbre_file,
                         Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
                     };
-                    StateViewModel.WriteState(state);
-                    Console.SetCursorPosition(0, Console.CursorTop);
-                    Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
-                    Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
+                    new StateViewModel().WriteState(state);
                 }
             }
         }

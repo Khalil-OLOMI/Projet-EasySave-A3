@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KHALIL\\source\\repos\\EasySAVE-2.0\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\EasySave.csproj": {}
+    "C:\\Users\\euphr\\Music\\DEV\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\EasySave.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KHALIL\\source\\repos\\EasySAVE-2.0\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\EasySave.csproj": {
+    "C:\\Users\\euphr\\Music\\DEV\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\EasySave.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KHALIL\\source\\repos\\EasySAVE-2.0\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\EasySave.csproj",
+        "projectUniqueName": "C:\\Users\\euphr\\Music\\DEV\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\EasySave.csproj",
         "projectName": "EasySave",
-        "projectPath": "C:\\Users\\KHALIL\\source\\repos\\EasySAVE-2.0\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\EasySave.csproj",
-        "packagesPath": "C:\\Users\\KHALIL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KHALIL\\source\\repos\\EasySAVE-2.0\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\obj\\",
+        "projectPath": "C:\\Users\\euphr\\Music\\DEV\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\EasySave.csproj",
+        "packagesPath": "C:\\Users\\euphr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\euphr\\Music\\DEV\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KHALIL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\euphr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
