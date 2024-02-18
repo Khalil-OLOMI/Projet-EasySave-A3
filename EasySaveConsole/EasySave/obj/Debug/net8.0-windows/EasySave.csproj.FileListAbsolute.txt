@@ -35,3 +35,5 @@ C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml

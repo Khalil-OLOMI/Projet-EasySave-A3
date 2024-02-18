@@ -8,7 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="650">
 
     <Grid>
-        <Label Content="Dashboard"/>
+        <Border Background="#FF0F52BA" Height="41" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Welcome" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
 
+        <!-- Contenu principal -->
     </Grid>
 </Page>

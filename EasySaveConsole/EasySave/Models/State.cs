@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace EasySave.Models
 {
     // JB: public?
-    class State
+    public class State
     {
         [JsonProperty("Horodatage")]
         [JsonConverter(typeof(CustomDateTimeConverter))]

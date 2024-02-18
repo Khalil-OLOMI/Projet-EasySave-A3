@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 
 namespace EasySave.Models
 {
@@ -14,7 +16,8 @@ namespace EasySave.Models
         public string Name { get; set; }
         public string Source { get; set; }
         public string Cible { get; set; }
-        
+        public string Type { get; set; }
+        public string Status { get; set; }
 
         // JB: Ici on a deux responsabilités qu'on pourrait séparer:
         // D'un coté le modèle avec les propriétés et de l'autre la classe permettant de créer une sauvegarde
@@ -25,9 +28,7 @@ namespace EasySave.Models
 
             if (!dir.Exists)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Repertoire source inaccessible");
-                Console.ResetColor();
+                MessageBox.Show("Dossier source inexistant");
             }
             else
             {
@@ -39,9 +40,7 @@ namespace EasySave.Models
                     }
                     catch (Exception ex)
                     {
-                        // Handle any exceptions that occur during directory creation
-                        Console.WriteLine("An error occurred while creating the directory:");
-                        Console.WriteLine(ex.Message);
+                        MessageBox.Show("Erreur de création de dossier cible");
                     }
                 }
 
@@ -62,10 +61,7 @@ namespace EasySave.Models
                         NbFilesLeftToDo = StateViewModel.FileNbre(source) - nbre_file,
                         Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
                     };
-                    StateViewModel.WriteState(state);
-                    Console.SetCursorPosition(0, Console.CursorTop);
-                    Console.Write(new string(' ', Console.WindowWidth - 1) + "\r");
-                    Console.Write("Progression: " + nbre_file + "/" + state.TotalFilesToCopy);
+                    new StateViewModel().WriteState(state);
                     
                 }
                 foreach (string subdir in Directory.GetDirectories(source))

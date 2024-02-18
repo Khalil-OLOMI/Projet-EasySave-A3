@@ -1,0 +1,26 @@
+[
+  {
+    "Horodatage": "18/02/2024 20:29:40",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\PPP",
+    "FileSize": 0,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "18/02/2024 20:31:21",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screen",
+    "FileTarget": "C:\\Users\\euphr\\Pictures\\Scre",
+    "FileSize": 0,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "18/02/2024 20:38:30",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 7381875,
+    "FileTransferTime": 0
+  }
+]

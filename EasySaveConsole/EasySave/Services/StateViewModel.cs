@@ -9,58 +9,39 @@ using System.Threading.Tasks;
 
 namespace EasySave.Services
 {
-    class StateViewModel
+    public class StateViewModel
     {
-        static string state_file = Directory.GetCurrentDirectory() + "\\log\\state.json";
+        private string state_file = "state.json";
 
-        public static void ReadStateFile()
+        public StateViewModel()
+        {
+            if (!File.Exists(state_file))
+            {
+                File.Create(state_file).Close();
+                string json = JsonConvert.SerializeObject(new List<State>(), Formatting.Indented);
+                File.WriteAllText(state_file, json);
+            }
+        }
+        public List<State> ReadStateFile()
         {
             try
             {
-                // Vérifier si le fichier existe
-                if (!File.Exists(state_file))
-                {
-                    Console.WriteLine("Le fichier journal spécifié n'existe pas.");
-                    return;
-                }
-
-                // Lire le contenu du fichier
                 string jsonContent = File.ReadAllText(state_file);
-
-                // Désérialiser le contenu JSON en objets
-                List<State> stateEntries = JsonConvert.DeserializeObject<List<State>>(jsonContent);
-
-                // Afficher les entrées du journal
-                foreach (var entry in stateEntries)
-                {
-                    Console.WriteLine($"Horodatage: {entry.Horodatage}");
-                    Console.WriteLine($"Nom de sauvegarde: {entry.Name}");
-                    Console.WriteLine($"Statut: {entry.Status}");
-                    Console.WriteLine($"Source: {entry.FileSource}");
-                    Console.WriteLine($"Destination: {entry.FileTarget}");
-                    Console.WriteLine($"Nombre total de fichier: {entry.TotalFilesToCopy}");
-                    Console.WriteLine($"Taille total des fichiers: {entry.TotalFilesSize}");
-                    Console.WriteLine($"Nombre de fichiers restants: {entry.NbFilesLeftToDo}");
-                    Console.WriteLine($"Progression: {entry.Progression}");
-                    Console.WriteLine();
-                }
+                return JsonConvert.DeserializeObject<List<State>>(jsonContent);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Une erreur s'est produite lors de la lecture du fichier journal : {ex.Message}");
+                return new List<State>();
             }
         }
-        public static void WriteState(State state)
+
+        public void WriteState(State state)
         {
             List<State> states = new List<State>();
             // Vérifier si le fichier existe déjà
-            if (File.Exists(state_file))
-            {
-                // Lire le contenu existant du fichier JSON dans une chaîne
-                string json = File.ReadAllText(state_file);
-                // Désérialiser la chaîne JSON en une liste d'objets
-                states = JsonConvert.DeserializeObject<List<State>>(json);
-            }
+            string json = File.ReadAllText(state_file);
+            // Désérialiser la chaîne JSON en une liste d'objets
+            states = JsonConvert.DeserializeObject<List<State>>(json);
             // Ajouter le nouvel objet à la liste
             states.Add(state);
 

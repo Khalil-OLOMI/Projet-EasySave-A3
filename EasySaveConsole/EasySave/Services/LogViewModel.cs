@@ -9,45 +9,33 @@ using System.IO;
 
 namespace EasySave.Services
 {
-    class LogViewModel
+    public class LogViewModel
     {
-        static string log_file = Directory.GetCurrentDirectory() + "\\log\\log.json";
+        private string log_file = "log.json";
 
-        public static void ReadLogFile()
+        public LogViewModel() 
+        {
+            if (!File.Exists(log_file))
+            {
+                File.Create(log_file).Close();
+                string json = JsonConvert.SerializeObject(new List<Log>(), Formatting.Indented);
+                File.WriteAllText(log_file, json);
+            }
+        }
+
+        public List<Log> GetLogs()
         {
             try
             {
-                // Vérifier si le fichier existe
-                if (!File.Exists(log_file))
-                {
-                    Console.WriteLine("Le fichier journal spécifié n'existe pas.");
-                    return;
-                }
-
-                // Lire le contenu du fichier
                 string jsonContent = File.ReadAllText(log_file);
-
-                // Désérialiser le contenu JSON en objets
-                List<Log> logEntries = JsonConvert.DeserializeObject<List<Log>>(jsonContent);
-
-                // Afficher les entrées du journal
-                foreach (var entry in logEntries)
-                {
-                    Console.WriteLine($"Horodatage: {entry.Horodatage}");
-                    Console.WriteLine($"Nom de sauvegarde: {entry.Name}");
-                    Console.WriteLine($"Source: {entry.FileSource}");
-                    Console.WriteLine($"Destination: {entry.FileTarget}");
-                    Console.WriteLine($"Taille du fichier: {entry.FileSize}");
-                    Console.WriteLine($"Temps de transfert: {entry.FileTransferTime}");
-                    Console.WriteLine();
-                }
+                return JsonConvert.DeserializeObject<List<Log>>(jsonContent);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Une erreur s'est produite lors de la lecture du fichier journal : {ex.Message}");
+                return new List<Log>(); // Or throw an exception or handle it according to your needs
             }
         }
-        public static void WriteLog(IBackup backup, long duration)
+        public void WriteLog(IBackup backup, long duration)
         {
             Log log = new Log
             {

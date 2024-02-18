@@ -6,8 +6,56 @@
       xmlns:local="clr-namespace:EasySave.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="650">
-
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Background="#FF0F52BA" Grid.Row="0" Height="40">
+            <!-- Header content goes here -->
+            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,0" Orientation="Horizontal">
+                <TextBlock Text="Backup list" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0"/>
+                <Button Content="Add backup" Margin="400,0,0,0" Height="25" Width="81" Background="White" Click="AddBackupForm"/>
+            </StackPanel>
+        </Border>
+        <!-- Main Content Area -->
+        <Border Background="White" Grid.Row="1">
+            <DataGrid
+                x:Name="Backups"
+                AutoGenerateColumns="False"
+                ItemsSource="{Binding Backups, Mode=TwoWay}"
+                SelectedItem="{Binding SelectedBackup, Mode=TwoWay}"
+                Margin="10" Background="White">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        Header="Name"
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Name}"/>
+                    <DataGridTextColumn
+                        Header="Type"
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Type}"/>
+                    <DataGridTextColumn
+                        Header="Status"
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Status}"/>
+                    <DataGridTemplateColumn Header="Actions" MinWidth="100" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Button Content="Play" Command="{Binding DataContext.PlayCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
+                                    <Button Content="Delete" Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
     </Grid>
 </Page>

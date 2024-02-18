@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EasySave.Models;
+using EasySave.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,15 @@ namespace EasySave.Views
         public BackupView()
         {
             InitializeComponent();
+            DataContext = new BackupViewModel();
         }
+
+        private void AddBackupForm(object sender, RoutedEventArgs e)
+        {
+            // Open the AddbackupView window
+            AddbackupView addForm = new AddbackupView();
+            addForm.ShowDialog(); // Use Show() for non-modal window
+        }
+
     }
 }
