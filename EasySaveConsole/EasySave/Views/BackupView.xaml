@@ -27,7 +27,7 @@
                 AutoGenerateColumns="False"
                 ItemsSource="{Binding Backups, Mode=TwoWay}"
                 SelectedItem="{Binding SelectedBackup, Mode=TwoWay}"
-                Margin="10" Background="White" SelectionChanged="Backups_SelectionChanged">
+                Margin="10" Background="White">
                 <DataGrid.Columns>
                     <DataGridTextColumn
                         Header="Name"

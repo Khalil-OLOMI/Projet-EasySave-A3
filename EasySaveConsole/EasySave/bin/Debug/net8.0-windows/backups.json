@@ -5,5 +5,12 @@
     "Cible": "C:\\ppp",
     "Type": "Complet",
     "Status": "Terminé"
+  },
+  {
+    "Name": "Test2",
+    "Source": "C:\\Users\\euphr\\Videos",
+    "Cible": "C:\\Videos",
+    "Type": "Complet",
+    "Status": null
   }
 ]

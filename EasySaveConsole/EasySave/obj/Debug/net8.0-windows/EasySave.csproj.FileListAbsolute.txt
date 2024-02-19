@@ -7,7 +7,6 @@ C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
-C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\SettingView.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
@@ -20,7 +19,6 @@ C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\bin
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
-C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\SettingView.baml
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
@@ -103,3 +101,9 @@ C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\n
 C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
 C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
 C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.baml

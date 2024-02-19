@@ -8,6 +8,43 @@
       d:DesignHeight="450" d:DesignWidth="650">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Background="#FF0F52BA" Grid.Row="0" Height="40">
+            <!-- Header content goes here -->
+            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,0" Orientation="Horizontal">
+                <TextBlock Text="Log" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0"/>
+            </StackPanel>
+        </Border>
+        <!-- Main Content Area -->
+        <Border Background="White" Grid.Row="1">
+            <DataGrid
+            x:Name="Logs"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding Logs, Mode=TwoWay}"
+            Margin="10" Background="White">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                    Header="Name"
+                    MinWidth="100"
+                    Width="*"
+                    Binding="{Binding Name}"/>
+                    <DataGridTextColumn
+                    Header="File Size"
+                    MinWidth="100"
+                    Width="*"
+                    Binding="{Binding FileSize}"/>
+                    <DataGridTextColumn
+                    Header="Time"
+                    MinWidth="100"
+                    Width="*"
+                    Binding="{Binding FileTransferTime}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
     </Grid>
 </Page>

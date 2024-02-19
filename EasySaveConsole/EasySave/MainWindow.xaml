@@ -23,7 +23,7 @@
                     <Button Click="NavBackups" Content="Backups" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
                     <Button Click="NavLogs" Content="Logs" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
                     <Button Click="NavSettings" Content="Settings" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
-                    <Button Content="Docs" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
+                    <Button Click="NavDocs" Content="Docs" Background="White" FontFamily="Bahnschrift Light" FontSize="16" Height="35"/>
                     <!-- Add more buttons or navigation elements as needed -->
                 </StackPanel>
                 <Label Content="Version 2.0" Foreground="White" FontSize="16" FontFamily="Bahnschrift Light" Margin="0,365,0,0" HorizontalAlignment="Center"/>

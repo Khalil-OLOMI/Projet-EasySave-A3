@@ -6,12 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace EasySave.Services
 {
-    public class LogViewModel
+    public class LogViewModel : INotifyPropertyChanged
     {
         private string log_file = "log.json";
+        public ObservableCollection<Log> Logs { get; set; }
 
         public LogViewModel()
         {
@@ -21,18 +24,19 @@ namespace EasySave.Services
                 string json = JsonConvert.SerializeObject(new List<Log>(), Formatting.Indented);
                 File.WriteAllText(log_file, json);
             }
+            Logs = GetLogs();
         }
 
-        public List<Log> GetLogs()
+        public ObservableCollection<Log> GetLogs()
         {
             try
             {
                 string jsonContent = File.ReadAllText(log_file);
-                return JsonConvert.DeserializeObject<List<Log>>(jsonContent);
+                return JsonConvert.DeserializeObject<ObservableCollection<Log>>(jsonContent);
             }
             catch (Exception ex)
             {
-                return new List<Log>(); // Or throw an exception or handle it according to your needs
+                return new ObservableCollection<Log>(); // Or throw an exception or handle it according to your needs
             }
         }
         public void WriteLog(IBackup backup, long duration)
@@ -68,7 +72,7 @@ namespace EasySave.Services
             // Écrire la chaîne JSON mise à jour dans le fichier
             File.WriteAllText(log_file, updatedJson);
         }
-        static long GetDirectorySize(string directoryPath)
+        long GetDirectorySize(string directoryPath)
         {
 
             DirectoryInfo directoryInfo = new DirectoryInfo(directoryPath);
@@ -90,6 +94,11 @@ namespace EasySave.Services
             }
 
 
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

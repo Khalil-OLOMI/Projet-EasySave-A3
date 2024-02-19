@@ -1,0 +1,22 @@
+﻿<Page x:Class="EasySave.Views.DocView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasySave.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="650"
+      Title="DocView">
+    <Grid>
+        <Border Background="#FF0F52BA" Height="41" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Documentation" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+        <Border Background="White" Margin="0,42,0,0">
+            <StackPanel>
+                <TextBlock Margin="2" TextWrapping="Wrap"><Run Text="EasySave 2.0 est l’évolution en mode graphique du logiciel de sauvegarde conçu pour simplifier la gestion et l’exécution des tâches de sauvegarde. L’équipe de développeur a essayé de penser l’application de manière qu’elle soit le plus ergonomique et simple d’utilisation possible. Ainsi, une fois EasySave 2.0 lancé, vous avez sur le coté un menu constitué des éléments suivants : Dashboard, Backups, Logs, Settings et Docs. Découvrons à quoi sert chaque rubrique et comment utiliser l’application : "/><LineBreak/><Run Text="*"/><Run Text=" Dashboard "/><LineBreak/><Run Text="*"/><Run Text=" Backups En cliquant sur cet élément du menu, vous pourrez voir la liste de tous les travaux de sauvegarde qui ont été créés. Pour chaque sauvegarde, vous avez la capacité de : "/><LineBreak/><Run Text="- Exécuter un travail de sauvegarde : pour ce faire, cliquez sur l’icône ‘’marche’’ dans la colonne ‘’Actions‘’ au niveau de la ligne du travail de sauvegarde que vous souhaitez exécuter "/><LineBreak/><Run Text="- Voir l’état d’un travail de sauvegarde : il s’agit des expressions Non active, Active, Fini que vous retrouverez dans la colonne ‘’Statut’’ "/><LineBreak/><Run Text="- Supprimer un travail de sauvegarde : il faudra cliquer sur l’icône ‘’suppression’’ dans la colonne ‘’Actions’’ "/><LineBreak/><Run Text="- Consulter l’historique en temps réel d’un travail de sauvegarde : afin d’avoir accès aux logs en temps réel, cliquez sur le statut (Active, Fini) de la sauvegarde ; une fenêtre pop-up s’ouvrira pour afficher les informations "/><LineBreak/><Run Text="- Ajouter un nouveau travail de sauvegarde : appuyez sur le bouton ‘’ajouter’’ dans le coin supérieur de votre écran. Il vous sera ensuite demandé le type de sauvegarde ainsi que les autres informations pour créer un nouveau travail de sauvegarde "/><Run Text="*"/><Run Text=" Logs Dans ‘’Logs’’, vous avez l’historique journalier des travaux de sauvegarde qui ont été créé. "/><LineBreak/><Run Language="fr-fr" Text="*"/><Run Text=" Settings Ici, vous avez la possibilité de choisir la langue du logiciel, les extensions de fichiers qui seront encryptés par le logiciel et le logiciel métier dont l’exécution devra bloquer le lancement d’un travail de sauvegarde. Le formulaire qui vous est présenté vous permet de faire cela. Une fois ce dernier rempli, appuyez sur ‘’enregistrer’’ pour que ce soit pris en compte."/></TextBlock>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

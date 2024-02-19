@@ -38,6 +38,10 @@ namespace EasySave
         {
             MainFrame.Content = new ConfigView();
         }
+        private void NavDocs(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new DocView();
+        }
 
     }
 }
