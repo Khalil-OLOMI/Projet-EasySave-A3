@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Release\net8.0-windows\
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Release\net8.0-windows\
 EasySave
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\App.xaml
-6-1078595308
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\App.xaml
+7-126509134
 
-23-447590374
+24411290202
 199594520515
-MainWindow.xaml;Views\AddbackupView.xaml;Views\BackupView.xaml;Views\ConfigView.xaml;Views\DashboardView.xaml;Views\LogView.xaml;
+MainWindow.xaml;Views\AddbackupView.xaml;Views\BackupView.xaml;Views\ConfigView.xaml;Views\DashboardView.xaml;Views\DocView.xaml;Views\LogView.xaml;
 
 True
 

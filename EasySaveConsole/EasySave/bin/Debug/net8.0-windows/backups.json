@@ -12,5 +12,12 @@
     "Cible": "C:\\Videos",
     "Type": "Complet",
     "Status": null
+  },
+  {
+    "Name": "test54",
+    "Source": "c:\\source",
+    "Cible": "c:\\cible",
+    "Type": "Complet",
+    "Status": "Created"
   }
 ]

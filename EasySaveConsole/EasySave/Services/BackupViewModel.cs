@@ -6,8 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -77,12 +79,24 @@ namespace EasySave.Services
                 Converters = new List<JsonConverter> { new BackupConverter() }
             });
         }
+        
         private void Play(object parameter)
         {
-            if (SelectedBackup != null)
+            ConfigViewModel configViewModel = new ConfigViewModel(Config.LoadConfig());
+            string processName = configViewModel.ProcessName;
+
+            if (Process.GetProcessesByName(processName).Length > 0)
             {
-                ExecuteBackup(SelectedBackup);
-                MessageBox.Show("Backup finish");
+                MessageBox.Show($"Le processus {processName} est en cours d'exécution. Veuillez fermer toutes ses instances pour reprendre la sauvegarde.", "Processus en cours d'exécution", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+
+            else
+            {
+                if (SelectedBackup != null)
+                {
+                    ExecuteBackup(SelectedBackup);
+                    MessageBox.Show("Backup finished.");
+                }
             }
         }
         private bool CanPlay(object parameter)
@@ -122,6 +136,7 @@ namespace EasySave.Services
                         completBackup.Source = Source;
                         completBackup.Cible = Cible;
                         completBackup.Type = Type;
+                        completBackup.Status = "Created";
                         backups.Add(completBackup);
                         SaveBackup();
                         break;
@@ -131,6 +146,7 @@ namespace EasySave.Services
                         diffBackup.Source = Source;
                         diffBackup.Cible = Cible;
                         diffBackup.Type = Type;
+                        diffBackup.Status = "Created";
                         backups.Add(diffBackup);
                         SaveBackup();
                         break;
