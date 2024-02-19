@@ -19,5 +19,12 @@
     "Cible": "c:\\cible",
     "Type": "Complet",
     "Status": "Created"
+  },
+  {
+    "Name": "testtt",
+    "Source": "C:\\tesst",
+    "Cible": "C:\\test-2",
+    "Type": "Complet",
+    "Status": "Created"
   }
 ]

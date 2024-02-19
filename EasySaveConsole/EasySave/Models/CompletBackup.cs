@@ -1,6 +1,7 @@
 ﻿using EasySave.Services;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -62,6 +63,21 @@ namespace EasySave.Models
                         Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
                     };
                     new StateViewModel().WriteState(state);
+
+                    ConfigViewModel configViewModel = new ConfigViewModel(Config.LoadConfig());
+                    List<string> encryptedFileExtensions = configViewModel.EncryptedFileExtensions.ToList();
+
+                    if (configViewModel.EncryptedFileExtensions.Contains(Path.GetExtension(file).TrimStart('.').ToLower()))
+                    {
+                        // Call CryptoSoft to encrypt the file
+                        string encryptedFile = targetFile + ".encrypted";
+                        ProcessStartInfo psi = new ProcessStartInfo("CryptoSoft.exe", $"\"{targetFile}\" \"{encryptedFile}\"");
+                        psi.CreateNoWindow = true;
+                        psi.UseShellExecute = false;
+                        Process.Start(psi)?.WaitForExit(); // Wait for the process to finish
+                        File.Delete(targetFile); // Delete the original file
+                        File.Move(encryptedFile, targetFile); // Rename the encrypted file to the original file name
+                    }
 
                 }
                 foreach (string subdir in Directory.GetDirectories(source))

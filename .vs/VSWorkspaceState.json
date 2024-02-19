@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\EasySaveConsole",
+    "\\EasySaveConsole\\EasySave",
     "\\EasySaveConsole\\EasySaveConsole",
     "\\EasySaveConsole\\EasySaveConsole\\Models",
-    "\\EasySaveConsole\\EasySaveConsole\\ViewModels"
+    "\\EasySaveConsole\\EasySaveConsole\\ViewModels",
+    "\\EasySaveConsole\\EasySave\\Services"
   ],
-  "SelectedNode": "\\EasySaveConsole\\EasySaveConsole.sln",
+  "SelectedNode": "\\EasySaveConsole\\EasySave\\Services\\LogViewModel.cs",
   "PreviewInSolutionExplorer": false
 }
