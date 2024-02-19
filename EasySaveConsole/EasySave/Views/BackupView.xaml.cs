@@ -33,12 +33,16 @@ namespace EasySave.Views
             AddbackupView addBackupView = new AddbackupView((BackupViewModel)DataContext);
             addBackupView.ShowDialog();
         }
-        //private void AddBackupForm(object sender, RoutedEventArgs e)
-        //{
-        //    // Open the AddbackupView window
-        //    AddbackupView addForm = new AddbackupView();
-        //    addForm.ShowDialog(); // Use Show() for non-modal window
-        //}
+        private void DetailBackupClick(object sender, RoutedEventArgs e)
+        {
+            if (Backups.SelectedItem != null)
+            {
+                IBackup backup = (IBackup)Backups.SelectedItem;
+
+                // Afficher les détails dans une MessageBox
+                MessageBox.Show($"Name: {backup.Name}\nSource: {backup.Source}\nDestionation: {backup.Cible}\nType: {backup.Type}\nStatus: {backup.Status}", "Détails du Log");
+            }
+        }
 
     }
 }

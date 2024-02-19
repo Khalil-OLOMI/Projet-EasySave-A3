@@ -26,23 +26,33 @@
             x:Name="Logs"
             AutoGenerateColumns="False"
             ItemsSource="{Binding Logs, Mode=TwoWay}"
-            Margin="10" Background="White">
+            Margin="10" Background="White"
+            MouseDoubleClick="DetailLogClick">
                 <DataGrid.Columns>
+                    <DataGridTextColumn
+                    Header="Date d'exécution"
+                    MinWidth="100"
+                    Width="*"
+                    Binding="{Binding Horodatage}"
+                    IsReadOnly="True"/>
                     <DataGridTextColumn
                     Header="Name"
                     MinWidth="100"
                     Width="*"
-                    Binding="{Binding Name}"/>
+                    Binding="{Binding Name}"
+                    IsReadOnly="True"/>
                     <DataGridTextColumn
-                    Header="File Size"
+                    Header="File Size(KO)"
                     MinWidth="100"
                     Width="*"
-                    Binding="{Binding FileSize}"/>
+                    Binding="{Binding FileSize}"
+                    IsReadOnly="True"/>
                     <DataGridTextColumn
-                    Header="Time"
+                    Header="Time(ms)"
                     MinWidth="100"
                     Width="*"
-                    Binding="{Binding FileTransferTime}"/>
+                    Binding="{Binding FileTransferTime}"
+                    IsReadOnly="True"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Border>

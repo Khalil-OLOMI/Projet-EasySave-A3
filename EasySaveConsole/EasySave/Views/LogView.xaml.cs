@@ -1,4 +1,5 @@
-﻿using EasySave.Services;
+﻿using EasySave.Models;
+using EasySave.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,17 @@ namespace EasySave.Views
         {
             InitializeComponent();
             DataContext = new LogViewModel();
+        }
+
+        private void DetailLogClick(object sender, RoutedEventArgs e)
+        {
+            if (Logs.SelectedItem != null)
+            {
+                Log log = (Log)Logs.SelectedItem;
+
+                // Afficher les détails dans une MessageBox
+                MessageBox.Show($"Date: {log.Horodatage}\nName: {log.Name}\nSource: {log.FileSource}\nDestionation: {log.FileTarget}\nFileSize: {log.FileSize}\nFileTransferTime: {log.FileTransferTime}", "Détails du Log");
+            }
         }
     }
 }

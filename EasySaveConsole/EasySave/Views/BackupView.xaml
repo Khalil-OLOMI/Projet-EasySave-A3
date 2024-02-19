@@ -27,23 +27,26 @@
                 AutoGenerateColumns="False"
                 ItemsSource="{Binding Backups, Mode=TwoWay}"
                 SelectedItem="{Binding SelectedBackup, Mode=TwoWay}"
-                Margin="10" Background="White">
+                Margin="10" Background="White" MouseDoubleClick="DetailBackupClick">
                 <DataGrid.Columns>
                     <DataGridTextColumn
                         Header="Name"
                         MinWidth="100"
                         Width="*"
-                        Binding="{Binding Name}"/>
+                        Binding="{Binding Name}"
+                        IsReadOnly="True"/>
                     <DataGridTextColumn
                         Header="Type"
                         MinWidth="100"
                         Width="*"
-                        Binding="{Binding Type}"/>
+                        Binding="{Binding Type}"
+                        IsReadOnly="True"/>
                     <DataGridTextColumn
                         Header="Status"
                         MinWidth="100"
                         Width="*"
-                        Binding="{Binding Status}"/>
+                        Binding="{Binding Status}"
+                        IsReadOnly="True"/>
                     <DataGridTemplateColumn Header="Actions" MinWidth="100" Width="*">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
