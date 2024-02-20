@@ -138,7 +138,7 @@ namespace EasySave.Services
                 if (SelectedBackup != null)
                 {
                     ExecuteBackup(SelectedBackup);
-                    MessageBox.Show("Backup finished.");
+                    MessageBox.Show("Backup finished.", "Backup finished.", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
         }
@@ -151,7 +151,7 @@ namespace EasySave.Services
             if (SelectedBackup != null)
             {
                 DeleteBackup(SelectedBackup);
-                MessageBox.Show("Backup deleted");
+                MessageBox.Show("Backup deleted", "Backup deleted", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
         private bool CanDelete(object parameter)

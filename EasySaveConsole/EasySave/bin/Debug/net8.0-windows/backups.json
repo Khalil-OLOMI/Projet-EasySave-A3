@@ -1,16 +1,9 @@
 [
   {
-    "Name": "Test",
-    "Source": "C:\\Users\\euphr\\Pictures",
-    "Cible": "C:\\ppp",
+    "Name": "Pictures",
+    "Source": "C:\\Source",
+    "Cible": "C:\\test",
     "Type": "Complet",
-    "Status": "Terminé"
-  },
-  {
-    "Name": "Test2",
-    "Source": "C:\\Users\\euphr\\Videos",
-    "Cible": "C:\\Videos",
-    "Type": "Complet",
-    "Status": null
+    "Status": "Created"
   }
 ]
