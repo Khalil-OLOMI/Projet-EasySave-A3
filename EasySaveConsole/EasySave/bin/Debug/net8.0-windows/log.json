@@ -1,106 +1,11 @@
 [
   {
-    "Horodatage": "19/02/2024 00:02:31",
-    "Name": "Test",
-    "FileSource": "C:\\Users\\euphr\\Pictures",
-    "FileTarget": "C:\\ppp",
-    "FileSize": 0,
-    "FileTransferTime": 4
-  },
-  {
-    "Horodatage": "19/02/2024 10:00:52",
+    "Horodatage": "20/02/2024 09:53:29",
+    "XamlHorodatage": "20/02/2024 09:53:29",
     "Name": "Test",
     "FileSource": "C:\\Users\\euphr\\Pictures",
     "FileTarget": "C:\\ppp",
     "FileSize": 7381875,
-    "FileTransferTime": 0
-  },
-  {
-    "Horodatage": "19/02/2024 10:31:14",
-    "Name": "Test",
-    "FileSource": "C:\\Users\\euphr\\Pictures",
-    "FileTarget": "C:\\ppp",
-    "FileSize": 0,
-    "FileTransferTime": 1
-  },
-  {
-    "Horodatage": "19/02/2024 10:38:25",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
-    "FileTransferTime": 1
-  },
-  {
-    "Horodatage": "19/02/2024 10:42:14",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
-    "FileTransferTime": 1
-  },
-  {
-    "Horodatage": "19/02/2024 10:47:20",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
     "FileTransferTime": 2
-  },
-  {
-    "Horodatage": "19/02/2024 10:51:39",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
-    "FileTransferTime": 2
-  },
-  {
-    "Horodatage": "19/02/2024 10:51:54",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
-    "FileTransferTime": 1
-  },
-  {
-    "Horodatage": "19/02/2024 10:52:00",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
-    "FileTransferTime": 1
-  },
-  {
-    "Horodatage": "19/02/2024 11:00:57",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
-    "FileTransferTime": 2
-  },
-  {
-    "Horodatage": "19/02/2024 11:02:47",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
-    "FileTransferTime": 2
-  },
-  {
-    "Horodatage": "19/02/2024 11:03:51",
-    "Name": "test54",
-    "FileSource": "c:\\source",
-    "FileTarget": "c:\\cible",
-    "FileSize": 1920045,
-    "FileTransferTime": 2
-  },
-  {
-    "Horodatage": "19/02/2024 13:27:53",
-    "Name": "testtt",
-    "FileSource": "C:\\tesst",
-    "FileTarget": "C:\\test-2",
-    "FileSize": 109123,
-    "FileTransferTime": 0
   }
 ]

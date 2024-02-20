@@ -62,7 +62,14 @@ namespace EasySave.Models
                         NbFilesLeftToDo = StateViewModel.FileNbre(source) - nbre_file,
                         Progression = ((double)(StateViewModel.FileNbre(source) - (StateViewModel.FileNbre(source) - nbre_file)) / StateViewModel.FileNbre(source)) * 100,
                     };
-                    new StateViewModel().WriteState(state);
+                    if (Config.LoadConfig().LogType == "XML")
+                    {
+                        new StateViewModel().WriteStateXml(state);
+                    }
+                    else
+                    {
+                        new StateViewModel().WriteState(state);
+                    }
 
                     ConfigViewModel configViewModel = new ConfigViewModel(Config.LoadConfig());
                     List<string> encryptedFileExtensions = configViewModel.EncryptedFileExtensions.ToList();

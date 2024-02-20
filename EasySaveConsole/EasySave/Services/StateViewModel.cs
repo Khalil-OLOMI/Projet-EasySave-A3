@@ -2,16 +2,19 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace EasySave.Services
 {
     public class StateViewModel
     {
         private string state_file = "state.json";
+        private string filePath = "state.xml";
 
         public StateViewModel()
         {
@@ -20,6 +23,15 @@ namespace EasySave.Services
                 File.Create(state_file).Close();
                 string json = JsonConvert.SerializeObject(new List<State>(), Formatting.Indented);
                 File.WriteAllText(state_file, json);
+            }
+            if (!File.Exists(filePath))
+            {
+                File.Create(filePath).Close();
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(ObservableCollection<State>));
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    xmlSerializer.Serialize(writer, new ObservableCollection<State>());
+                }
             }
         }
         public List<State> ReadStateFile()
@@ -92,6 +104,51 @@ namespace EasySave.Services
             }
 
             return totalFichiers;
+        }
+
+        public ObservableCollection<State> ReadXMLState()
+        {
+            try
+            {
+                // Lire le contenu du fichier XML dans une chaîne
+                string xml = File.ReadAllText(filePath);
+
+                // Désérialiser la chaîne XML en une liste d'objets Log
+                XmlSerializer serializer = new XmlSerializer(typeof(ObservableCollection<State>));
+                using (StringReader reader = new StringReader(xml))
+                {
+                    return (ObservableCollection<State>)serializer.Deserialize(reader);
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ObservableCollection<State>();
+            }
+        }
+
+        public void WriteStateXml(State state)
+        {
+            ObservableCollection<State> states = new ObservableCollection<State>();
+
+            // Vérifier si le fichier journal existe déjà
+            string xml = File.ReadAllText(filePath);
+
+            // Désérialiser la chaîne XML en une liste d'objets Log
+            XmlSerializer serializer = new XmlSerializer(typeof(ObservableCollection<State>));
+            using (StringReader reader = new StringReader(xml))
+            {
+                states = (ObservableCollection<State>)serializer.Deserialize(reader);
+            }
+
+            // Ajouter le nouvel objet à la liste
+            states.Add(state);
+
+            // Sérialiser la liste mise à jour en une chaîne XML
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(ObservableCollection<State>));
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                xmlSerializer.Serialize(writer, states);
+            }
         }
     }
 }

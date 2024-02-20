@@ -170,7 +170,14 @@ namespace EasySave.Services
             DateTime end = DateTime.Now;
             TimeSpan timeSpan = end - start;
             long duration = Convert.ToInt64(timeSpan.TotalSeconds);
-            new LogViewModel().WriteLog(backup, duration);
+            if (Config.LoadConfig().LogType == "XML")
+            {
+                new LogViewModel().WriteLogXml(backup, duration);
+            }
+            else
+            {
+                new LogViewModel().WriteJSONLog(backup, duration);
+            }
         }
         public void DeleteBackup(IBackup backup)
         {

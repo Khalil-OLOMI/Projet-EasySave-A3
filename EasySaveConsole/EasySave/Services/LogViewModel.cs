@@ -1,33 +1,46 @@
 ﻿using EasySave.Models;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
+using System.Xml.Serialization;
 
 namespace EasySave.Services
 {
     public class LogViewModel : INotifyPropertyChanged
     {
         private string log_file = "log.json";
+        private readonly string filePath = "log.xml";
         public ObservableCollection<Log> Logs { get; set; }
+        private Config config { get; set; }
 
         public LogViewModel()
         {
             if (!File.Exists(log_file))
             {
                 File.Create(log_file).Close();
-                string json = JsonConvert.SerializeObject(new List<Log>(), Formatting.Indented);
+                string json = JsonConvert.SerializeObject(new ObservableCollection<Log>(), Formatting.Indented);
                 File.WriteAllText(log_file, json);
             }
-            Logs = GetLogs();
+            if (!File.Exists(filePath))
+            {
+                File.Create(log_file).Close();
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(ObservableCollection<Log>));
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    xmlSerializer.Serialize(writer, new ObservableCollection<Log>());
+                }
+            }
+            if (Config.LoadConfig().LogType == "XML")
+            {
+                Logs = ReadXMLLog();
+            }
+            if (Config.LoadConfig().LogType != "XML")
+            {
+                Logs = GetJSONLogs();
+            }
         }
-
-        public ObservableCollection<Log> GetLogs()
+        public ObservableCollection<Log> GetJSONLogs()
         {
             try
             {
@@ -39,7 +52,7 @@ namespace EasySave.Services
                 return new ObservableCollection<Log>(); // Or throw an exception or handle it according to your needs
             }
         }
-        public void WriteLog(IBackup backup, long duration)
+        public void WriteJSONLog(IBackup backup, long duration)
         {
             Log log = new Log
             {
@@ -72,6 +85,7 @@ namespace EasySave.Services
             // Écrire la chaîne JSON mise à jour dans le fichier
             File.WriteAllText(log_file, updatedJson);
         }
+
         long GetDirectorySize(string directoryPath)
         {
 
@@ -92,8 +106,71 @@ namespace EasySave.Services
 
                 return directorySize;
             }
+        }
+        public ObservableCollection<Log> ReadXMLLog()
+        {
+            try
+            {
+                // Lire le contenu du fichier XML dans une chaîne
+                string xml = File.ReadAllText(filePath);
 
+                // Désérialiser la chaîne XML en une liste d'objets Log
+                XmlSerializer serializer = new XmlSerializer(typeof(ObservableCollection<Log>));
+                using (StringReader reader = new StringReader(xml))
+                {
+                    return (ObservableCollection<Log>)serializer.Deserialize(reader);
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ObservableCollection<Log>();
+            }
+        }
 
+        public void WriteLogXml(IBackup backup, long duration)
+        {
+            // Créer un nouvel objet Log
+            Log log = new Log
+            {
+                Horodatage = DateTime.Now,
+                Name = backup.Name,
+                FileSource = backup.Source,
+                FileTarget = backup.Cible,
+                FileSize = GetDirectorySize(backup.Source),
+                FileTransferTime = duration
+            };
+
+            // Liste pour stocker les logs
+            List<Log> logs = new List<Log>();
+
+            // Vérifier si le fichier journal existe déjà
+            if (File.Exists(filePath))
+            {
+                // Lire le contenu existant du fichier XML dans une chaîne
+                string xml = File.ReadAllText(filePath);
+
+                // Désérialiser la chaîne XML en une liste d'objets Log
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Log>));
+                using (StringReader reader = new StringReader(xml))
+                {
+                    logs = (List<Log>)serializer.Deserialize(reader);
+                }
+            }
+            else
+            {
+                // Créer le fichier s'il n'existe pas
+                File.Create(filePath).Close();
+            }
+
+            // Ajouter le nouvel objet à la liste
+            logs.Add(log);
+
+            // Sérialiser la liste mise à jour en une chaîne XML
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Log>));
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                xmlSerializer.Serialize(writer, logs);
+            }
         }
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)

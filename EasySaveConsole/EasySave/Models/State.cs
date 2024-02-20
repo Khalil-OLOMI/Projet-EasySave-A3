@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace EasySave.Models
 {
@@ -82,6 +83,12 @@ namespace EasySave.Models
 
         
         public DateTime Horodatage { get; set; }
+        [XmlElement("Horodatage", Namespace = "clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole")]
+        public string XamlHorodatage
+        {
+            get => Horodatage.ToString("dd/MM/yyyy HH:mm:ss");
+            set => Horodatage = DateTime.Parse(value);
+        }
         public string Name { get; set; }
         public string Status { get; set; }
         public string FileSource { get; set; }

@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\0 RX1BKG2HUxS-JUb3.png</FileSource>
+    <FileTarget>C:\ppp\0 RX1BKG2HUxS-JUb3.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>74</NbFilesLeftToDo>
+    <Progression>1.3333333333333335</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\02 Branch-1 kopiera.png</FileSource>
+    <FileTarget>C:\ppp\02 Branch-1 kopiera.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>73</NbFilesLeftToDo>
+    <Progression>2.666666666666667</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\1 sFFvHiJRbKTM3UXBobHr6Q.png</FileSource>
+    <FileTarget>C:\ppp\1 sFFvHiJRbKTM3UXBobHr6Q.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>72</NbFilesLeftToDo>
+    <Progression>4</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\1670309176036-Understand Process Synchronization with Example 2.png</FileSource>
+    <FileTarget>C:\ppp\1670309176036-Understand Process Synchronization with Example 2.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>71</NbFilesLeftToDo>
+    <Progression>5.333333333333334</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\2133517-middle.png</FileSource>
+    <FileTarget>C:\ppp\2133517-middle.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>70</NbFilesLeftToDo>
+    <Progression>6.666666666666667</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\500px-Observer_w_update.svg.png</FileSource>
+    <FileTarget>C:\ppp\500px-Observer_w_update.svg.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>69</NbFilesLeftToDo>
+    <Progression>8</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Anti-steering-of-roaming-diagram-01.svg</FileSource>
+    <FileTarget>C:\ppp\Anti-steering-of-roaming-diagram-01.svg</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>68</NbFilesLeftToDo>
+    <Progression>9.333333333333334</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\bridge_pattern_uml_diagram.jpg</FileSource>
+    <FileTarget>C:\ppp\bridge_pattern_uml_diagram.jpg</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>67</NbFilesLeftToDo>
+    <Progression>10.666666666666668</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\desktop.ini</FileSource>
+    <FileTarget>C:\ppp\desktop.ini</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>66</NbFilesLeftToDo>
+    <Progression>12</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Different-Types-of-UML-Diagrams-scaled.jpg</FileSource>
+    <FileTarget>C:\ppp\Different-Types-of-UML-Diagrams-scaled.jpg</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>65</NbFilesLeftToDo>
+    <Progression>13.333333333333334</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\environnement-de-travail-vital.png</FileSource>
+    <FileTarget>C:\ppp\environnement-de-travail-vital.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>64</NbFilesLeftToDo>
+    <Progression>14.666666666666666</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Exec_Prog.png</FileSource>
+    <FileTarget>C:\ppp\Exec_Prog.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>63</NbFilesLeftToDo>
+    <Progression>16</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\le-strategy-pattern-en-uml.png</FileSource>
+    <FileTarget>C:\ppp\le-strategy-pattern-en-uml.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>62</NbFilesLeftToDo>
+    <Progression>17.333333333333336</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\microsoft-built-framework.jpg</FileSource>
+    <FileTarget>C:\ppp\microsoft-built-framework.jpg</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>61</NbFilesLeftToDo>
+    <Progression>18.666666666666668</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\NET-5-vs-.NET-Core-4-copy@2x-min.png</FileSource>
+    <FileTarget>C:\ppp\NET-5-vs-.NET-Core-4-copy@2x-min.png</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>60</NbFilesLeftToDo>
+    <Progression>20</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\photo_2024-02-05_21-26-08.jpg</FileSource>
+    <FileTarget>C:\ppp\photo_2024-02-05_21-26-08.jpg</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>59</NbFilesLeftToDo>
+    <Progression>21.333333333333336</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Sans-titre-22.webp</FileSource>
+    <FileTarget>C:\ppp\Sans-titre-22.webp</FileTarget>
+    <TotalFilesToCopy>75</TotalFilesToCopy>
+    <TotalFilesSize>7381875</TotalFilesSize>
+    <NbFilesLeftToDo>58</NbFilesLeftToDo>
+    <Progression>22.666666666666664</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Camera Roll\desktop.ini</FileSource>
+    <FileTarget>C:\ppp\Camera Roll\desktop.ini</FileTarget>
+    <TotalFilesToCopy>1</TotalFilesToCopy>
+    <TotalFilesSize>190</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <Progression>100</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Saved Pictures\desktop.ini</FileSource>
+    <FileTarget>C:\ppp\Saved Pictures\desktop.ini</FileTarget>
+    <TotalFilesToCopy>1</TotalFilesToCopy>
+    <TotalFilesSize>190</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <Progression>100</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 011225.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 011225.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>27</NbFilesLeftToDo>
+    <Progression>3.571428571428571</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 013252.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 013252.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>26</NbFilesLeftToDo>
+    <Progression>7.142857142857142</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 013434.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 013434.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>25</NbFilesLeftToDo>
+    <Progression>10.714285714285714</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 013452.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 013452.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>24</NbFilesLeftToDo>
+    <Progression>14.285714285714285</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 013524.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 013524.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>23</NbFilesLeftToDo>
+    <Progression>17.857142857142858</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 013612.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 013612.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>22</NbFilesLeftToDo>
+    <Progression>21.428571428571427</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 013641.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 013641.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>21</NbFilesLeftToDo>
+    <Progression>25</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 014400.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 014400.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>20</NbFilesLeftToDo>
+    <Progression>28.57142857142857</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 014601.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 014601.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>19</NbFilesLeftToDo>
+    <Progression>32.142857142857146</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 014624.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 014624.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+    <Progression>35.714285714285715</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 135105.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 135105.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>17</NbFilesLeftToDo>
+    <Progression>39.285714285714285</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 135134.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 135134.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>16</NbFilesLeftToDo>
+    <Progression>42.857142857142854</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-01-30 135659.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-01-30 135659.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>15</NbFilesLeftToDo>
+    <Progression>46.42857142857143</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-02-07 104625.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-02-07 104625.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>14</NbFilesLeftToDo>
+    <Progression>50</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-02-07 104637.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-02-07 104637.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>13</NbFilesLeftToDo>
+    <Progression>53.57142857142857</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-02-07 105544.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-02-07 105544.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>12</NbFilesLeftToDo>
+    <Progression>57.14285714285714</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Capture d'écran 2024-02-07 105736.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Capture d'écran 2024-02-07 105736.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>11</NbFilesLeftToDo>
+    <Progression>60.71428571428571</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\desktop.ini</FileSource>
+    <FileTarget>C:\ppp\Screenshots\desktop.ini</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>10</NbFilesLeftToDo>
+    <Progression>64.28571428571429</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013434.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013434.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>9</NbFilesLeftToDo>
+    <Progression>10</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013452.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013452.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>8</NbFilesLeftToDo>
+    <Progression>20</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013524.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013524.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>7</NbFilesLeftToDo>
+    <Progression>30</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013612.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013612.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>6</NbFilesLeftToDo>
+    <Progression>40</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013641.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 013641.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>5</NbFilesLeftToDo>
+    <Progression>50</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 014400.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 014400.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>4</NbFilesLeftToDo>
+    <Progression>60</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 014601.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-01-30 014601.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>3</NbFilesLeftToDo>
+    <Progression>70</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-02-07 104637.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-02-07 104637.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <Progression>80</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-02-07 105544.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-02-07 105544.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <Progression>90</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Screenshots\Nouveau dossier\Capture d'écran 2024-02-07 105736.png</FileSource>
+    <FileTarget>C:\ppp\Screenshots\Nouveau dossier\Capture d'écran 2024-02-07 105736.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <Progression>100</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 011225.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 011225.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>27</NbFilesLeftToDo>
+    <Progression>3.571428571428571</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 013252.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 013252.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>26</NbFilesLeftToDo>
+    <Progression>7.142857142857142</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 013434.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 013434.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>25</NbFilesLeftToDo>
+    <Progression>10.714285714285714</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 013452.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 013452.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>24</NbFilesLeftToDo>
+    <Progression>14.285714285714285</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 013524.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 013524.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>23</NbFilesLeftToDo>
+    <Progression>17.857142857142858</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 013612.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 013612.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>22</NbFilesLeftToDo>
+    <Progression>21.428571428571427</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 013641.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 013641.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>21</NbFilesLeftToDo>
+    <Progression>25</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:12</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:12</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 014400.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 014400.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>20</NbFilesLeftToDo>
+    <Progression>28.57142857142857</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 014601.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 014601.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>19</NbFilesLeftToDo>
+    <Progression>32.142857142857146</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 014624.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 014624.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>18</NbFilesLeftToDo>
+    <Progression>35.714285714285715</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 135105.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 135105.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>17</NbFilesLeftToDo>
+    <Progression>39.285714285714285</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 135134.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 135134.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>16</NbFilesLeftToDo>
+    <Progression>42.857142857142854</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-01-30 135659.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-01-30 135659.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>15</NbFilesLeftToDo>
+    <Progression>46.42857142857143</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-02-07 104625.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-02-07 104625.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>14</NbFilesLeftToDo>
+    <Progression>50</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-02-07 104637.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-02-07 104637.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>13</NbFilesLeftToDo>
+    <Progression>53.57142857142857</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-02-07 105544.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-02-07 105544.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>12</NbFilesLeftToDo>
+    <Progression>57.14285714285714</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Capture d'écran 2024-02-07 105736.png</FileSource>
+    <FileTarget>C:\ppp\Test\Capture d'écran 2024-02-07 105736.png</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>11</NbFilesLeftToDo>
+    <Progression>60.71428571428571</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\desktop.ini</FileSource>
+    <FileTarget>C:\ppp\Test\desktop.ini</FileTarget>
+    <TotalFilesToCopy>28</TotalFilesToCopy>
+    <TotalFilesSize>3253053</TotalFilesSize>
+    <NbFilesLeftToDo>10</NbFilesLeftToDo>
+    <Progression>64.28571428571429</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-01-30 013434.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-01-30 013434.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>9</NbFilesLeftToDo>
+    <Progression>10</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-01-30 013452.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-01-30 013452.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>8</NbFilesLeftToDo>
+    <Progression>20</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-01-30 013524.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-01-30 013524.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>7</NbFilesLeftToDo>
+    <Progression>30</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-01-30 013612.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-01-30 013612.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>6</NbFilesLeftToDo>
+    <Progression>40</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-01-30 013641.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-01-30 013641.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>5</NbFilesLeftToDo>
+    <Progression>50</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-01-30 014400.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-01-30 014400.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>4</NbFilesLeftToDo>
+    <Progression>60</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-01-30 014601.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-01-30 014601.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>3</NbFilesLeftToDo>
+    <Progression>70</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-02-07 104637.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-02-07 104637.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <Progression>80</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-02-07 105544.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-02-07 105544.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <Progression>90</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-20T09:51:13.1324794+01:00</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 09:51:13</Horodatage>
+    <Name>Test</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\Users\euphr\Pictures\Test\Nouveau dossier\Capture d'écran 2024-02-07 105736.png</FileSource>
+    <FileTarget>C:\ppp\Test\Nouveau dossier\Capture d'écran 2024-02-07 105736.png</FileTarget>
+    <TotalFilesToCopy>10</TotalFilesToCopy>
+    <TotalFilesSize>335359</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <Progression>100</Progression>
+  </State>
+</ArrayOfState>

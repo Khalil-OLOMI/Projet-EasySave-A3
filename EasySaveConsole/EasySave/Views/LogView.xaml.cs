@@ -32,10 +32,17 @@ namespace EasySave.Views
         {
             if (Logs.SelectedItem != null)
             {
-                Log log = (Log)Logs.SelectedItem;
+                try
+                {
+                    Log log = (Log)Logs.SelectedItem;
 
-                // Afficher les détails dans une MessageBox
-                MessageBox.Show($"Date: {log.Horodatage}\nName: {log.Name}\nSource: {log.FileSource}\nDestionation: {log.FileTarget}\nFileSize: {log.FileSize}\nFileTransferTime: {log.FileTransferTime}", "Détails du Log");
+                    // Afficher les détails dans une MessageBox
+                    MessageBox.Show($"Date: {log.Horodatage}\nName: {log.Name}\nSource: {log.FileSource}\nDestionation: {log.FileTarget}\nFileSize: {log.FileSize}\nFileTransferTime: {log.FileTransferTime}", "Détails du Log");
+                }
+                catch
+                {
+                    MessageBox.Show("Vide");
+                }
             }
         }
     }
