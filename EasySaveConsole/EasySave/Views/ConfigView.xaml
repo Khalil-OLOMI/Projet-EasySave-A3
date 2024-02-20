@@ -8,16 +8,18 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ConfigView">
     <Grid>
-        <Grid.Resources>
-            <!-- Any additional resources can be defined here -->
-        </Grid.Resources>
+        
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="781*"/>
             <ColumnDefinition Width="19*"/>
         </Grid.ColumnDefinitions>
-
-        <StackPanel Grid.ColumnSpan="2" Margin="20,38,20,20" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+        <Border Background="#FF0F52BA" Height="41" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Settings" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+        <StackPanel Grid.ColumnSpan="2" Margin="20,42,20,20" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
             <!-- Language Selection -->
             <TextBlock Text="{Binding TargetLanguageText}" FontWeight="Bold" Margin="0 0 0 10"/>
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">

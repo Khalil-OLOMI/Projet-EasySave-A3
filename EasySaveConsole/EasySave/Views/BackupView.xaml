@@ -16,8 +16,8 @@
         <Border Background="#FF0F52BA" Grid.Row="0" Height="40">
             <!-- Header content goes here -->
             <StackPanel HorizontalAlignment="Left" Margin="0,0,0,0" Orientation="Horizontal">
-                <TextBlock Text="Backup list" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0"/>
-                <Button Content="Add backup" Margin="400,0,0,0" Height="25" Width="81" Background="White" Click="AddBackupForm"/>
+                <TextBlock Text="{Binding BackupListHeaderText}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0" Width="350"/>
+                <Button Content="{Binding AddBackupButtonText}" Height="24" Width="160" Background="White" Click="AddBackupForm" Margin="100,0,0,0"/>
             </StackPanel>
         </Border>
         <!-- Main Content Area -->
@@ -30,13 +30,13 @@
                 Margin="10" Background="White" MouseDoubleClick="DetailBackupClick">
                 <DataGrid.Columns>
                     <DataGridTextColumn
-                        Header="Name"
+                        Header="{Binding NameHeaderText}"
                         MinWidth="100"
                         Width="*"
                         Binding="{Binding Name}"
                         IsReadOnly="True"/>
                     <DataGridTextColumn
-                        Header="Type"
+                        Header="{Binding TypeHeaderText}"
                         MinWidth="100"
                         Width="*"
                         Binding="{Binding Type}"

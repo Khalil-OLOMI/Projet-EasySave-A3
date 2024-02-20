@@ -7,5 +7,23 @@
     "FileTarget": "C:\\ppp",
     "FileSize": 7381875,
     "FileTransferTime": 2
+  },
+  {
+    "Horodatage": "20/02/2024 11:59:39",
+    "XamlHorodatage": "20/02/2024 11:59:39",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 7381875,
+    "FileTransferTime": 2
+  },
+  {
+    "Horodatage": "20/02/2024 13:35:01",
+    "XamlHorodatage": "20/02/2024 13:35:01",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 7381875,
+    "FileTransferTime": 1
   }
 ]

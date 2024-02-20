@@ -29,6 +29,14 @@ namespace EasySave.Services
         public ICommand DeleteCommand { get; private set; }
 
         private IBackup selectedBackup;
+        public string BackupListHeaderText { get; set; }
+        public string NameHeaderText { get; set; }
+        public string TypeHeaderText { get; set; }
+        public string StatusHeaderText { get; set; }
+        public string ActionsHeaderText { get; set; }
+        public string AddBackupButtonText { get; set; }
+        public string PlayButtonText { get; set; }
+        public string DeleteButtonText { get; set; }
 
         public IBackup SelectedBackup
         {
@@ -40,6 +48,36 @@ namespace EasySave.Services
                     selectedBackup = value;
                     OnPropertyChanged(nameof(SelectedBackup));
                 }
+            }
+        }
+        private async void TranslateTextElementsAsync()
+        {
+            try
+            {
+                // Translate text elements using the DeepLTranslator object
+                BackupListHeaderText = await translator.TranslateAsync("Backup list");
+                NameHeaderText = await translator.TranslateAsync("Name");
+                TypeHeaderText = await translator.TranslateAsync("Type");
+                StatusHeaderText = await translator.TranslateAsync("Status");
+                ActionsHeaderText = await translator.TranslateAsync("Actions");
+                AddBackupButtonText = await translator.TranslateAsync("Add backup");
+                PlayButtonText = await translator.TranslateAsync("Play");
+                DeleteButtonText = await translator.TranslateAsync("Delete");
+
+                // Notify property changed for translated text properties
+                OnPropertyChanged(nameof(BackupListHeaderText));
+                OnPropertyChanged(nameof(NameHeaderText));
+                OnPropertyChanged(nameof(TypeHeaderText));
+                OnPropertyChanged(nameof(StatusHeaderText));
+                OnPropertyChanged(nameof(ActionsHeaderText));
+                OnPropertyChanged(nameof(AddBackupButtonText));
+                OnPropertyChanged(nameof(PlayButtonText));
+                OnPropertyChanged(nameof(DeleteButtonText));
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine($"Error translating text: {ex.Message}");
             }
         }
         public void InitBackup()
@@ -69,6 +107,11 @@ namespace EasySave.Services
             Backups = GetBackups();
             PlayCommand = new RelayCommand(Play, CanPlay);
             DeleteCommand = new RelayCommand(Delete, CanDelete);
+            string apiKey = Config.ApiKey;
+            translator = new DeepLTranslator(apiKey);
+
+            // Translate text elements
+            TranslateTextElementsAsync();
         }
 
         public ObservableCollection<IBackup> GetBackups()
