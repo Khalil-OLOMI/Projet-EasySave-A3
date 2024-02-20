@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nk5x2leTJd/8y3WywzyGOpXl9DNU8l1pogndcJ4b2jyMmqCHVXh60u+1SBb8WDfoKxd3NJcaQcHEzAjTMdClQw==",
+  "dgSpecHash": "yLlGqbGNsBbcenBM+SeltaB/Y+TJSXnbgsH6yw/BU/2Ga2h+CTlr4SGINMuL/tGetHmYRRRYHDhlEP4xuigTbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\euphr\\Documents\\Projets\\Projet-EasySave-A3\\EasySaveConsole\\EasySaveConsole\\EasySaveConsole.csproj",
+  "projectFilePath": "C:\\Users\\Rock BAMENOU\\Source\\Repos\\Khalil-OLOMI\\Projet-EasySave-A3\\EasySaveConsole\\EasySaveConsole\\EasySaveConsole.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\euphr\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
-    "C:\\Users\\euphr\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Rock BAMENOU\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
+    "C:\\Users\\Rock BAMENOU\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
