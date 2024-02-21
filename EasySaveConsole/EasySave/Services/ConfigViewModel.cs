@@ -23,6 +23,13 @@ namespace EasySave.Services
             get { return _targetLanguageText; }
             set {_targetLanguageText = value;OnPropertyChanged();}
         }
+
+        private string _SettingText;
+        public string SettingText
+        {
+            get { return _SettingText; }
+            set { _SettingText = value; OnPropertyChanged(); }
+        }
         private string _extensionText;
         public string Extension
         {
@@ -223,12 +230,14 @@ namespace EasySave.Services
         public async Task TranslateText()
         {
             
-            TargetLanguageText = await _translator.TranslateAsync("Target Language :");
-            Extension = await _translator.TranslateAsync("Encrypted File Extensions :");
+            TargetLanguageText = await _translator.TranslateAsync("Choisissez une langue :");
+            Extension = await _translator.TranslateAsync("Ajouter les extensions de fichiers qui doivent être cryptées lors d'une sauvegarde :");
             Logi = await _translator.TranslateAsync("Processus qui empêche une sauvegarde :");
             Logtype = await _translator.TranslateAsync("Log file type :");
             AddText = await _translator.TranslateAsync("Add Extension");
             SaveText = await _translator.TranslateAsync("Sauvegarder");
+            SettingText = await _translator.TranslateAsync("Settings");
+
 
 
         }
