@@ -20,24 +20,24 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Name:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
+        <Label Content="{Binding NameHeaderText}" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
         <TextBox x:Name="Name" Grid.Row="0" Grid.Column="1" Margin="5"/>
 
-        <Label Content="Source:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
+        <Label Content="{Binding SrcPath}" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
         <TextBox x:Name="Source" Grid.Row="1" Grid.Column="1" Margin="5"/>
-        <Button Content="Browse" Grid.Row="1" Grid.Column="2" Margin="5" Click="BrowseSource_Click"/>
+        <Button Content="{Binding Browse}" Grid.Row="1" Grid.Column="2" Margin="5" Click="BrowseSource_Click"/>
 
-        <Label Content="Cible:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
+        <Label Content="{Binding Cible}" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
         <TextBox x:Name="Cible" Grid.Row="2" Grid.Column="1" Margin="5"/>
-        <Button Content="Browse" Grid.Row="2" Grid.Column="2" Margin="5" Click="BrowseTarget_Click"/>
+        <Button Content="{Binding Browse}" Grid.Row="2" Grid.Column="2" Margin="5" Click="BrowseTarget_Click"/>
 
-        <Label Content="Type:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
+        <Label Content="{Binding TypeHeaderText}" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
         <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Margin="5">
             <RadioButton x:Name="CompletRadioButton" Content="Complet" Margin="0,0,10,0"/>
             <RadioButton x:Name="DiffrentiellleRadioButton" Content="Diffrentiellle"/>
         </StackPanel>
 
-        <Button x:Name="SaveButton" Content="Save" Grid.Row="4" Grid.Column="1" Margin="0,10,0,0" Click="SaveButton_Click"
+        <Button x:Name="SaveButton" Content="{Binding Save}" Grid.Row="4" Grid.Column="1" Margin="0,10,0,0" Click="SaveButton_Click"
                 HorizontalAlignment="Center" VerticalAlignment="Top" Width="200"/>
 
         <!-- Add some spacing -->

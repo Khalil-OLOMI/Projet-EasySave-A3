@@ -27,6 +27,7 @@ namespace EasySave.Views
         {
             InitializeComponent();
             viewModel = backupViewModel;
+            DataContext = viewModel;
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

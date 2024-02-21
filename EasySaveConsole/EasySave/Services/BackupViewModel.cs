@@ -37,6 +37,13 @@ namespace EasySave.Services
         public string AddBackupButtonText { get; set; }
         public string PlayButtonText { get; set; }
         public string DeleteButtonText { get; set; }
+        public string SrcPath { get; set; }
+        public string Browse { get; set; }
+        public string Save { get; set; }
+        public string Cible { get; set; }
+       
+
+
 
         private bool _isComplete;
         public bool IsComplete
@@ -84,13 +91,19 @@ namespace EasySave.Services
             {
                 // Translate text elements using the DeepLTranslator object
                 BackupListHeaderText = await translator.TranslateAsync("Backup list");
-                NameHeaderText = "name";//await translator.TranslateAsync("Name");
+                NameHeaderText = await translator.TranslateAsync("Name");
                 TypeHeaderText = await translator.TranslateAsync("Type");
                 StatusHeaderText = await translator.TranslateAsync("Status");
                 ActionsHeaderText = await translator.TranslateAsync("Actions");
                 AddBackupButtonText = await translator.TranslateAsync("Add backup");
                 PlayButtonText = await translator.TranslateAsync("Play");
                 DeleteButtonText = await translator.TranslateAsync("Delete");
+                SrcPath = await translator.TranslateAsync("Fichiers à sauvegarder:");
+                Browse = await translator.TranslateAsync("Browse");
+                Save = await translator.TranslateAsync("Sauvegarder");
+                Cible = await translator.TranslateAsync("Sauvegarder ici:");
+                
+
 
                 // Notify property changed for translated text properties
                 OnPropertyChanged(nameof(BackupListHeaderText));
@@ -101,6 +114,12 @@ namespace EasySave.Services
                 OnPropertyChanged(nameof(AddBackupButtonText));
                 OnPropertyChanged(nameof(PlayButtonText));
                 OnPropertyChanged(nameof(DeleteButtonText));
+                OnPropertyChanged(nameof(SrcPath));
+                OnPropertyChanged(nameof(Browse));
+                OnPropertyChanged(nameof(Save));
+                OnPropertyChanged(nameof(Cible));
+                
+
             }
             catch (Exception ex)
             {
