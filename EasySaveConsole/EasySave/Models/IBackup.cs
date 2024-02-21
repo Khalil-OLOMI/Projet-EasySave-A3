@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace EasySave.Models;
 
-namespace EasySave.Models
+public interface IBackup
 {
-    public interface IBackup
-    {
-        string Name { get; set; }
-        string Source { get; set; }
-        string Cible { get; set; }
-        string Type { get; set; }
-        string Status { get; set; }
-        void Copy(string source, string cible);
-    }
+    string Name { get; set; }
+    string Source { get; set; }
+    string Cible { get; set; }
+    string Type { get; set; }
+    string Status { get; set; }
+    void Copy(string source, string cible);
 }

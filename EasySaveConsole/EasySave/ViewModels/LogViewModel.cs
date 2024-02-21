@@ -1,18 +1,19 @@
 ﻿using EasySave.Models;
 using Newtonsoft.Json;
 using System.IO;
-using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Xml.Serialization;
+using EasySave.Helpers;
 
-namespace EasySave.Services
+namespace EasySave.ViewModels
 {
-    public class LogViewModel : INotifyPropertyChanged
+    public class LogViewModel : ObservableObject
     {
-        private string log_file = "log.json";
+        private readonly string log_file = "log.json";
         private readonly string filePath = "log.xml";
+
         public ObservableCollection<Log> Logs { get; set; }
-        private Config config { get; set; }
+        private Config Config { get; set; }
 
         public LogViewModel()
         {
@@ -22,24 +23,26 @@ namespace EasySave.Services
                 string json = JsonConvert.SerializeObject(new ObservableCollection<Log>(), Formatting.Indented);
                 File.WriteAllText(log_file, json);
             }
+
             if (!File.Exists(filePath))
             {
                 File.Create(log_file).Close();
                 XmlSerializer xmlSerializer = new XmlSerializer(typeof(ObservableCollection<Log>));
-                using (StreamWriter writer = new StreamWriter(filePath))
-                {
-                    xmlSerializer.Serialize(writer, new ObservableCollection<Log>());
-                }
+
+                using StreamWriter writer = new StreamWriter(filePath);
+                xmlSerializer.Serialize(writer, new ObservableCollection<Log>());
             }
+
             if (Config.LoadConfig().LogType == "XML")
             {
                 Logs = ReadXMLLog();
             }
-            if (Config.LoadConfig().LogType != "XML")
+            else
             {
                 Logs = GetJSONLogs();
             }
         }
+
         public ObservableCollection<Log> GetJSONLogs()
         {
             try
@@ -52,9 +55,10 @@ namespace EasySave.Services
                 return new ObservableCollection<Log>(); // Or throw an exception or handle it according to your needs
             }
         }
+
         public void WriteJSONLog(IBackup backup, long duration)
         {
-            Log log = new Log
+            Log log = new()
             {
                 Horodatage = DateTime.Now,
                 Name = backup.Name,
@@ -64,7 +68,7 @@ namespace EasySave.Services
                 FileTransferTime = duration
             };
 
-            List<Log> logs = new List<Log>();
+            List<Log> logs = new();
 
             // Vérifier si le fichier existe déjà
             if (File.Exists(log_file))
@@ -86,7 +90,7 @@ namespace EasySave.Services
             File.WriteAllText(log_file, updatedJson);
         }
 
-        long GetDirectorySize(string directoryPath)
+        private static long GetDirectorySize(string directoryPath)
         {
 
             DirectoryInfo directoryInfo = new DirectoryInfo(directoryPath);
@@ -94,18 +98,17 @@ namespace EasySave.Services
             {
                 return 0;
             }
-            else
+
+
+            long directorySize = 0;
+
+            // Add size of all files in the directory
+            foreach (FileInfo file in directoryInfo.GetFiles("*", SearchOption.AllDirectories))
             {
-                long directorySize = 0;
-
-                // Add size of all files in the directory
-                foreach (FileInfo file in directoryInfo.GetFiles("*", SearchOption.AllDirectories))
-                {
-                    directorySize += file.Length;
-                }
-
-                return directorySize;
+                directorySize += file.Length;
             }
+
+            return directorySize;
         }
         public ObservableCollection<Log> ReadXMLLog()
         {
@@ -116,10 +119,9 @@ namespace EasySave.Services
 
                 // Désérialiser la chaîne XML en une liste d'objets Log
                 XmlSerializer serializer = new XmlSerializer(typeof(ObservableCollection<Log>));
-                using (StringReader reader = new StringReader(xml))
-                {
-                    return (ObservableCollection<Log>)serializer.Deserialize(reader);
-                }
+
+                using StringReader reader = new StringReader(xml);
+                return (ObservableCollection<Log>)serializer.Deserialize(reader);
             }
             catch (Exception ex)
             {
@@ -151,10 +153,8 @@ namespace EasySave.Services
 
                 // Désérialiser la chaîne XML en une liste d'objets Log
                 XmlSerializer serializer = new XmlSerializer(typeof(List<Log>));
-                using (StringReader reader = new StringReader(xml))
-                {
-                    logs = (List<Log>)serializer.Deserialize(reader);
-                }
+                using StringReader reader = new StringReader(xml);
+                logs = (List<Log>)serializer.Deserialize(reader);
             }
             else
             {
@@ -167,15 +167,9 @@ namespace EasySave.Services
 
             // Sérialiser la liste mise à jour en une chaîne XML
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Log>));
-            using (StreamWriter writer = new StreamWriter(filePath))
-            {
-                xmlSerializer.Serialize(writer, logs);
-            }
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            using StreamWriter writer = new StreamWriter(filePath);
+
+            xmlSerializer.Serialize(writer, logs);
         }
     }
 }
