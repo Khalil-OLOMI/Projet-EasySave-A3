@@ -8005,7 +8005,7 @@
     <Progression>50</Progression>
   </State>
   <State>
-    <Horodatage>2024-02-20T14:28:56.0128691+01:00</Horodatage>
+    <Horodatage>2024-02-20T14:28:56</Horodatage>
     <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 14:28:56</Horodatage>
     <Name>Work</Name>
     <Status>ACTIVE</Status>
@@ -8013,6 +8013,210 @@
     <FileTarget>C:\test\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\RH\TEST.html</FileTarget>
     <TotalFilesToCopy>1</TotalFilesToCopy>
     <TotalFilesSize>15096</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <Progression>100</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:14:26</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:14:26</Horodatage>
+    <Name>SchoolWork</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\23.PNG</FileSource>
+    <FileTarget>C:\test-2\23.PNG</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>6</NbFilesLeftToDo>
+    <Progression>14.285714285714285</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:14:26</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:14:26</Horodatage>
+    <Name>SchoolWork</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\78998987978987.txt</FileSource>
+    <FileTarget>C:\test-2\78998987978987.txt</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>5</NbFilesLeftToDo>
+    <Progression>28.57142857142857</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:14:26</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:14:26</Horodatage>
+    <Name>SchoolWork</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\Blurb2.pdf</FileSource>
+    <FileTarget>C:\test-2\Blurb2.pdf</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>4</NbFilesLeftToDo>
+    <Progression>42.857142857142854</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:14:26</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:14:26</Horodatage>
+    <Name>SchoolWork</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\Blurb_2.docx</FileSource>
+    <FileTarget>C:\test-2\Blurb_2.docx</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>3</NbFilesLeftToDo>
+    <Progression>57.14285714285714</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:14:27</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:14:27</Horodatage>
+    <Name>SchoolWork</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\Blurr.docx</FileSource>
+    <FileTarget>C:\test-2\Blurr.docx</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <Progression>71.42857142857143</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:14:27</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:14:27</Horodatage>
+    <Name>SchoolWork</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\Blurr.pdf</FileSource>
+    <FileTarget>C:\test-2\Blurr.pdf</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <Progression>85.71428571428571</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:14:27</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:14:27</Horodatage>
+    <Name>SchoolWork</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\test.txt</FileSource>
+    <FileTarget>C:\test-2\test.txt</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <Progression>100</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:27:43</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:27:43</Horodatage>
+    <Name>New - TEST</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\Blurb2.pdf</FileSource>
+    <FileTarget>C:\test-2\Blurb2.pdf</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>6</NbFilesLeftToDo>
+    <Progression>14.285714285714285</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:27:43</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:27:43</Horodatage>
+    <Name>New - TEST</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\Blurr.pdf</FileSource>
+    <FileTarget>C:\test-2\Blurr.pdf</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>5</NbFilesLeftToDo>
+    <Progression>28.57142857142857</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:27:43</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:27:43</Horodatage>
+    <Name>New - TEST</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test\test.txt</FileSource>
+    <FileTarget>C:\test-2\test.txt</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>4</NbFilesLeftToDo>
+    <Progression>42.857142857142854</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:36:29</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:36:29</Horodatage>
+    <Name>Data</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test-2\23.PNG</FileSource>
+    <FileTarget>C:\Browse-feature\23.PNG</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>6</NbFilesLeftToDo>
+    <Progression>14.285714285714285</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:36:29</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:36:29</Horodatage>
+    <Name>Data</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test-2\78998987978987.txt</FileSource>
+    <FileTarget>C:\Browse-feature\78998987978987.txt</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>5</NbFilesLeftToDo>
+    <Progression>28.57142857142857</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:36:29</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:36:29</Horodatage>
+    <Name>Data</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test-2\Blurb2.pdf</FileSource>
+    <FileTarget>C:\Browse-feature\Blurb2.pdf</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>4</NbFilesLeftToDo>
+    <Progression>42.857142857142854</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:36:29</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:36:29</Horodatage>
+    <Name>Data</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test-2\Blurb_2.docx</FileSource>
+    <FileTarget>C:\Browse-feature\Blurb_2.docx</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>3</NbFilesLeftToDo>
+    <Progression>57.14285714285714</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:36:29</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:36:29</Horodatage>
+    <Name>Data</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test-2\Blurr.docx</FileSource>
+    <FileTarget>C:\Browse-feature\Blurr.docx</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <Progression>71.42857142857143</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:36:29</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:36:29</Horodatage>
+    <Name>Data</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test-2\Blurr.pdf</FileSource>
+    <FileTarget>C:\Browse-feature\Blurr.pdf</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <Progression>85.71428571428571</Progression>
+  </State>
+  <State>
+    <Horodatage>2024-02-21T15:36:29.9284357+01:00</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:36:29</Horodatage>
+    <Name>Data</Name>
+    <Status>ACTIVE</Status>
+    <FileSource>C:\test-2\test.txt</FileSource>
+    <FileTarget>C:\Browse-feature\test.txt</FileTarget>
+    <TotalFilesToCopy>7</TotalFilesToCopy>
+    <TotalFilesSize>800950</TotalFilesSize>
     <NbFilesLeftToDo>0</NbFilesLeftToDo>
     <Progression>100</Progression>
   </State>

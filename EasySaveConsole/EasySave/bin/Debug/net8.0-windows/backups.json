@@ -5,5 +5,26 @@
     "Cible": "C:\\test",
     "Type": "Complet",
     "Status": "Created"
+  },
+  {
+    "Name": "SchoolWork",
+    "Source": "C:\\test",
+    "Cible": "C:\\test-2",
+    "Type": "Complet",
+    "Status": "Created"
+  },
+  {
+    "Name": "New - TEST",
+    "Source": "C:\\test",
+    "Cible": "C:\\test-2",
+    "Type": "Differential",
+    "Status": "Created"
+  },
+  {
+    "Name": "Data",
+    "Source": "C:\\test-2",
+    "Cible": "C:\\Browse-feature",
+    "Type": "Complet",
+    "Status": "Created"
   }
 ]

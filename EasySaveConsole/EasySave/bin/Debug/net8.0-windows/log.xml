@@ -73,12 +73,39 @@
     <FileTransferTime>5</FileTransferTime>
   </Log>
   <Log>
-    <Horodatage>2024-02-20T14:28:56.0903574+01:00</Horodatage>
+    <Horodatage>2024-02-20T14:28:56</Horodatage>
     <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">20/02/2024 14:28:56</Horodatage>
     <Name>Work</Name>
     <FileSource>C:\Source</FileSource>
     <FileTarget>C:\test</FileTarget>
     <FileSize>1920045</FileSize>
     <FileTransferTime>7</FileTransferTime>
+  </Log>
+  <Log>
+    <Horodatage>2024-02-21T15:14:27</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:14:27</Horodatage>
+    <Name>SchoolWork</Name>
+    <FileSource>C:\test</FileSource>
+    <FileTarget>C:\test-2</FileTarget>
+    <FileSize>800950</FileSize>
+    <FileTransferTime>1</FileTransferTime>
+  </Log>
+  <Log>
+    <Horodatage>2024-02-21T15:27:43</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:27:43</Horodatage>
+    <Name>New - TEST</Name>
+    <FileSource>C:\test</FileSource>
+    <FileTarget>C:\test-2</FileTarget>
+    <FileSize>800950</FileSize>
+    <FileTransferTime>0</FileTransferTime>
+  </Log>
+  <Log>
+    <Horodatage>2024-02-21T15:36:30.0344098+01:00</Horodatage>
+    <Horodatage xmlns="clr-namespace:EasySaveConsole.Models;assembly=EasySaveConsole">21/02/2024 15:36:30</Horodatage>
+    <Name>Data</Name>
+    <FileSource>C:\test-2</FileSource>
+    <FileTarget>C:\Browse-feature</FileTarget>
+    <FileSize>800950</FileSize>
+    <FileTransferTime>1</FileTransferTime>
   </Log>
 </ArrayOfLog>

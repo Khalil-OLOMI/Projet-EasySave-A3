@@ -38,6 +38,34 @@ namespace EasySave.Services
         public string PlayButtonText { get; set; }
         public string DeleteButtonText { get; set; }
 
+        private bool _isComplete;
+        public bool IsComplete
+        {
+            get { return _isComplete; }
+            set
+            {
+                if (_isComplete != value)
+                {
+                    _isComplete = value;
+                    OnPropertyChanged(nameof(IsComplete));
+                }
+            }
+        }
+
+        private bool _isDifferential;
+        public bool IsDifferential
+        {
+            get { return _isDifferential; }
+            set
+            {
+                if (_isDifferential != value)
+                {
+                    _isDifferential = value;
+                    OnPropertyChanged(nameof(IsDifferential));
+                }
+            }
+        }
+
         public IBackup SelectedBackup
         {
             get { return selectedBackup; }
@@ -164,7 +192,7 @@ namespace EasySave.Services
             string json = JsonConvert.SerializeObject(backups, Formatting.Indented);
             File.WriteAllText(this.backupFile, json);
         }
-        public void AddBackup(string Name, string Source, string Cible, string Type)
+        public void AddBackup(string Name, string Source, string Cible, bool isComplete, bool isDifferential)
         {
             if (Source == Cible)
             {
@@ -172,33 +200,29 @@ namespace EasySave.Services
             }
             else
             {
-                switch (Type.ToLower())
+                if (isComplete)
                 {
-                    case "complet":
-                        IBackup completBackup = new CompletBackup();
-                        completBackup.Name = Name;
-                        completBackup.Source = Source;
-                        completBackup.Cible = Cible;
-                        completBackup.Type = Type;
-                        completBackup.Status = "Created";
-                        backups.Add(completBackup);
-                        SaveBackup();
-                        break;
-                    case "differential":
-                        IBackup diffBackup = new DifferentialBackup();
-                        diffBackup.Name = Name;
-                        diffBackup.Source = Source;
-                        diffBackup.Cible = Cible;
-                        diffBackup.Type = Type;
-                        diffBackup.Status = "Created";
-                        backups.Add(diffBackup);
-                        SaveBackup();
-                        break;
-                    default:
-                        break;
+                    IBackup completBackup = new CompletBackup();
+                    completBackup.Name = Name;
+                    completBackup.Source = Source;
+                    completBackup.Cible = Cible;
+                    completBackup.Type = "Complet";
+                    completBackup.Status = "Created";
+                    backups.Add(completBackup);
+                    SaveBackup();
+                }
+                else if (isDifferential)
+                {
+                    IBackup diffBackup = new DifferentialBackup();
+                    diffBackup.Name = Name;
+                    diffBackup.Source = Source;
+                    diffBackup.Cible = Cible;
+                    diffBackup.Type = "Differential";
+                    diffBackup.Status = "Created";
+                    backups.Add(diffBackup);
+                    SaveBackup();
                 }
             }
-
         }
         public void ExcuteBackups(ObservableCollection<IBackup> backupToExecute)
         {

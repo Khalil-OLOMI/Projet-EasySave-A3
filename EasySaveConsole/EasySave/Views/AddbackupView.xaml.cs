@@ -34,10 +34,40 @@ namespace EasySave.Views
             string name = Name.Text;
             string source = Source.Text;
             string cible = Cible.Text;
-            string type = Type.Text;
+            bool isComplete = CompletRadioButton.IsChecked ?? false;
+            bool isDifferential = DiffrentiellleRadioButton.IsChecked ?? false;
 
-            viewModel.AddBackup(name, source, cible, type);
-            Close(); 
+            viewModel.AddBackup(name, source, cible, isComplete, isDifferential);
+            Close();
+            
         }
+        private void BrowseSource_Click(object sender, RoutedEventArgs e)
+        {
+            var openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            openFileDialog.ValidateNames = false;
+            openFileDialog.CheckFileExists = false;
+            openFileDialog.CheckPathExists = true;
+            openFileDialog.FileName = "Folder Selection";
+            openFileDialog.Filter = "Folder|*.thisdoesnotexist";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Source.Text = System.IO.Path.GetDirectoryName(openFileDialog.FileName);
+            }
+        }
+
+        private void BrowseTarget_Click(object sender, RoutedEventArgs e)
+        {
+            var openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            openFileDialog.ValidateNames = false;
+            openFileDialog.CheckFileExists = false;
+            openFileDialog.CheckPathExists = true;
+            openFileDialog.FileName = "Folder Selection";
+            openFileDialog.Filter = "Folder|*.thisdoesnotexist";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Cible.Text = System.IO.Path.GetDirectoryName(openFileDialog.FileName);
+            }
+        }
+
     }
 }
