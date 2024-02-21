@@ -44,5 +44,9 @@ namespace EasySave.Views
             }
         }
 
+        private void Backups_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

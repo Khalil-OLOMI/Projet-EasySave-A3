@@ -56,7 +56,7 @@ namespace EasySave.Services
             {
                 // Translate text elements using the DeepLTranslator object
                 BackupListHeaderText = await translator.TranslateAsync("Backup list");
-                NameHeaderText = await translator.TranslateAsync("Name");
+                NameHeaderText = "name";//await translator.TranslateAsync("Name");
                 TypeHeaderText = await translator.TranslateAsync("Type");
                 StatusHeaderText = await translator.TranslateAsync("Status");
                 ActionsHeaderText = await translator.TranslateAsync("Actions");
@@ -112,6 +112,7 @@ namespace EasySave.Services
 
             // Translate text elements
             TranslateTextElementsAsync();
+
         }
 
         public ObservableCollection<IBackup> GetBackups()
@@ -151,7 +152,7 @@ namespace EasySave.Services
             if (SelectedBackup != null)
             {
                 DeleteBackup(SelectedBackup);
-                MessageBox.Show("Backup deleted", "Backup deleted", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Backup deleted", "Backup deleted", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
         private bool CanDelete(object parameter)

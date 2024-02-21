@@ -9,10 +9,13 @@ namespace EasySave.Services
 {
     public class LogViewModel : INotifyPropertyChanged
     {
+        private DeepLTranslator translator; // Ajout de la classe de traduction
         private string log_file = "log.json";
         private readonly string filePath = "log.xml";
         public ObservableCollection<Log> Logs { get; set; }
         private Config config { get; set; }
+        public string LogHeaderText { get; set; }
+        public string DateHeaderText { get; set; }
 
         public LogViewModel()
         {
@@ -39,7 +42,34 @@ namespace EasySave.Services
             {
                 Logs = GetJSONLogs();
             }
+
+            string apiKey = Config.ApiKey;
+            translator = new DeepLTranslator(apiKey);
+
+            // Translate text elements
+            TranslateTextElementsAsync();
         }
+        private async void TranslateTextElementsAsync()
+        {
+            try
+            {
+                // Translate text elements using the DeepLTranslator object
+                LogHeaderText = await translator.TranslateAsync("Logs");
+                DateHeaderText = await translator.TranslateAsync("Date d'exécution"); ;//await translator.TranslateAsync("Name");
+                
+                // Notify property changed for translated text properties
+                OnPropertyChanged(nameof(LogHeaderText));
+                OnPropertyChanged(nameof(DateHeaderText));
+                
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine($"Error translating text: {ex.Message}");
+            }
+        }
+
+
         public ObservableCollection<Log> GetJSONLogs()
         {
             try

@@ -22,15 +22,16 @@
         </Border>
         <!-- Main Content Area -->
         <Border Background="White" Grid.Row="1">
+            
             <DataGrid
                 x:Name="Backups"
                 AutoGenerateColumns="False"
                 ItemsSource="{Binding Backups, Mode=TwoWay}"
                 SelectedItem="{Binding SelectedBackup, Mode=TwoWay}"
-                Margin="10" Background="White" MouseDoubleClick="DetailBackupClick">
+                Margin="10" Background="White" MouseDoubleClick="DetailBackupClick" SelectionChanged="Backups_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn
-                        Header="{Binding NameHeaderText}"
+                        Header="{Binding DataContext.NameHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"
                         MinWidth="100"
                         Width="*"
                         Binding="{Binding Name}"

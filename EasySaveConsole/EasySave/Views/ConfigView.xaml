@@ -24,8 +24,8 @@
             <TextBlock Text="{Binding TargetLanguageText}" FontWeight="Bold" Margin="0 0 0 10"/>
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
                 <RadioButton Content="English" IsChecked="{Binding IsEnglish, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
-                <RadioButton Content="French" IsChecked="{Binding IsFrench, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
-                <RadioButton Content="Spanish" IsChecked="{Binding IsSpanish, Mode=TwoWay}" GroupName="Language" Width="80"/>
+                <RadioButton Content="Français" IsChecked="{Binding IsFrench, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
+                <RadioButton Content="Español" IsChecked="{Binding IsSpanish, Mode=TwoWay}" GroupName="Language" Width="80"/>
             </StackPanel>
 
             <!-- Encrypted File Extensions with ScrollViewer -->
