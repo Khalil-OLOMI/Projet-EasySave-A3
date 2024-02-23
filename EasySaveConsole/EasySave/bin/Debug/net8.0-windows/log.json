@@ -1,11 +1,47 @@
 [
   {
     "Horodatage": "20/02/2024 09:53:29",
-    "XamlHorodatage": "20/02/2024 09:53:29",
+    "XmlHorodatage": "20/02/2024 09:53:29",
     "Name": "Test",
     "FileSource": "C:\\Users\\euphr\\Pictures",
     "FileTarget": "C:\\ppp",
     "FileSize": 7381875,
     "FileTransferTime": 2
+  },
+  {
+    "Horodatage": "23/02/2024 16:42:12",
+    "XmlHorodatage": "23/02/2024 16:42:12",
+    "Name": "ttetst",
+    "FileSource": "C:\\Check",
+    "FileTarget": "C:\\crypto",
+    "FileSize": 109123,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "23/02/2024 16:42:16",
+    "XmlHorodatage": "23/02/2024 16:42:16",
+    "Name": "ttetst",
+    "FileSource": "C:\\Check",
+    "FileTarget": "C:\\crypto",
+    "FileSize": 109123,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "23/02/2024 16:53:33",
+    "XmlHorodatage": "23/02/2024 16:53:33",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 2
+  },
+  {
+    "Horodatage": "23/02/2024 16:53:43",
+    "XmlHorodatage": "23/02/2024 16:53:43",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 3
   }
 ]

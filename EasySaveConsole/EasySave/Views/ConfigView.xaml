@@ -8,22 +8,24 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ConfigView">
     <Grid>
-        <Grid.Resources>
-            <!-- Any additional resources can be defined here -->
-        </Grid.Resources>
+
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="781*"/>
-            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-
-        <StackPanel Grid.ColumnSpan="2" Margin="20,38,20,20" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+        <Border Background="#FF0F52BA" Height="41" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding SettingText}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+        <StackPanel Margin="0,41,0,0" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
             <!-- Language Selection -->
             <TextBlock Text="{Binding TargetLanguageText}" FontWeight="Bold" Margin="0 0 0 10"/>
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
                 <RadioButton Content="English" IsChecked="{Binding IsEnglish, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
-                <RadioButton Content="French" IsChecked="{Binding IsFrench, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
-                <RadioButton Content="Spanish" IsChecked="{Binding IsSpanish, Mode=TwoWay}" GroupName="Language" Width="80"/>
+                <RadioButton Content="Français" IsChecked="{Binding IsFrench, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
+                <RadioButton Content="Español" IsChecked="{Binding IsSpanish, Mode=TwoWay}" GroupName="Language" Width="80"/>
             </StackPanel>
 
             <!-- Encrypted File Extensions with ScrollViewer -->
@@ -50,7 +52,7 @@
             <!-- Add New Extension -->
             <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
                 <TextBox Text="{Binding NewExtensionToAdd}" Width="400" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
-                <Button Content="{Binding AddText}" Command="{Binding AddExtensionCommand}" Width="120" Margin="10 0 0 0" Background="#FF33A4E3"/>
+                <Button Content="{Binding AddText}" Command="{Binding AddExtensionCommand}" Width="120" Margin="10 0 0 0" Background="#FF262E32" Foreground="White"/>
             </StackPanel>
 
             <!-- Process Name -->
@@ -65,7 +67,7 @@
             </ComboBox>
 
             <!-- Save Button -->
-            <Button Content="{Binding SaveText}" Command="{Binding SaveCommand}" Width="100" Background="#FF33A4E3"/>
+            <Button Content="{Binding SaveText}" Command="{Binding SaveCommand}" Width="100" Background="#FF262E32" Foreground="White"/>
         </StackPanel>
     </Grid>
 

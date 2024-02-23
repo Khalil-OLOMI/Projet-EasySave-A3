@@ -84,10 +84,10 @@ public class CompletBackup : IBackup
                     CreateNoWindow = true,
                     UseShellExecute = false
                 };
-                Process.Start(processStartInfo)?.WaitForExit(); // Wait for the process to finish
+                Process.Start(processStartInfo)?.WaitForExit(); 
 
-                File.Delete(targetFile); // Delete the original file
-                File.Move(encryptedFile, targetFile); // Rename the encrypted file to the original file name
+                File.Delete(targetFile); 
+                File.Move(encryptedFile, targetFile); 
             }
         }
 

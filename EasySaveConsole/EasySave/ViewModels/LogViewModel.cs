@@ -12,6 +12,12 @@ namespace EasySave.ViewModels
         private readonly string log_file = "log.json";
         private readonly string filePath = "log.xml";
 
+        public string LogText { get; set; }
+        public string DateHeaderText { get; set; }
+        public string NameHeaderText { get; set; }
+        public string FileHeaderText { get; set; }
+        public string ActionsHeaderText { get; set; }
+
         public ObservableCollection<Log> Logs { get; set; }
         private Config Config { get; set; }
 

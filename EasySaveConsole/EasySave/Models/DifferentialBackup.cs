@@ -1,6 +1,8 @@
 ﻿using EasySave.ViewModels;
+using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
+using System.Windows;
 
 namespace EasySave.Models;
 
@@ -19,7 +21,7 @@ internal class DifferentialBackup : IBackup
         int nbre_file = 0;
         // Obtenir la liste des fichiers dans le répertoire source
         string[] sourceFiles = Directory.GetFiles(source, "*", SearchOption.AllDirectories);
-
+        DecryptFilesInTarget(cible);
 
         // Parcourir chaque fichier dans le répertoire source
         foreach (string sourceFile in sourceFiles)
@@ -37,6 +39,7 @@ internal class DifferentialBackup : IBackup
                 string sourceHash = CalculateFileHash(sourceFile);
                 string targetHash = CalculateFileHash(targetFile);
 
+
                 // Si les hashs sont différents, copier le fichier
                 if (sourceHash != targetHash)
                 {
@@ -44,6 +47,7 @@ internal class DifferentialBackup : IBackup
 
                     nbre_file++;
                 }
+                EncryptFile(targetFile);
             }
             else
             {
@@ -52,6 +56,7 @@ internal class DifferentialBackup : IBackup
                 nbre_file++;
             }
         }
+        EncryptFilesInTarget(cible);
     }
 
     private void CopyFile(string source, string sourceFile, string targetFile, int nbre_file)
@@ -101,5 +106,74 @@ internal class DifferentialBackup : IBackup
         byte[] hash = md5.ComputeHash(stream);
 
         return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+    }
+
+    private void EncryptFile(string filePath)
+    {
+        try
+        {
+            ProcessStartInfo psi = new ProcessStartInfo("CryptoSoft.exe", $"\"{filePath}\"");
+            psi.CreateNoWindow = true;
+            psi.UseShellExecute = false;
+            Process.Start(psi)?.WaitForExit();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Le chiffrement du fichier a échoué : {filePath}\nErreur : {ex.Message}", "Erreur de chiffrement", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+    }
+
+    private void DecryptFilesInTarget(string directory)
+    {
+        string[] encryptedFiles = Directory.GetFiles(directory, "*encrypted.*", SearchOption.AllDirectories);
+
+        foreach (string encryptedFile in encryptedFiles)
+        {
+            try
+            {
+                // Decrypt the encrypted file
+                string decryptedFile = Path.Combine(Path.GetDirectoryName(encryptedFile), Path.GetFileNameWithoutExtension(encryptedFile).Replace("encrypted.", ""));
+                ProcessStartInfo psi = new ProcessStartInfo("CryptoSoft.exe", $"\"{encryptedFile}\"");
+                psi.CreateNoWindow = true;
+                psi.UseShellExecute = false;
+                Process.Start(psi)?.WaitForExit();
+
+                // Delete the encrypted file
+                File.Delete(encryptedFile);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"La suppression du fichier chiffré a échoué : {encryptedFile}\nErreur : {ex.Message}", "Erreur de déchiffrement", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+    }
+
+    private void EncryptFilesInTarget(string directory)
+    {
+        string[] targetFiles = Directory.GetFiles(directory, "*", SearchOption.AllDirectories);
+
+        foreach (string targetFile in targetFiles)
+        {
+            try
+            {
+                if (!targetFile.StartsWith("encrypted."))
+                {
+                    string fileName = Path.GetFileNameWithoutExtension(targetFile);
+                    string fileExtension = Path.GetExtension(targetFile);
+                    string encryptedFileName = "encrypted." + fileName + fileExtension;
+                    string encryptedFile = Path.Combine(Path.GetDirectoryName(targetFile), encryptedFileName);
+
+                    ProcessStartInfo psi = new ProcessStartInfo("CryptoSoft.exe", $"\"{targetFile}\" \"{encryptedFile}\"");
+                    psi.CreateNoWindow = true;
+                    psi.UseShellExecute = false;
+                    Process.Start(psi)?.WaitForExit();
+                    File.Delete(targetFile);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Le chiffrement du fichier a échoué : {targetFile}\nErreur : {ex.Message}", "Erreur de chiffrement", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

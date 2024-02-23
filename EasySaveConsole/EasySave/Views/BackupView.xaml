@@ -16,37 +16,55 @@
         <Border Background="#FF0F52BA" Grid.Row="0" Height="40">
             <!-- Header content goes here -->
             <StackPanel HorizontalAlignment="Left" Margin="0,0,0,0" Orientation="Horizontal">
-                <TextBlock Text="Backup list" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0"/>
-                <Button Content="Add backup" Margin="400,0,0,0" Height="25" Width="81" Background="White" Click="AddBackupForm"/>
+                <TextBlock Text="{Binding BackupListHeaderText}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0" Width="350"/>
+                <Button Content="{Binding AddBackupButtonText}" Height="24" Width="160" Background="White" Click="AddBackupForm" Margin="100,0,0,0"/>
             </StackPanel>
         </Border>
         <!-- Main Content Area -->
         <Border Background="White" Grid.Row="1">
+
             <DataGrid
                 x:Name="Backups"
                 AutoGenerateColumns="False"
                 ItemsSource="{Binding Backups, Mode=TwoWay}"
                 SelectedItem="{Binding SelectedBackup, Mode=TwoWay}"
-                Margin="10" Background="White" MouseDoubleClick="DetailBackupClick">
+                Margin="10" Background="White" MouseDoubleClick="DetailBackupClick" SelectionChanged="Backups_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn
-                        Header="Name"
-                        MinWidth="100"
-                        Width="*"
-                        Binding="{Binding Name}"
-                        IsReadOnly="True"/>
+                     MinWidth="100"
+                     Width="*"
+                     Binding="{Binding Name}"
+                     IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.NameHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
+
                     <DataGridTextColumn
-                        Header="Type"
                         MinWidth="100"
                         Width="*"
                         Binding="{Binding Type}"
-                        IsReadOnly="True"/>
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.TypeHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
+
                     <DataGridTextColumn
-                        Header="Status"
                         MinWidth="100"
                         Width="*"
                         Binding="{Binding Status}"
-                        IsReadOnly="True"/>
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.StatusHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
                     <DataGridTemplateColumn Header="Actions" MinWidth="100" Width="*">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>

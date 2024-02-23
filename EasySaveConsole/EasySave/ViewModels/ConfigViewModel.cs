@@ -33,6 +33,13 @@ public class ConfigViewModel : ObservableObject
         TranslateText();
     }
 
+    private string _SettingText;
+    public string SettingText
+    {
+        get { return _SettingText; }
+        set { _SettingText = value; OnPropertyChanged(SettingText); }
+    }
+
     private string _targetLanguageText;
     public string TargetLanguageText
     {
@@ -253,6 +260,7 @@ public class ConfigViewModel : ObservableObject
         Logtype = await _translator.TranslateAsync("Log file type :");
         AddText = await _translator.TranslateAsync("Add Extension");
         SaveText = await _translator.TranslateAsync("Sauvegarder");
+        SettingText = await _translator.TranslateAsync("Settings");
 
 
     }

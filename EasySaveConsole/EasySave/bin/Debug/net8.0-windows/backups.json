@@ -26,5 +26,19 @@
     "Cible": "C:\\test-2",
     "Type": "Complet",
     "Status": "Created"
+  },
+  {
+    "Name": "ttetst",
+    "Source": "C:\\Check",
+    "Cible": "C:\\crypto",
+    "Type": "Differential",
+    "Status": "Created"
+  },
+  {
+    "Name": "check",
+    "Source": "C:\\test",
+    "Cible": "C:\\test-2",
+    "Type": "Differential",
+    "Status": "Created"
   }
 ]

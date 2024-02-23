@@ -1,4 +1,5 @@
 ﻿using EasySave.Models;
+using EasySave.Services;
 using EasySave.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -24,8 +25,8 @@ namespace EasySave.Views
     {
         public BackupView()
         {
-            InitializeComponent();
             DataContext = new BackupViewModel();
+            InitializeComponent();
         }
 
         private void AddBackupForm(object sender, RoutedEventArgs e)
@@ -44,5 +45,9 @@ namespace EasySave.Views
             }
         }
 
+        private void Backups_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

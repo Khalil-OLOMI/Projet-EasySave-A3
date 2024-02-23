@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\
-EasySave
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\
+EasySave_g4orkcvo_wpftmp
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\App.xaml
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\App.xaml
 7-126509134
 
-24-1882236410
-19992874265
+33-419410928
+3981189041030
 MainWindow.xaml;Views\AddbackupView.xaml;Views\BackupView.xaml;Views\ConfigView.xaml;Views\DashboardView.xaml;Views\DocView.xaml;Views\LogView.xaml;
 
-False
+True
 

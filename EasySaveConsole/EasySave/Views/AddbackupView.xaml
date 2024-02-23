@@ -1,17 +1,14 @@
 ﻿<Window x:Class="EasySave.Views.AddbackupView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:EasySave.Views"
-        mc:Ignorable="d"
-        ResizeMode="NoResize" WindowState="Normal"
         Title="Add Backup" Height="300" Width="400"
+        ResizeMode="NoResize" WindowState="Normal"
         DataContext="{Binding}">
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -23,25 +20,30 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Name:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="{Binding NameHeaderText}" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
         <TextBox x:Name="Name" Grid.Row="0" Grid.Column="1" Margin="5"/>
 
-        <Label Content="Source:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="{Binding SrcPath}" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
         <TextBox x:Name="Source" Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <Button Content="{Binding Browse}" Grid.Row="1" Grid.Column="2" Margin="5" Click="BrowseSource_Click"/>
 
-        <Label Content="Cible:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="{Binding Cible}" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
         <TextBox x:Name="Cible" Grid.Row="2" Grid.Column="1" Margin="5"/>
+        <Button Content="{Binding Browse}" Grid.Row="2" Grid.Column="2" Margin="5" Click="BrowseTarget_Click"/>
 
-        <Label Content="Type:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
-        <TextBox x:Name="Type" Text="{Binding Type, Mode=TwoWay}" Grid.Row="3" Grid.Column="1" Margin="5"/>
+        <Label Content="{Binding TypeHeaderText}" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,5,5,0"/>
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Margin="5">
+            <RadioButton x:Name="CompletRadioButton" Content="Complet" Margin="0,0,10,0"/>
+            <RadioButton x:Name="DiffrentiellleRadioButton" Content="Diffrentiellle"/>
+        </StackPanel>
 
-        <Button x:Name="SaveButton" Content="Save" Grid.Row="4" Grid.Column="1" Margin="5" Click="SaveButton_Click"
-                HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <Button x:Name="SaveButton" Content="{Binding Save}" Grid.Row="4" Grid.Column="1" Margin="0,10,0,0" Click="SaveButton_Click"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Width="200"/>
 
         <!-- Add some spacing -->
-        <Border Grid.Row="5" Grid.ColumnSpan="2" Height="10"/>
+        <Border Grid.Row="5" Grid.ColumnSpan="3" Height="10"/>
 
         <!-- Add a line separator -->
-        <Line X1="0" Y1="0" X2="1" Y2="0" Stroke="DarkGray" StrokeThickness="1" Grid.Row="6" Grid.ColumnSpan="2"/>
+        <Line X1="0" Y1="0" X2="1" Y2="0" Stroke="DarkGray" StrokeThickness="1" Grid.Row="6" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>

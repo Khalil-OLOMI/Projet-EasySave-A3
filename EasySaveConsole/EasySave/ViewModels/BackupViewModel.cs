@@ -16,6 +16,48 @@ public class BackupViewModel : ObservableObject
     private string backupFile = "backups.json";
     private DeepLTranslator translator; // Ajout de la classe de traduction
 
+    public string BackupListHeaderText { get; set; }
+    public string NameHeaderText { get; set; }
+    public string TypeHeaderText { get; set; }
+    public string StatusHeaderText { get; set; }
+    public string ActionsHeaderText { get; set; }
+    public string AddBackupButtonText { get; set; }
+    public string PlayButtonText { get; set; }
+    public string DeleteButtonText { get; set; }
+    public string SrcPath { get; set; }
+    public string Browse { get; set; }
+    public string Save { get; set; }
+    public string Cible { get; set; }
+
+
+    private bool _isComplete;
+    public bool IsComplete
+    {
+        get { return _isComplete; }
+        set
+        {
+            if (_isComplete != value)
+            {
+                _isComplete = value;
+                OnPropertyChanged(nameof(IsComplete));
+            }
+        }
+    }
+
+    private bool _isDifferential;
+    public bool IsDifferential
+    {
+        get { return _isDifferential; }
+        set
+        {
+            if (_isDifferential != value)
+            {
+                _isDifferential = value;
+                OnPropertyChanged(nameof(IsDifferential));
+            }
+        }
+    }
+
     public BackupViewModel()
     {
         InitBackup();
@@ -23,6 +65,51 @@ public class BackupViewModel : ObservableObject
         Backups = GetBackups();
         PlayCommand = new RelayCommand(Play, CanPlay);
         DeleteCommand = new RelayCommand(Delete, CanDelete);
+        string apiKey = Config.ApiKey;
+        translator = new DeepLTranslator(apiKey);
+
+        // Translate text elements
+        var task = Task.Run(() => TranslateTextElementsAsync());
+        task.Wait();
+    }
+
+
+    private async Task TranslateTextElementsAsync()
+    {
+        try
+        {
+            // Translate text elements using the DeepLTranslator object
+            BackupListHeaderText = await translator.TranslateAsync("Backup list");
+            NameHeaderText = await translator.TranslateAsync("Name");
+            TypeHeaderText = await translator.TranslateAsync("Type");
+            StatusHeaderText = await translator.TranslateAsync("Status");
+            ActionsHeaderText = await translator.TranslateAsync("Actions");
+            AddBackupButtonText = await translator.TranslateAsync("Add backup");
+            PlayButtonText = await translator.TranslateAsync("Play");
+            DeleteButtonText = await translator.TranslateAsync("Delete");
+            SrcPath = await translator.TranslateAsync("Fichiers à sauvegarder:");
+            Browse = await translator.TranslateAsync("Browse");
+            Save = await translator.TranslateAsync("Sauvegarder");
+            Cible = await translator.TranslateAsync("Sauvegarder ici:");
+            // Notify property changed for translated text properties
+            OnPropertyChanged(nameof(BackupListHeaderText));
+            OnPropertyChanged(nameof(NameHeaderText));
+            OnPropertyChanged(nameof(TypeHeaderText));
+            OnPropertyChanged(nameof(StatusHeaderText));
+            OnPropertyChanged(nameof(ActionsHeaderText));
+            OnPropertyChanged(nameof(AddBackupButtonText));
+            OnPropertyChanged(nameof(PlayButtonText));
+            OnPropertyChanged(nameof(DeleteButtonText));
+            OnPropertyChanged(nameof(SrcPath));
+            OnPropertyChanged(nameof(Browse));
+            OnPropertyChanged(nameof(Save));
+            OnPropertyChanged(nameof(Cible));
+        }
+        catch (Exception ex)
+        {
+
+            Console.WriteLine($"Error translating text: {ex.Message}");
+        }
     }
 
     public ICommand PlayCommand { get; private set; }
@@ -115,12 +202,17 @@ public class BackupViewModel : ObservableObject
         File.WriteAllText(backupFile, json);
     }
 
-    public void AddBackup(string Name, string Source, string Cible, string Type)
+    public void AddBackup(string Name, string Source, string Cible, bool isComplete, bool isDifferential)
     {
         if (Source == Cible)
         {
             MessageBox.Show("Source identique à la destination.");
             return;
+        }
+        string Type= "Complet";
+        if (!isComplete)
+        {
+            Type = "Differential";
         }
 
         IBackup backup = Type.ToLower() switch
