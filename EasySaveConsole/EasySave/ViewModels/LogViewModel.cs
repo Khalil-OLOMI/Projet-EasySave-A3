@@ -11,12 +11,12 @@ namespace EasySave.ViewModels
     {
         private readonly string log_file = "log.json";
         private readonly string filePath = "log.xml";
-
-        public string LogText { get; set; }
+        private DeepLTranslator translator; // Ajout de la classe de traduction
+        public string FIlesizeText { get; set; }
         public string DateHeaderText { get; set; }
-        public string NameHeaderText { get; set; }
-        public string FileHeaderText { get; set; }
-        public string ActionsHeaderText { get; set; }
+        public string LogHeaderText { get; set; }
+        public string TimeText { get; set; }
+        public string NameText { get; set; }
 
         public ObservableCollection<Log> Logs { get; set; }
         private Config Config { get; set; }
@@ -46,6 +46,39 @@ namespace EasySave.ViewModels
             else
             {
                 Logs = GetJSONLogs();
+            }
+
+            string apiKey = Config.ApiKey;
+            translator = new DeepLTranslator(apiKey);
+
+            // Translate text elements
+            TranslateTextElementsAsync();
+        }
+
+        private async void TranslateTextElementsAsync()
+        {
+            try
+            {
+                // Translate text elements using the DeepLTranslator object
+                LogHeaderText = await translator.TranslateAsync("Logs");
+                DateHeaderText = await translator.TranslateAsync("Execution date");
+                NameText = await translator.TranslateAsync("Name");
+                FIlesizeText = await translator.TranslateAsync("File size in (KO)");
+                TimeText = await translator.TranslateAsync("Time (ms)");
+
+
+                // Notify property changed for translated text properties
+                OnPropertyChanged(nameof(LogHeaderText));
+                OnPropertyChanged(nameof(DateHeaderText));
+                OnPropertyChanged(nameof(NameText));
+                OnPropertyChanged(nameof(FIlesizeText));
+                OnPropertyChanged(nameof(TimeText));
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine($"Error translating text: {ex.Message}");
             }
         }
 

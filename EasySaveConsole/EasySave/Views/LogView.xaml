@@ -17,7 +17,7 @@
         <Border Background="#FF0F52BA" Grid.Row="0" Height="40">
             <!-- Header content goes here -->
             <StackPanel HorizontalAlignment="Left" Margin="0,0,0,0" Orientation="Horizontal">
-                <TextBlock Text="Log" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0"/>
+                <TextBlock Text="{Binding LogHeaderText}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0"/>
             </StackPanel>
         </Border>
         <!-- Main Content Area -->
@@ -30,29 +30,49 @@
             MouseDoubleClick="DetailLogClick">
                 <DataGrid.Columns>
                     <DataGridTextColumn
-                    Header="Date d'exécution"
-                    MinWidth="100"
-                    Width="*"
-                    Binding="{Binding Horodatage}"
-                    IsReadOnly="True"/>
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Horodatage}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.DateHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
                     <DataGridTextColumn
-                    Header="Name"
-                    MinWidth="100"
-                    Width="*"
-                    Binding="{Binding Name}"
-                    IsReadOnly="True"/>
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Name}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.NameText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
                     <DataGridTextColumn
-                    Header="File Size(KO)"
-                    MinWidth="100"
-                    Width="*"
-                    Binding="{Binding FileSize}"
-                    IsReadOnly="True"/>
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding FileSize}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.FIlesizeText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
                     <DataGridTextColumn
-                    Header="Time(ms)"
-                    MinWidth="100"
-                    Width="*"
-                    Binding="{Binding FileTransferTime}"
-                    IsReadOnly="True"/>
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding FileTransferTime}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.TimeText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </Border>
