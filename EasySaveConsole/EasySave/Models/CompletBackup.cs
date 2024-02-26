@@ -21,14 +21,13 @@ public class CompletBackup : IBackup
     public void Copy(string source, string cible)
     {
         int nbre_file = 0;
-        DirectoryInfo dir = new(source);
+        DirectoryInfo dir = new DirectoryInfo(source);
 
         if (!dir.Exists)
         {
             MessageBox.Show("Dossier source inexistant");
             return;
         }
-
 
         if (!Directory.Exists(cible))
         {
@@ -39,35 +38,45 @@ public class CompletBackup : IBackup
             catch (Exception ex)
             {
                 MessageBox.Show("Erreur de création de dossier cible");
+                return;
             }
         }
 
+        Config config = Config.LoadConfig();
+        List<string> priorityExtensions = config.FichierPrioritaires;
+        List<string> encryptedExtensions = config.EncryptedFileExtensions;
+
         foreach (string file in Directory.GetFiles(source))
         {
-
             if (isStopped)
             {
-                // If the backup process is stopped, exit the loop
                 return;
             }
 
             if (isPaused)
             {
-                // If the backup process is paused, wait for it to be unpaused
                 while (isPaused)
                 {
                     System.Threading.Thread.Sleep(100);
                 }
             }
 
-
+            var fileExtension = Path.GetExtension(file).TrimStart('.').ToLower();
             string targetFile = Path.Combine(cible, Path.GetFileName(file));
 
-            File.Copy(file, targetFile, true);
+            if (priorityExtensions.Contains(fileExtension))
+            {
+                File.Copy(file, targetFile, true);
+                nbre_file++;
+            }
 
-            nbre_file++;
+            if (encryptedExtensions.Contains(fileExtension))
+            {
+                EncryptFile(file, targetFile);
+            }
 
-            State state = new()
+            // State tracking logic
+            State state = new State()
             {
                 Name = this.Name,
                 Horodatage = DateTime.Now,
@@ -80,7 +89,7 @@ public class CompletBackup : IBackup
                 Progression = StateViewModel.GetProgression(source, nbre_file),
             };
 
-            if (Config.LoadConfig().LogType == "XML")
+            if (config.LogType == "XML")
             {
                 new StateViewModel().WriteStateXml(state);
             }
@@ -88,26 +97,58 @@ public class CompletBackup : IBackup
             {
                 new StateViewModel().WriteState(state);
             }
+        }
 
-            ConfigViewModel configViewModel = new(Config.LoadConfig());
-            List<string> encryptedFileExtensions = configViewModel.EncryptedFileExtensions.ToList();
+        foreach (string file in Directory.GetFiles(source))
+        {
+            if (isStopped)
+            {
+                return;
+            }
+
+            if (isPaused)
+            {
+                while (isPaused)
+                {
+                    System.Threading.Thread.Sleep(100);
+                }
+            }
 
             var fileExtension = Path.GetExtension(file).TrimStart('.').ToLower();
+            string targetFile = Path.Combine(cible, Path.GetFileName(file));
 
-            if (configViewModel.EncryptedFileExtensions.Contains(fileExtension))
+            if (!priorityExtensions.Contains(fileExtension) && !encryptedExtensions.Contains(fileExtension))
             {
-                // Call CryptoSoft to encrypt the file
-                string encryptedFile = targetFile + ".encrypted";
+                File.Copy(file, targetFile, true);
+                nbre_file++;
+            }
 
-                ProcessStartInfo processStartInfo = new("CryptoSoft.exe", $"\"{targetFile}\" \"{encryptedFile}\"")
-                {
-                    CreateNoWindow = true,
-                    UseShellExecute = false
-                };
-                Process.Start(processStartInfo)?.WaitForExit(); 
+            if (encryptedExtensions.Contains(fileExtension))
+            {
+                EncryptFile(file, targetFile);
+            }
 
-                File.Delete(targetFile); 
-                File.Move(encryptedFile, targetFile); 
+            // State tracking logic
+            State state = new State()
+            {
+                Name = this.Name,
+                Horodatage = DateTime.Now,
+                Status = "ACTIVE",
+                FileSource = file,
+                FileTarget = targetFile,
+                TotalFilesToCopy = StateViewModel.FileNbre(source),
+                TotalFilesSize = StateViewModel.GetDirectorySize(source),
+                NbFilesLeftToDo = StateViewModel.FileNbre(source) - nbre_file,
+                Progression = StateViewModel.GetProgression(source, nbre_file),
+            };
+
+            if (config.LogType == "XML")
+            {
+                new StateViewModel().WriteStateXml(state);
+            }
+            else
+            {
+                new StateViewModel().WriteState(state);
             }
         }
 
@@ -116,8 +157,22 @@ public class CompletBackup : IBackup
             string targetSubDir = Path.Combine(cible, Path.GetFileName(subdir));
             Copy(subdir, targetSubDir);
         }
+    }
 
-        
+    private void EncryptFile(string sourceFile, string targetFile)
+    {
+        // Call CryptoSoft to encrypt the file
+        string encryptedFile = targetFile + ".encrypted";
+
+        ProcessStartInfo processStartInfo = new("CryptoSoft.exe", $"\"{targetFile}\" \"{encryptedFile}\"")
+        {
+            CreateNoWindow = true,
+            UseShellExecute = false
+        };
+        Process.Start(processStartInfo)?.WaitForExit();
+
+        File.Delete(targetFile);
+        File.Move(encryptedFile, targetFile);
     }
 
     public void Play()

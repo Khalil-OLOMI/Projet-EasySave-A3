@@ -75,5 +75,12 @@
     "Cible": "C:\\tesst",
     "Type": "Differential",
     "Status": "Created"
+  },
+  {
+    "Name": "DIF-TESSST",
+    "Source": "C:\\test",
+    "Cible": "C:\\test-2",
+    "Type": "Differential",
+    "Status": "Created"
   }
 ]

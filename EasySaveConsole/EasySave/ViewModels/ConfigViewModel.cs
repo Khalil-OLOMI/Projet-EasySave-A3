@@ -10,6 +10,47 @@ public class ConfigViewModel : ObservableObject
     private Config _config;
     private readonly DeepLTranslator _translator;
 
+
+    public ObservableCollection<string> FichierPrioritaires
+    {
+        get => new(_config.FichierPrioritaires);
+        set
+        {
+            _config.FichierPrioritaires = value.ToList();
+            OnPropertyChanged(nameof(FichierPrioritaires));
+        }
+    }
+
+    private string _newFichierPrioritaireToAdd;
+    public string NewFichierPrioritaireToAdd
+    {
+        get => _newFichierPrioritaireToAdd;
+        set
+        {
+            if (_newFichierPrioritaireToAdd == value) return;
+
+            _newFichierPrioritaireToAdd = value;
+            OnPropertyChanged(nameof(NewFichierPrioritaireToAdd));
+        }
+    }
+
+
+    private void AddFichierPrioritaire()
+    {
+        if (string.IsNullOrEmpty(NewFichierPrioritaireToAdd))
+        {
+            return;
+        }
+
+        _config.FichierPrioritaires.Add(NewFichierPrioritaireToAdd);
+
+        FichierPrioritaires = new ObservableCollection<string>(_config.FichierPrioritaires);
+        NewFichierPrioritaireToAdd = string.Empty;
+    }
+
+
+
+
     public ConfigViewModel(Config config)
     {
         Config.LoadConfig();
@@ -30,6 +71,7 @@ public class ConfigViewModel : ObservableObject
 
         SaveCommand = new RelayCommandSET(SaveConfig);
         AddExtensionCommand = new RelayCommandSET(AddExtension);
+        AddFichierPrioritaireCommand = new RelayCommandSET(AddFichierPrioritaire);
         TranslateText();
     }
 
@@ -38,6 +80,14 @@ public class ConfigViewModel : ObservableObject
     {
         get { return _SettingText; }
         set { _SettingText = value; OnPropertyChanged(SettingText); }
+    }
+
+
+    private string _GESText;
+    public string GESText
+    {
+        get { return _GESText; }
+        set { _GESText = value; OnPropertyChanged(GESText); }
     }
 
     private string _targetLanguageText;
@@ -249,7 +299,7 @@ public class ConfigViewModel : ObservableObject
 
     public ICommand SaveCommand { get; }
     public ICommand AddExtensionCommand { get; }
-
+    public ICommand AddFichierPrioritaireCommand { get; }
 
     public async Task TranslateText()
     {
@@ -261,6 +311,7 @@ public class ConfigViewModel : ObservableObject
         AddText = await _translator.TranslateAsync("Add Extension");
         SaveText = await _translator.TranslateAsync("Sauvegarder");
         SettingText = await _translator.TranslateAsync("Settings");
+        GESText = await _translator.TranslateAsync(" Extensions prioritaires");
 
 
     }

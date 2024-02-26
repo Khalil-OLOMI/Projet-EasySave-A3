@@ -7,6 +7,7 @@ public class Config
 
     public string TargetLanguage { get; set; } = null;
     public List<string> EncryptedFileExtensions { get; set; } = new List<string>();
+    public List<string> FichierPrioritaires { get; set; } = new List<string>();
     public string ProcessName { get; set; } = null;
     public string LogType { get; set; } = null;
 

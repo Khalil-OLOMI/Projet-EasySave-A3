@@ -592,5 +592,176 @@
     "FileTarget": "C:\\test",
     "FileSize": 39202461324,
     "FileTransferTime": 147
+  },
+  {
+    "Horodatage": "26/02/2024 13:59:19",
+    "XmlHorodatage": "26/02/2024 13:59:19",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 236
+  },
+  {
+    "Horodatage": "26/02/2024 16:28:22",
+    "XmlHorodatage": "26/02/2024 16:28:22",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 94
+  },
+  {
+    "Horodatage": "26/02/2024 16:28:28",
+    "XmlHorodatage": "26/02/2024 16:28:28",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 4
+  },
+  {
+    "Horodatage": "26/02/2024 16:33:39",
+    "XmlHorodatage": "26/02/2024 16:33:39",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 20
+  },
+  {
+    "Horodatage": "26/02/2024 16:42:08",
+    "XmlHorodatage": "26/02/2024 16:42:08",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 13
+  },
+  {
+    "Horodatage": "26/02/2024 16:43:32",
+    "XmlHorodatage": "26/02/2024 16:43:32",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 5
+  },
+  {
+    "Horodatage": "26/02/2024 16:54:05",
+    "XmlHorodatage": "26/02/2024 16:54:05",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 16
+  },
+  {
+    "Horodatage": "26/02/2024 20:42:11",
+    "XmlHorodatage": "26/02/2024 20:42:11",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 30
+  },
+  {
+    "Horodatage": "26/02/2024 21:04:14",
+    "XmlHorodatage": "26/02/2024 21:04:14",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39204831145,
+    "FileTransferTime": 36
+  },
+  {
+    "Horodatage": "26/02/2024 21:09:10",
+    "XmlHorodatage": "26/02/2024 21:09:10",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 6
+  },
+  {
+    "Horodatage": "26/02/2024 21:16:03",
+    "XmlHorodatage": "26/02/2024 21:16:03",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 10
+  },
+  {
+    "Horodatage": "26/02/2024 21:17:11",
+    "XmlHorodatage": "26/02/2024 21:17:11",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 9
+  },
+  {
+    "Horodatage": "26/02/2024 21:22:54",
+    "XmlHorodatage": "26/02/2024 21:22:54",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 6
+  },
+  {
+    "Horodatage": "26/02/2024 21:23:54",
+    "XmlHorodatage": "26/02/2024 21:23:54",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 9
+  },
+  {
+    "Horodatage": "26/02/2024 21:24:08",
+    "XmlHorodatage": "26/02/2024 21:24:08",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 9
+  },
+  {
+    "Horodatage": "26/02/2024 21:25:03",
+    "XmlHorodatage": "26/02/2024 21:25:03",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 7
+  },
+  {
+    "Horodatage": "26/02/2024 21:25:28",
+    "XmlHorodatage": "26/02/2024 21:25:28",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 9
+  },
+  {
+    "Horodatage": "26/02/2024 21:35:15",
+    "XmlHorodatage": "26/02/2024 21:35:15",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39204831145,
+    "FileTransferTime": 496
+  },
+  {
+    "Horodatage": "26/02/2024 21:35:52",
+    "XmlHorodatage": "26/02/2024 21:35:52",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39204831145,
+    "FileTransferTime": 16
   }
 ]

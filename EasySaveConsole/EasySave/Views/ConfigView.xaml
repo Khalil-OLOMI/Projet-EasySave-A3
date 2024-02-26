@@ -30,7 +30,7 @@
 
             <!-- Encrypted File Extensions with ScrollViewer -->
             <TextBlock Text="{Binding Extension}" FontWeight="Bold" Margin="0 0 0 10"/>
-            <ScrollViewer Height="100" VerticalScrollBarVisibility="Visible" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}">
+            <ScrollViewer Height="70" VerticalScrollBarVisibility="Visible" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}">
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -54,13 +54,42 @@
                 <TextBox Text="{Binding NewExtensionToAdd}" Width="400" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
                 <Button Content="{Binding AddText}" Command="{Binding AddExtensionCommand}" Width="120" Margin="10 0 0 0" Background="#FF262E32" Foreground="White"/>
             </StackPanel>
+            
+            <!-- LIST FichierPrioritaires -->
+            <TextBlock Text="{Binding GESText}" FontWeight="Bold" Margin="0 0 0 10"/>
+            <ScrollViewer Height="50" VerticalScrollBarVisibility="Visible" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <!-- Define as many rows as necessary -->
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <DataGrid Grid.Row="0" ItemsSource="{Binding FichierPrioritaires}" AutoGenerateColumns="False" Background="White" Margin="0,0,0,-100" SelectionChanged="DataGrid_SelectionChanged" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding}" Width="*" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </ScrollViewer>
+
+
+            <!-- Fichier Prioritaires -->
+            <TextBlock Text="{Binding FichierPrioritairesText}" FontWeight="Bold" Margin="0,5,0,0"/>
+            <StackPanel Orientation="Horizontal" Margin="0,1,0,10">
+                <TextBox Text="{Binding NewFichierPrioritaireToAdd, UpdateSourceTrigger=PropertyChanged}" Width="400" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+                <Button Content="{Binding AddText}" Command="{Binding AddFichierPrioritaireCommand}" Width="120" Margin="10 0 0 0" Background="#FF262E32" Foreground="White"/>
+            </StackPanel>
 
             <!-- Process Name -->
-            <TextBlock Text="{Binding Logi}" FontWeight="Bold" Margin="0 0 0 10"/>
+            <TextBlock Text="{Binding Logi}" FontWeight="Bold"/>
             <TextBox Text="{Binding ProcessName}" Width="500" Margin="0 0 0 10" HorizontalAlignment="Left"/>
 
             <!-- Log Type -->
-            <TextBlock Text="{Binding Logtype}" FontWeight="Bold" Margin="0 0 0 10"/>
+            <TextBlock Text="{Binding Logtype}" FontWeight="Bold"/>
             <ComboBox SelectedItem="{Binding SelectedLogType, Mode=TwoWay}" Width="150" Margin="0 0 0 10" HorizontalAlignment="Left">
                 <ComboBoxItem Content="XML"/>
                 <ComboBoxItem Content="JSON"/>
