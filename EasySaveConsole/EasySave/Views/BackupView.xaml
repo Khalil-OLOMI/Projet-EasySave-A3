@@ -71,10 +71,14 @@
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                     <Button Content="Play" Command="{Binding DataContext.PlayCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
                                     <Button Content="Delete" Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
+                                    <Button Content="Pause" Command="{Binding DataContext.PauseCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
+                                    <Button Content="Stop" Command="{Binding DataContext.StopCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
+                                    <Button Content="Resume" Command="{Binding DataContext.ResumeCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
+
                 </DataGrid.Columns>
             </DataGrid>
         </Border>

@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using RelayCommand = EasySave.Services.RelayCommand;
 
@@ -65,6 +66,10 @@ public class BackupViewModel : ObservableObject
         Backups = GetBackups();
         PlayCommand = new RelayCommand(Play, CanPlay);
         DeleteCommand = new RelayCommand(Delete, CanDelete);
+        PauseCommand = new RelayCommand(Pause, CanPause);
+        StopCommand = new RelayCommand(Stop, CanStop);
+        ResumeCommand = new RelayCommand(Resume, CanResume);
+
         string apiKey = Config.ApiKey;
         translator = new DeepLTranslator(apiKey);
 
@@ -114,6 +119,11 @@ public class BackupViewModel : ObservableObject
 
     public ICommand PlayCommand { get; private set; }
     public ICommand DeleteCommand { get; private set; }
+   
+    public ICommand PauseCommand { get; private set; }
+    public ICommand StopCommand { get; private set; }
+    public ICommand ResumeCommand { get; private set; }
+
 
 
     private IBackup _selectedBackup;
@@ -151,6 +161,75 @@ public class BackupViewModel : ObservableObject
         }
     }
 
+    private bool CanPlay(object parameter)
+    {
+        return !IsBackupRunning && SelectedBackup != null;
+    }
+
+    private void Pause(object parameter)
+    {
+        if (SelectedBackup != null)
+        {
+            if (SelectedBackup.IsPaused())
+            {
+                SelectedBackup.Resume();
+            }
+            else
+            {
+                SelectedBackup.Pause();
+            }
+        }
+    }
+
+    private bool CanPause(object parameter)
+    {
+        return SelectedBackup != null && !SelectedBackup.IsPaused(); // Allow pausing if the backup is not already paused
+    }
+
+   
+
+    private void Stop(object parameter)
+    {
+        if (SelectedBackup != null)
+        {
+            SelectedBackup.Stop();
+        }
+    }
+
+    private bool CanStop(object parameter)
+    {
+        return SelectedBackup != null && !SelectedBackup.IsPaused(); // Allow stopping if the backup is not paused
+    }
+
+
+    private void Resume(object parameter)
+    {
+        if (SelectedBackup != null)
+        {
+            SelectedBackup.Resume();
+        }
+    }
+
+    private bool CanResume(object parameter)
+    {
+        return SelectedBackup != null && SelectedBackup.IsPaused();
+    }
+
+
+    private bool _isBackupRunning;
+    public bool IsBackupRunning
+    {
+        get { return _isBackupRunning; }
+        set
+        {
+            if (_isBackupRunning != value)
+            {
+                _isBackupRunning = value;
+                OnPropertyChanged(nameof(IsBackupRunning));
+                CommandManager.InvalidateRequerySuggested(); // Ensures that the commands are re-evaluated
+            }
+        }
+    }
     public ObservableCollection<IBackup> GetBackups()
     {
         string json = File.ReadAllText(backupFile);
@@ -160,7 +239,7 @@ public class BackupViewModel : ObservableObject
         });
     }
 
-    private void Play(object parameter)
+    private async void Play(object parameter)
     {
         ConfigViewModel configViewModel = new ConfigViewModel(Config.LoadConfig());
         string processName = configViewModel.ProcessName;
@@ -171,17 +250,23 @@ public class BackupViewModel : ObservableObject
         }
         else if (SelectedBackup != null)
         {
-            ExecuteBackup(SelectedBackup);
-
-            MessageBox.Show("Backup finished.");
+            if (!SelectedBackup.IsPaused()) 
+            {
+                SelectedBackup.Play(); // Activate the Play button for the selected backup
+                await ExecuteBackupAsync(SelectedBackup);
+                //SelectedBackup.Stop(); // Deactivate the Play button after backup completion
+                MessageBox.Show("Backup finished.");
+            }
+            else
+            {
+                MessageBox.Show("Backup is already running.");
+            }
         }
     }
 
-    private bool CanPlay(object parameter)
-    {
-        return SelectedBackup is not null;
-    }
 
+
+   
     private void Delete(object parameter)
     {
         if (SelectedBackup is not null)
@@ -242,19 +327,46 @@ public class BackupViewModel : ObservableObject
 
     }
 
-    public void ExcuteBackups(ObservableCollection<IBackup> backupToExecute)
+    //public void ExcuteBackups(ObservableCollection<IBackup> backupToExecute)
+    //{
+    //    foreach (IBackup bkp in backupToExecute)
+    //    {
+    //        ExecuteBackup(bkp);
+    //    }
+    //}
+
+    public async Task ExcuteBackupsAsync(ObservableCollection<IBackup> backupsToExecute)
     {
-        foreach (IBackup bkp in backupToExecute)
+        try
         {
-            ExecuteBackup(bkp);
+            // Create tasks for each backup operation
+            var backupTasks = backupsToExecute.Select(bkp => Task.Run(async () =>
+            {
+                try
+                {
+                    await ExecuteBackupAsync(bkp);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error executing backup {bkp.Name}: {ex.Message}");
+                }
+            }));
+
+            // Wait for all backup tasks to complete
+            await Task.WhenAll(backupTasks);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error executing backups: {ex.Message}");
         }
     }
 
-    public static void ExecuteBackup(IBackup backup)
+
+    private async Task ExecuteBackupAsync(IBackup backup)
     {
         DateTime start = DateTime.Now;
 
-        backup.Copy(backup.Source, backup.Cible);
+        await Task.Run(() => backup.Copy(backup.Source, backup.Cible));
 
         DateTime end = DateTime.Now;
         TimeSpan timeSpan = end - start;

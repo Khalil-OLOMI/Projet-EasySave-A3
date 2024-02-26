@@ -8,4 +8,9 @@ public interface IBackup
     string Type { get; set; }
     string Status { get; set; }
     void Copy(string source, string cible);
+    void Play();
+    void Pause();
+    void Stop();
+    bool IsPaused();
+    void Resume();
 }

@@ -10,6 +10,7 @@ public class StateViewModel
 {
     private const string state_file = "state.json";
     private const string filePath = "state.xml";
+    private static readonly object stateLock = new object();
 
     public StateViewModel()
     {
@@ -44,19 +45,22 @@ public class StateViewModel
 
     public void WriteState(State state)
     {
-        List<State> states = new List<State>();
-        // Vérifier si le fichier existe déjà
-        string json = File.ReadAllText(state_file);
-        // Désérialiser la chaîne JSON en une liste d'objets
-        states = JsonConvert.DeserializeObject<List<State>>(json);
-        // Ajouter le nouvel objet à la liste
-        states.Add(state);
+        lock (stateLock) // Lock access to the file
+        {
+            List<State> states = new List<State>();
+            // Vérifier si le fichier existe déjà
+            string json = File.ReadAllText(state_file);
+            // Désérialiser la chaîne JSON en une liste d'objets
+            states = JsonConvert.DeserializeObject<List<State>>(json);
+            // Ajouter le nouvel objet à la liste
+            states.Add(state);
 
-        // Sérialiser la liste mise à jour en une chaîne JSON
-        string updatedJson = JsonConvert.SerializeObject(states, Formatting.Indented);
+            // Sérialiser la liste mise à jour en une chaîne JSON
+            string updatedJson = JsonConvert.SerializeObject(states, Formatting.Indented);
 
-        // Écrire la chaîne JSON mise à jour dans le fichier
-        File.WriteAllText(state_file, updatedJson);
+            // Écrire la chaîne JSON mise à jour dans le fichier
+            File.WriteAllText(state_file, updatedJson);
+        }
     }
     public static long GetDirectorySize(string directoryPath)
     {

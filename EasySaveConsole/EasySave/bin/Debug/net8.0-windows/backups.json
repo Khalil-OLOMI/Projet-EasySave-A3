@@ -7,13 +7,6 @@
     "Status": "Terminé"
   },
   {
-    "Name": "Test2",
-    "Source": "C:\\Users\\euphr\\Videos",
-    "Cible": "C:\\Videos",
-    "Type": "Complet",
-    "Status": null
-  },
-  {
     "Name": "test54",
     "Source": "c:\\source",
     "Cible": "c:\\cible",
@@ -38,6 +31,48 @@
     "Name": "check",
     "Source": "C:\\test",
     "Cible": "C:\\test-2",
+    "Type": "Differential",
+    "Status": "Created"
+  },
+  {
+    "Name": "new",
+    "Source": "C:\\test",
+    "Cible": "C:\\tesst",
+    "Type": "Complet",
+    "Status": "Created"
+  },
+  {
+    "Name": "TESTDIF",
+    "Source": "C:\\tesst",
+    "Cible": "C:\\test",
+    "Type": "Differential",
+    "Status": "Created"
+  },
+  {
+    "Name": "Downloads",
+    "Source": "C:\\Users\\KHALIL\\Downloads",
+    "Cible": "C:\\test",
+    "Type": "Complet",
+    "Status": "Created"
+  },
+  {
+    "Name": "NEW-TEST",
+    "Source": "C:\\Users\\KHALIL\\Downloads",
+    "Cible": "C:\\tesst",
+    "Type": "Complet",
+    "Status": "Created"
+  },
+  {
+    "Name": "NEW-DIF-TEST",
+    "Source": "C:\\Users\\KHALIL\\Downloads",
+    "Cible": "C:\\test",
+    "Type": "Differential",
+    "Status": "Created"
+  },
+  {
+    "Name": "NEW-DIF-TEST-2",
+    "Source": "C:\\Users\\KHALIL\\Downloads",
+    "Cible": "C:\\tesst",
     "Type": "Differential",
     "Status": "Created"
   }

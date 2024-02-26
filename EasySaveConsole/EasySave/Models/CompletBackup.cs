@@ -7,6 +7,9 @@ namespace EasySave.Models;
 
 public class CompletBackup : IBackup
 {
+    private bool isPaused;
+    private bool isStopped;
+
     public string Name { get; set; }
     public string Source { get; set; }
     public string Cible { get; set; }
@@ -41,6 +44,23 @@ public class CompletBackup : IBackup
 
         foreach (string file in Directory.GetFiles(source))
         {
+
+            if (isStopped)
+            {
+                // If the backup process is stopped, exit the loop
+                return;
+            }
+
+            if (isPaused)
+            {
+                // If the backup process is paused, wait for it to be unpaused
+                while (isPaused)
+                {
+                    System.Threading.Thread.Sleep(100);
+                }
+            }
+
+
             string targetFile = Path.Combine(cible, Path.GetFileName(file));
 
             File.Copy(file, targetFile, true);
@@ -96,6 +116,34 @@ public class CompletBackup : IBackup
             string targetSubDir = Path.Combine(cible, Path.GetFileName(subdir));
             Copy(subdir, targetSubDir);
         }
+
+        
+    }
+
+    public void Play()
+    {
+        isPaused = false;
+        isStopped = false;
+    }
+
+    public void Pause()
+    {
+        isPaused = true;
+    }
+
+    public void Stop()
+    {
+        isStopped = true;
+    }
+
+    public bool IsPaused()
+    {
+        return isPaused;
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
     }
 }
 

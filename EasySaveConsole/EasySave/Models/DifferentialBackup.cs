@@ -8,6 +8,8 @@ namespace EasySave.Models;
 
 internal class DifferentialBackup : IBackup
 {
+    private bool isPaused;
+    private bool isStopped;
     // Propriétés de la sauvegarde différentielle
     public string Name { get; set; } // Nom de la sauvegarde
     public string Source { get; set; } // Répertoire source
@@ -26,6 +28,20 @@ internal class DifferentialBackup : IBackup
         // Parcourir chaque fichier dans le répertoire source
         foreach (string sourceFile in sourceFiles)
         {
+            if (isStopped)
+            {
+                // If the backup process is stopped, exit the loop
+                return;
+            }
+
+            if (isPaused)
+            {
+                // If the backup process is paused, wait for it to be unpaused
+                while (isPaused)
+                {
+                    System.Threading.Thread.Sleep(100);
+                }
+            }
             // Obtenir le chemin relatif du fichier
             string relativePath = sourceFile.Substring(source.Length + 1);
 
@@ -47,14 +63,13 @@ internal class DifferentialBackup : IBackup
 
                     nbre_file++;
                 }
-                EncryptFile(targetFile);
             }
             else
             {
                 CopyFile(source, sourceFile, targetFile, nbre_file);
 
                 nbre_file++;
-            }
+            } 
         }
         EncryptFilesInTarget(cible);
     }
@@ -108,21 +123,6 @@ internal class DifferentialBackup : IBackup
         return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
     }
 
-    private void EncryptFile(string filePath)
-    {
-        try
-        {
-            ProcessStartInfo psi = new ProcessStartInfo("CryptoSoft.exe", $"\"{filePath}\"");
-            psi.CreateNoWindow = true;
-            psi.UseShellExecute = false;
-            Process.Start(psi)?.WaitForExit();
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show($"Le chiffrement du fichier a échoué : {filePath}\nErreur : {ex.Message}", "Erreur de chiffrement", MessageBoxButton.OK, MessageBoxImage.Error);
-        }
-    }
-
     private void DecryptFilesInTarget(string directory)
     {
         string[] encryptedFiles = Directory.GetFiles(directory, "*encrypted.*", SearchOption.AllDirectories);
@@ -150,30 +150,71 @@ internal class DifferentialBackup : IBackup
 
     private void EncryptFilesInTarget(string directory)
     {
-        string[] targetFiles = Directory.GetFiles(directory, "*", SearchOption.AllDirectories);
-
-        foreach (string targetFile in targetFiles)
+        try
         {
-            try
-            {
-                if (!targetFile.StartsWith("encrypted."))
-                {
-                    string fileName = Path.GetFileNameWithoutExtension(targetFile);
-                    string fileExtension = Path.GetExtension(targetFile);
-                    string encryptedFileName = "encrypted." + fileName + fileExtension;
-                    string encryptedFile = Path.Combine(Path.GetDirectoryName(targetFile), encryptedFileName);
+            ConfigViewModel configViewModel = new ConfigViewModel(Config.LoadConfig());
+            List<string> encryptedFileExtensions = configViewModel.EncryptedFileExtensions.Select(ext => ext.ToLowerInvariant()).ToList();
 
-                    ProcessStartInfo psi = new ProcessStartInfo("CryptoSoft.exe", $"\"{targetFile}\" \"{encryptedFile}\"");
-                    psi.CreateNoWindow = true;
-                    psi.UseShellExecute = false;
-                    Process.Start(psi)?.WaitForExit();
-                    File.Delete(targetFile);
+            string[] targetFiles = Directory.GetFiles(directory, "*", SearchOption.AllDirectories);
+
+            foreach (string targetFile in targetFiles)
+            {
+                try
+                {
+                    string fileExtension = Path.GetExtension(targetFile).TrimStart('.').ToLowerInvariant();
+
+                    if (!targetFile.StartsWith("encrypted.") && encryptedFileExtensions.Contains(fileExtension))
+                    {
+                        string fileName = Path.GetFileNameWithoutExtension(targetFile);
+                        string encryptedFileName = "encrypted." + fileName + Path.GetExtension(targetFile);
+                        string encryptedFilePath = Path.Combine(Path.GetDirectoryName(targetFile), encryptedFileName);
+
+                        ProcessStartInfo psi = new ProcessStartInfo("CryptoSoft.exe", $"\"{targetFile}\" \"{encryptedFilePath}\"");
+                        psi.CreateNoWindow = true;
+                        psi.UseShellExecute = false;
+                        Process.Start(psi)?.WaitForExit();
+
+                        File.Delete(targetFile);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Le chiffrement du fichier a échoué : {targetFile}\nErreur : {ex.Message}", "Erreur de chiffrement", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Le chiffrement du fichier a échoué : {targetFile}\nErreur : {ex.Message}", "Erreur de chiffrement", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
         }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Une erreur s'est produite lors du chiffrement des fichiers : {ex.Message}", "Erreur de chiffrement", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
     }
+
+    public void Play()
+    {
+        isPaused = false;
+        isStopped = false;
+    }
+
+    public void Pause()
+    {
+        isPaused = true;
+    }
+
+    public void Stop()
+    {
+        isStopped = true;
+    }
+
+    public bool IsPaused()
+    {
+        return isPaused;
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
+    }
+
+
 }

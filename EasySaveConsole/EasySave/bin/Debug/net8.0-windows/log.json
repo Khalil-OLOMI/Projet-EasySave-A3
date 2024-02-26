@@ -43,5 +43,554 @@
     "FileTarget": "C:\\test-2",
     "FileSize": 800950,
     "FileTransferTime": 3
+  },
+  {
+    "Horodatage": "24/02/2024 17:35:03",
+    "XmlHorodatage": "24/02/2024 17:35:03",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 13
+  },
+  {
+    "Horodatage": "24/02/2024 17:40:27",
+    "XmlHorodatage": "24/02/2024 17:40:27",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 17:43:25",
+    "XmlHorodatage": "24/02/2024 17:43:25",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 17:47:33",
+    "XmlHorodatage": "24/02/2024 17:47:33",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 17:50:31",
+    "XmlHorodatage": "24/02/2024 17:50:31",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 17:54:31",
+    "XmlHorodatage": "24/02/2024 17:54:31",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 17:59:21",
+    "XmlHorodatage": "24/02/2024 17:59:21",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 18:01:59",
+    "XmlHorodatage": "24/02/2024 18:01:59",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 18:05:13",
+    "XmlHorodatage": "24/02/2024 18:05:13",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 18:11:48",
+    "XmlHorodatage": "24/02/2024 18:11:48",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 18:12:39",
+    "XmlHorodatage": "24/02/2024 18:12:39",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 18:14:39",
+    "XmlHorodatage": "24/02/2024 18:14:39",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 18:17:44",
+    "XmlHorodatage": "24/02/2024 18:17:44",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:18:17",
+    "XmlHorodatage": "24/02/2024 18:18:17",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 18:18:22",
+    "XmlHorodatage": "24/02/2024 18:18:22",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 18:18:30",
+    "XmlHorodatage": "24/02/2024 18:18:30",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 19:56:45",
+    "XmlHorodatage": "24/02/2024 19:56:45",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 19:56:49",
+    "XmlHorodatage": "24/02/2024 19:56:49",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 800950,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 19:56:52",
+    "XmlHorodatage": "24/02/2024 19:56:52",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1086180,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 20:43:29",
+    "XmlHorodatage": "24/02/2024 20:43:29",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1086180,
+    "FileTransferTime": 2
+  },
+  {
+    "Horodatage": "24/02/2024 20:43:30",
+    "XmlHorodatage": "24/02/2024 20:43:30",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1086180,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "24/02/2024 20:44:18",
+    "XmlHorodatage": "24/02/2024 20:44:18",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 1706932536,
+    "FileTransferTime": 7
+  },
+  {
+    "Horodatage": "24/02/2024 22:36:39",
+    "XmlHorodatage": "24/02/2024 22:36:39",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1703961443,
+    "FileTransferTime": 5
+  },
+  {
+    "Horodatage": "24/02/2024 23:44:56",
+    "XmlHorodatage": "24/02/2024 23:44:56",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 19
+  },
+  {
+    "Horodatage": "25/02/2024 00:01:40",
+    "XmlHorodatage": "25/02/2024 00:01:40",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 2
+  },
+  {
+    "Horodatage": "25/02/2024 00:05:12",
+    "XmlHorodatage": "25/02/2024 00:05:12",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 2
+  },
+  {
+    "Horodatage": "25/02/2024 00:46:37",
+    "XmlHorodatage": "25/02/2024 00:46:37",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 9
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:03",
+    "XmlHorodatage": "25/02/2024 01:21:03",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 34
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:17",
+    "XmlHorodatage": "25/02/2024 01:21:17",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:20",
+    "XmlHorodatage": "25/02/2024 01:21:20",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:26",
+    "XmlHorodatage": "25/02/2024 01:21:26",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:35",
+    "XmlHorodatage": "25/02/2024 01:21:35",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1703961443,
+    "FileTransferTime": 5
+  },
+  {
+    "Horodatage": "25/02/2024 01:22:15",
+    "XmlHorodatage": "25/02/2024 01:22:15",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:23:00",
+    "XmlHorodatage": "25/02/2024 01:23:00",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 19
+  },
+  {
+    "Horodatage": "25/02/2024 01:23:04",
+    "XmlHorodatage": "25/02/2024 01:23:04",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:23:07",
+    "XmlHorodatage": "25/02/2024 01:23:07",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:26:20",
+    "XmlHorodatage": "25/02/2024 01:26:20",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 5
+  },
+  {
+    "Horodatage": "25/02/2024 01:26:24",
+    "XmlHorodatage": "25/02/2024 01:26:24",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:26:26",
+    "XmlHorodatage": "25/02/2024 01:26:26",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:26:29",
+    "XmlHorodatage": "25/02/2024 01:26:29",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:27:02",
+    "XmlHorodatage": "25/02/2024 01:27:02",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 19
+  },
+  {
+    "Horodatage": "25/02/2024 02:01:40",
+    "XmlHorodatage": "25/02/2024 02:01:40",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 33
+  },
+  {
+    "Horodatage": "25/02/2024 02:01:44",
+    "XmlHorodatage": "25/02/2024 02:01:44",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:01:46",
+    "XmlHorodatage": "25/02/2024 02:01:46",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:02:28",
+    "XmlHorodatage": "25/02/2024 02:02:28",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 27
+  },
+  {
+    "Horodatage": "25/02/2024 02:02:34",
+    "XmlHorodatage": "25/02/2024 02:02:34",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:13:17",
+    "XmlHorodatage": "25/02/2024 02:13:17",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 37
+  },
+  {
+    "Horodatage": "25/02/2024 02:15:04",
+    "XmlHorodatage": "25/02/2024 02:15:04",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 15
+  },
+  {
+    "Horodatage": "25/02/2024 16:25:11",
+    "XmlHorodatage": "25/02/2024 16:25:11",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 40
+  },
+  {
+    "Horodatage": "25/02/2024 16:25:28",
+    "XmlHorodatage": "25/02/2024 16:25:28",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1703961443,
+    "FileTransferTime": 11
+  },
+  {
+    "Horodatage": "25/02/2024 16:39:06",
+    "XmlHorodatage": "25/02/2024 16:39:06",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 6646158,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "25/02/2024 16:39:12",
+    "XmlHorodatage": "25/02/2024 16:39:12",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 6646158,
+    "FileTransferTime": 1
+  },
+  {
+    "Horodatage": "25/02/2024 16:56:58",
+    "XmlHorodatage": "25/02/2024 16:56:58",
+    "Name": "NEW-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 39202461324,
+    "FileTransferTime": 134
+  },
+  {
+    "Horodatage": "25/02/2024 16:57:16",
+    "XmlHorodatage": "25/02/2024 16:57:16",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 164
+  },
+  {
+    "Horodatage": "25/02/2024 16:58:16",
+    "XmlHorodatage": "25/02/2024 16:58:16",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 52
+  },
+  {
+    "Horodatage": "25/02/2024 16:58:16",
+    "XmlHorodatage": "25/02/2024 16:58:16",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 37
+  },
+  {
+    "Horodatage": "25/02/2024 16:58:17",
+    "XmlHorodatage": "25/02/2024 16:58:17",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 38
+  },
+  {
+    "Horodatage": "25/02/2024 17:17:52",
+    "XmlHorodatage": "25/02/2024 17:17:52",
+    "Name": "NEW-DIF-TEST-2",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 39202461324,
+    "FileTransferTime": 59
+  },
+  {
+    "Horodatage": "25/02/2024 17:17:59",
+    "XmlHorodatage": "25/02/2024 17:17:59",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 87
+  },
+  {
+    "Horodatage": "25/02/2024 17:30:11",
+    "XmlHorodatage": "25/02/2024 17:30:11",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 33
+  },
+  {
+    "Horodatage": "26/02/2024 10:53:28",
+    "XmlHorodatage": "26/02/2024 10:53:28",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 147
   }
 ]
