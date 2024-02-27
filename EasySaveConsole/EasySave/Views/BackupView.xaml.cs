@@ -34,7 +34,7 @@ namespace EasySave.Views
             AddbackupView addBackupView = new AddbackupView((BackupViewModel)DataContext);
             addBackupView.ShowDialog();
         }
-        private void DetailBackupClick(object sender, RoutedEventArgs e)
+        private void DetailBackupClick(object sender, MouseButtonEventArgs e)
         {
             if (Backups.SelectedItem != null)
             {
@@ -45,7 +45,7 @@ namespace EasySave.Views
             }
         }
 
-        private void Backups_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void StateViewClick(object sender, MouseButtonEventArgs e)
         {
 
         }

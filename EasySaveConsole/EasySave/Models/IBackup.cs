@@ -7,6 +7,7 @@ public interface IBackup
     string Cible { get; set; }
     string Type { get; set; }
     string Status { get; set; }
+    double Progression { get; set; }
     void Copy(string source, string cible);
     void Play();
     void Pause();

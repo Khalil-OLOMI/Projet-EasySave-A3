@@ -59,11 +59,13 @@ public class BackupViewModel : ObservableObject
         }
     }
 
+
     public BackupViewModel()
     {
         InitBackup();
 
         Backups = GetBackups();
+
         PlayCommand = new RelayCommand(Play, CanPlay);
         DeleteCommand = new RelayCommand(Delete, CanDelete);
         PauseCommand = new RelayCommand(Pause, CanPause);
@@ -176,6 +178,7 @@ public class BackupViewModel : ObservableObject
             }
             else
             {
+                ChangeBackupStatus(SelectedBackup, "Pause");
                 SelectedBackup.Pause();
             }
         }
@@ -206,6 +209,7 @@ public class BackupViewModel : ObservableObject
     {
         if (SelectedBackup != null)
         {
+            ChangeBackupStatus(SelectedBackup, "Active");
             SelectedBackup.Resume();
         }
     }
@@ -252,9 +256,13 @@ public class BackupViewModel : ObservableObject
         {
             if (!SelectedBackup.IsPaused()) 
             {
-                SelectedBackup.Play(); // Activate the Play button for the selected backup
+                await ChangeBackupStatus(SelectedBackup, "Active" );
+
                 await ExecuteBackupAsync(SelectedBackup);
                 //SelectedBackup.Stop(); // Deactivate the Play button after backup completion
+
+                await ChangeBackupStatus(SelectedBackup, "Terminer");
+                
                 MessageBox.Show("Backup finished.");
             }
             else
@@ -264,9 +272,6 @@ public class BackupViewModel : ObservableObject
         }
     }
 
-
-
-   
     private void Delete(object parameter)
     {
         if (SelectedBackup is not null)
@@ -386,4 +391,17 @@ public class BackupViewModel : ObservableObject
         _backups.Remove(backup);
         SaveBackup();
     }
+
+    private async Task ChangeBackupStatus(IBackup backup, string status)
+    {
+        var backupToUpdate = _backups.FirstOrDefault(b => b == backup);
+
+        if (backupToUpdate != null)
+        {
+            backupToUpdate.Status = status;
+            SaveBackup();
+            OnPropertyChanged(nameof(Backups));
+        }
+    }
+
 }

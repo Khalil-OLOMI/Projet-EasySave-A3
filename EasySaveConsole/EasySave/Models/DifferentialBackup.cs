@@ -1,6 +1,7 @@
 ﻿using EasySave.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
@@ -8,7 +9,7 @@ using System.Windows;
 
 namespace EasySave.Models
 {
-    internal class DifferentialBackup : IBackup
+    internal class DifferentialBackup : IBackup, INotifyPropertyChanged
     {
         private bool isPaused;
         private bool isStopped;
@@ -18,14 +19,43 @@ namespace EasySave.Models
         public string Source { get; set; }
         public string Cible { get; set; }
         public string Type { get; set; }
-        public string Status { get; set; }
+
+        private string _status;
+
+        public string Status
+        {
+            get { return _status; }
+            set
+            {
+                if (_status != value)
+                {
+                    _status = value;
+                    OnPropertyChanged(nameof(Status));
+                }
+            }
+        }
+
+        private double _progression;
+        public double Progression
+        {
+            get { return _progression; }
+            set
+            {
+                if (_progression != value)
+                {
+                    _progression = value;
+                    OnPropertyChanged(nameof(Progression));
+                }
+            }
+        }
+        private int _nbreFile = 0;
 
         // Method to perform a differential backup
         public void Copy(string source, string cible)
         {
             Config config = Config.LoadConfig();
             List<string> PriorityExtensions = config.FichierPrioritaires;
-            int nbre_file = 0;
+            //int nbre_file = 0;
             string[] sourceFiles = Directory.GetFiles(source, "*", SearchOption.AllDirectories);
             DecryptFilesInTarget(cible);
 
@@ -56,8 +86,8 @@ namespace EasySave.Models
                     {
                         if (PriorityExtensions.Contains(Path.GetExtension(sourceFile).TrimStart('.').ToLowerInvariant()))
                         {
-                            CopyFile(sourceFile, targetFile, nbre_file);
-                            nbre_file++;
+                            CopyFile(sourceFile, targetFile, _nbreFile);
+                            _nbreFile++;
                         }
                     }
                 }
@@ -65,8 +95,8 @@ namespace EasySave.Models
                 {
                     if (PriorityExtensions.Contains(Path.GetExtension(sourceFile).TrimStart('.').ToLowerInvariant()))
                     {
-                        CopyFile(sourceFile, targetFile, nbre_file);
-                        nbre_file++;
+                        CopyFile(sourceFile, targetFile, _nbreFile);
+                        _nbreFile++;
                     }
                 }
             }
@@ -93,8 +123,8 @@ namespace EasySave.Models
                 if (!PriorityExtensions.Contains(Path.GetExtension(sourceFile).TrimStart('.').ToLowerInvariant()))
                 {
                     // Copy the non-priority file
-                    CopyFile(sourceFile, targetFile, nbre_file);
-                    nbre_file++;
+                    CopyFile(sourceFile, targetFile, _nbreFile);
+                    _nbreFile++;
                 }
             }
 
@@ -120,6 +150,8 @@ namespace EasySave.Models
             };
 
             WriteState(state);
+            Progression = state.Progression;
+            OnPropertyChanged(nameof(Progression));
         }
 
         private static void WriteState(State state)
@@ -234,6 +266,12 @@ namespace EasySave.Models
         public void Resume()
         {
             isPaused = false;
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

@@ -28,18 +28,23 @@
                 AutoGenerateColumns="False"
                 ItemsSource="{Binding Backups, Mode=TwoWay}"
                 SelectedItem="{Binding SelectedBackup, Mode=TwoWay}"
-                Margin="10" Background="White" MouseDoubleClick="DetailBackupClick" SelectionChanged="Backups_SelectionChanged">
+                Margin="10" Background="White">
                 <DataGrid.Columns>
                     <DataGridTextColumn
-                     MinWidth="100"
-                     Width="*"
-                     Binding="{Binding Name}"
-                     IsReadOnly="True">
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Name}"
+                        IsReadOnly="True">
                         <DataGridTextColumn.HeaderTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding DataContext.NameHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
                             </DataTemplate>
                         </DataGridTextColumn.HeaderTemplate>
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <EventSetter Event="MouseDoubleClick" Handler="DetailBackupClick"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
                     </DataGridTextColumn>
 
                     <DataGridTextColumn
@@ -64,6 +69,11 @@
                                 <TextBlock Text="{Binding DataContext.StatusHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
                             </DataTemplate>
                         </DataGridTextColumn.HeaderTemplate>
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <EventSetter Event="MouseDoubleClick" Handler="StateViewClick"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
                     </DataGridTextColumn>
                     <DataGridTemplateColumn Header="Actions" MinWidth="100" Width="*">
                         <DataGridTemplateColumn.CellTemplate>

@@ -4,83 +4,103 @@
     "Source": "C:\\Users\\euphr\\Pictures",
     "Cible": "C:\\ppp",
     "Type": "Complet",
-    "Status": "Terminé"
+    "Status": "Terminer",
+    "Progression": 100.0
   },
   {
     "Name": "test54",
     "Source": "c:\\source",
     "Cible": "c:\\cible",
     "Type": "Complet",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "testtt",
     "Source": "C:\\tesst",
     "Cible": "C:\\test-2",
     "Type": "Complet",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "ttetst",
     "Source": "C:\\Check",
     "Cible": "C:\\crypto",
     "Type": "Differential",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "check",
     "Source": "C:\\test",
     "Cible": "C:\\test-2",
     "Type": "Differential",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "new",
     "Source": "C:\\test",
     "Cible": "C:\\tesst",
     "Type": "Complet",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "TESTDIF",
     "Source": "C:\\tesst",
     "Cible": "C:\\test",
     "Type": "Differential",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "Downloads",
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\test",
     "Type": "Complet",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "NEW-TEST",
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\tesst",
     "Type": "Complet",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "NEW-DIF-TEST",
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\test",
     "Type": "Differential",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "NEW-DIF-TEST-2",
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\tesst",
     "Type": "Differential",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
   },
   {
     "Name": "DIF-TESSST",
     "Source": "C:\\test",
     "Cible": "C:\\test-2",
     "Type": "Differential",
-    "Status": "Created"
+    "Status": "Created",
+    "Progression": 0.0
+  },
+  {
+    "Name": "Testing",
+    "Source": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "Cible": "C:\\Users\\euphr\\Desktop\\Test",
+    "Type": "Differential",
+    "Status": "Terminer",
+    "Progression": 97.05882352941177
   }
 ]

@@ -27,6 +27,7 @@ public class Log
     public string FileTarget { get; set; }
     public long FileSize { get; set; }
     public long FileTransferTime { get; set; }
+    public long FileEncryptTime { get; set; }
 }
 
 public class CustomDateTimeConverter : IsoDateTimeConverter
