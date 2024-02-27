@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\views\\backupview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\views\\backupview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F81F3DB6-8F2E-498F-873F-E75E9A9E7BB3}|Tests-Unitaires\\Tests-Unitaires.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\tests-unitaires\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F81F3DB6-8F2E-498F-873F-E75E9A9E7BB3}|Tests-Unitaires\\Tests-Unitaires.csproj|solutionrelative:tests-unitaires\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\viewmodels\\backupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\viewmodels\\backupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\models\\completbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\models\\completbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\services\\backupconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\services\\backupconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\viewmodels\\configviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\viewmodels\\configviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\models\\ibackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\models\\ibackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\models\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\models\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\views\\logview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\views\\logview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\viewmodels\\logviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\viewmodels\\logviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\views\\backupview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\views\\backupview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\views\\addbackupview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\views\\addbackupview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|c:\\users\\rock bamenou\\source\\repos\\projet-easysave-a3\\easysaveconsole\\easysave\\viewmodels\\stateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5351805D-AE37-413F-96B6-992CBDCA8DB4}|EasySave\\EasySave.csproj|solutionrelative:easysave\\viewmodels\\stateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\Tests-Unitaires\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Tests-Unitaires\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\Tests-Unitaires\\UnitTest1.cs",
+              "RelativeToolTip": "Tests-Unitaires\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T15:09:14.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConfigViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\ViewModels\\ConfigViewModel.cs",
+              "RelativeDocumentMoniker": "EasySave\\ViewModels\\ConfigViewModel.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\ViewModels\\ConfigViewModel.cs",
+              "RelativeToolTip": "EasySave\\ViewModels\\ConfigViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBackup.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Models\\IBackup.cs",
+              "RelativeDocumentMoniker": "EasySave\\Models\\IBackup.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Models\\IBackup.cs",
+              "RelativeToolTip": "EasySave\\Models\\IBackup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompletBackup.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Models\\CompletBackup.cs",
+              "RelativeDocumentMoniker": "EasySave\\Models\\CompletBackup.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Models\\CompletBackup.cs",
+              "RelativeToolTip": "EasySave\\Models\\CompletBackup.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BackupViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\ViewModels\\BackupViewModel.cs",
+              "RelativeDocumentMoniker": "EasySave\\ViewModels\\BackupViewModel.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\ViewModels\\BackupViewModel.cs",
+              "RelativeToolTip": "EasySave\\ViewModels\\BackupViewModel.cs",
+              "ViewState": "AQIAABoBAAAAAAAAAAAYwEQBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LogView.xaml",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Views\\LogView.xaml",
+              "RelativeDocumentMoniker": "EasySave\\Views\\LogView.xaml",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Views\\LogView.xaml",
+              "RelativeToolTip": "EasySave\\Views\\LogView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-26T13:22:56.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BackupView.xaml",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Views\\BackupView.xaml",
+              "RelativeDocumentMoniker": "EasySave\\Views\\BackupView.xaml",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Views\\BackupView.xaml",
+              "RelativeToolTip": "EasySave\\Views\\BackupView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-26T13:22:56.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\ViewModels\\LogViewModel.cs",
+              "RelativeDocumentMoniker": "EasySave\\ViewModels\\LogViewModel.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\ViewModels\\LogViewModel.cs",
+              "RelativeToolTip": "EasySave\\ViewModels\\LogViewModel.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAADwv0IAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Models\\Config.cs",
+              "RelativeDocumentMoniker": "EasySave\\Models\\Config.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Models\\Config.cs",
+              "RelativeToolTip": "EasySave\\Models\\Config.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BackupConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Services\\BackupConverter.cs",
+              "RelativeDocumentMoniker": "EasySave\\Services\\BackupConverter.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Services\\BackupConverter.cs",
+              "RelativeToolTip": "EasySave\\Services\\BackupConverter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T15:45:00.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BackupView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Views\\BackupView.xaml.cs",
+              "RelativeDocumentMoniker": "EasySave\\Views\\BackupView.xaml.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Views\\BackupView.xaml.cs",
+              "RelativeToolTip": "EasySave\\Views\\BackupView.xaml.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddbackupView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Views\\AddbackupView.xaml.cs",
+              "RelativeDocumentMoniker": "EasySave\\Views\\AddbackupView.xaml.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\Views\\AddbackupView.xaml.cs",
+              "RelativeToolTip": "EasySave\\Views\\AddbackupView.xaml.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\ViewModels\\StateViewModel.cs",
+              "RelativeDocumentMoniker": "EasySave\\ViewModels\\StateViewModel.cs",
+              "ToolTip": "C:\\Users\\Rock BAMENOU\\source\\repos\\Projet-EasySave-A3\\EasySaveConsole\\EasySave\\ViewModels\\StateViewModel.cs",
+              "RelativeToolTip": "EasySave\\ViewModels\\StateViewModel.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T13:22:56.705Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

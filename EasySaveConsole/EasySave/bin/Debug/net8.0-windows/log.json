@@ -592,5 +592,14 @@
     "FileTarget": "C:\\test",
     "FileSize": 39202461324,
     "FileTransferTime": 147
+  },
+  {
+    "Horodatage": "27/02/2024 14:00:30",
+    "XmlHorodatage": "27/02/2024 14:00:30",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 0,
+    "FileTransferTime": 2
   }
 ]

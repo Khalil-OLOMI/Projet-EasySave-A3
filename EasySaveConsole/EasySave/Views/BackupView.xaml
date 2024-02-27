@@ -69,11 +69,21 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                    <Button Content="Play" Command="{Binding DataContext.PlayCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
-                                    <Button Content="Delete" Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
-                                    <Button Content="Pause" Command="{Binding DataContext.PauseCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
-                                    <Button Content="Stop" Command="{Binding DataContext.StopCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
-                                    <Button Content="Resume" Command="{Binding DataContext.ResumeCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black"/>
+                                    <Button Command="{Binding DataContext.PlayCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Resources/play_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                    <Button Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Resources/trash_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                    <Button Command="{Binding DataContext.PauseCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Resources/pause_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                    <Button Command="{Binding DataContext.StopCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Resources/stop_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                    <Button Command="{Binding DataContext.ResumeCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Resources/resume_icon.png" Width="16" Height="16"/>
+                                    </Button>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>

@@ -3,7 +3,12 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 
 namespace EasySave.Services;
-
+public interface IFileSystem
+{
+    void CopyFile(string sourceFileName, string destFileName, bool overwrite);
+    void CreateDirectory(string path);
+    // Autres méthodes du système de fichiers nécessaires pour CompletBackup
+}
 public class BackupConverter : JsonConverter
 {
     public override bool CanConvert(Type objectType)

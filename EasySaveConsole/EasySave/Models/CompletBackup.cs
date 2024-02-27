@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Windows;
+using EasySave.Services;
 
 namespace EasySave.Models;
 
@@ -15,6 +16,8 @@ public class CompletBackup : IBackup
     public string Cible { get; set; }
     public string Type { get; set; }
     public string Status { get; set; }
+
+    public IFileSystem FileSystem { get; set; }
 
     // JB: Ici on a deux responsabilités qu'on pourrait séparer:
     // D'un coté le modèle avec les propriétés et de l'autre la classe permettant de créer une sauvegarde
