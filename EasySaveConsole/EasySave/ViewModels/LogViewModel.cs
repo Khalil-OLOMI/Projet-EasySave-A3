@@ -104,7 +104,8 @@ namespace EasySave.ViewModels
                 FileSource = backup.Source,
                 FileTarget = backup.Cible,
                 FileSize = GetDirectorySize(backup.Source),
-                FileTransferTime = duration
+                FileTransferTime = duration,
+                FileEncryptTime = backup.EncryptTime,
             };
 
             List<Log> logs = new();

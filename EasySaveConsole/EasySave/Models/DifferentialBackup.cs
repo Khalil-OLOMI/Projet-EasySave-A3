@@ -19,6 +19,7 @@ namespace EasySave.Models
         public string Source { get; set; }
         public string Cible { get; set; }
         public string Type { get; set; }
+        public long EncryptTime { get; set; }
 
         private string _status;
         private string LMProcessName;

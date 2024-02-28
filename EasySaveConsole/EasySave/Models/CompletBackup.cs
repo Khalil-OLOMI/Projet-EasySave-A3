@@ -17,6 +17,20 @@ namespace EasySave.Models
         public string Cible { get; set; }
         public string Type { get; set; }
 
+        private long _encryptionTime;
+        public long EncryptTime
+        {
+
+            get { return _encryptionTime; }
+            set
+            {
+                if (_encryptionTime != value)
+                {
+                    _encryptionTime = value;
+                    OnPropertyChanged(nameof(Status));
+                }
+            }
+        }
         private string _status;
 
         public string Status
@@ -120,7 +134,11 @@ namespace EasySave.Models
                     _nbreFile++;
                     if (encryptedExtensions.Contains(fileExtension))
                     {
+                        DateTime start = DateTime.Now;
                         EncryptFile(file, targetFile);
+                        DateTime end = DateTime.Now;
+                        TimeSpan timeSpan = end - start;
+                        EncryptTime += Convert.ToInt64(timeSpan.TotalSeconds);
                     }
                     State state = new State()
                     {
@@ -173,7 +191,11 @@ namespace EasySave.Models
                     _nbreFile++;
                     if (encryptedExtensions.Contains(fileExtension))
                     {
+                        DateTime start = DateTime.Now;
                         EncryptFile(file, targetFile);
+                        DateTime end = DateTime.Now;
+                        TimeSpan timeSpan = end - start;
+                        EncryptTime += Convert.ToInt64(timeSpan.TotalSeconds);
                     }
                     State state = new State()
                     {

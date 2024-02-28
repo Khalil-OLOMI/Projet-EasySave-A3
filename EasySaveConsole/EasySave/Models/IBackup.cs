@@ -9,6 +9,7 @@ public interface IBackup
     string Status { get; set; }
     double Progression { get; set; }
     int NbreFile {  get; set; }
+    long EncryptTime { get; set; }
     void Copy(string source, string cible);
     void Play();
     void Pause();

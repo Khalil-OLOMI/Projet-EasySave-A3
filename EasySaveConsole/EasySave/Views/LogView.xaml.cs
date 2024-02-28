@@ -25,7 +25,7 @@ namespace EasySave.Views
                     Log log = (Log)Logs.SelectedItem;
 
                     // Afficher les détails dans une MessageBox
-                    MessageBox.Show($"Date: {log.Horodatage}\nName: {log.Name}\nSource: {log.FileSource}\nDestionation: {log.FileTarget}\nFileSize: {log.FileSize}\nFileTransferTime: {log.FileTransferTime}", "Détails du Log");
+                    MessageBox.Show($"Date: {log.Horodatage}\nName: {log.Name}\nSource: {log.FileSource}\nDestionation: {log.FileTarget}\nFileSize: {log.FileSize}\nFileTransferTime: {log.FileTransferTime} \nFileEncryptTime: {log.FileEncryptTime}", "Détails du Log");
                 }
                 catch
                 {

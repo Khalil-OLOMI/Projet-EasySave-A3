@@ -1408,5 +1408,115 @@
     "FileSize": 33915990902,
     "FileTransferTime": 10,
     "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:25:58",
+    "XmlHorodatage": "28/02/2024 15:25:58",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 81,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:40:52",
+    "XmlHorodatage": "28/02/2024 15:40:52",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 104,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:44:28",
+    "XmlHorodatage": "28/02/2024 15:44:28",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 105,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:55:23",
+    "XmlHorodatage": "28/02/2024 15:55:23",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 15,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:57:56",
+    "XmlHorodatage": "28/02/2024 15:57:56",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 17,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:05",
+    "XmlHorodatage": "28/02/2024 15:58:05",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:08",
+    "XmlHorodatage": "28/02/2024 15:58:08",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:13",
+    "XmlHorodatage": "28/02/2024 15:58:13",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:32",
+    "XmlHorodatage": "28/02/2024 15:58:32",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 9,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:36",
+    "XmlHorodatage": "28/02/2024 15:58:36",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:59:11",
+    "XmlHorodatage": "28/02/2024 15:59:11",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 24,
+    "FileEncryptTime": 0
   }
 ]

@@ -4,134 +4,19 @@
     "Source": "C:\\Users\\euphr\\Pictures",
     "Cible": "C:\\ppp",
     "Type": "Complet",
-    "Status": "Active",
-    "Progression": 100.0,
-    "NbreFile": 0
-  },
-  {
-    "Name": "test54",
-    "Source": "c:\\source",
-    "Cible": "c:\\cible",
-    "Type": "Complet",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
-  },
-  {
-    "Name": "testtt",
-    "Source": "C:\\tesst",
-    "Cible": "C:\\test-2",
-    "Type": "Complet",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
-  },
-  {
-    "Name": "ttetst",
-    "Source": "C:\\Check",
-    "Cible": "C:\\crypto",
-    "Type": "Differential",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
-  },
-  {
-    "Name": "check",
-    "Source": "C:\\test",
-    "Cible": "C:\\test-2",
-    "Type": "Differential",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
-  },
-  {
-    "Name": "new",
-    "Source": "C:\\test",
-    "Cible": "C:\\tesst",
-    "Type": "Complet",
+    "EncryptTime": 0,
     "Status": "Terminer",
-    "Progression": 0.0,
-    "NbreFile": 0
-  },
-  {
-    "Name": "TESTDIF",
-    "Source": "C:\\tesst",
-    "Cible": "C:\\test",
-    "Type": "Differential",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
-  },
-  {
-    "Name": "Downloads",
-    "Source": "C:\\Users\\KHALIL\\Downloads",
-    "Cible": "C:\\test",
-    "Type": "Complet",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
-  },
-  {
-    "Name": "NEW-TEST",
-    "Source": "C:\\Users\\KHALIL\\Downloads",
-    "Cible": "C:\\tesst",
-    "Type": "Complet",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
+    "Progression": 22.443181818181817,
+    "NbreFile": 79
   },
   {
     "Name": "NEW-DIF-TEST",
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\test",
     "Type": "Differential",
+    "EncryptTime": 0,
     "Status": "Terminer",
     "Progression": 0.07903576368306658,
     "NbreFile": 5
-  },
-  {
-    "Name": "NEW-DIF-TEST-2",
-    "Source": "C:\\Users\\KHALIL\\Downloads",
-    "Cible": "C:\\tesst",
-    "Type": "Differential",
-    "Status": "Terminer",
-    "Progression": 0.4160887656033287,
-    "NbreFile": 22
-  },
-  {
-    "Name": "DIF-TESSST",
-    "Source": "C:\\test",
-    "Cible": "C:\\test-2",
-    "Type": "Differential",
-    "Status": "Terminer",
-    "Progression": 0.0,
-    "NbreFile": 1
-  },
-  {
-    "Name": "Testing",
-    "Source": "C:\\Users\\euphr\\Pictures\\Screenshots",
-    "Cible": "C:\\Users\\euphr\\Desktop\\Test",
-    "Type": "Differential",
-    "Status": "Terminer",
-    "Progression": 197.05882352941177,
-    "NbreFile": 0
-  },
-  {
-    "Name": "New-DATA",
-    "Source": "C:\\TEST-N1",
-    "Cible": "C:\\TEST-N2",
-    "Type": "Complet",
-    "Status": "Terminer",
-    "Progression": 20.46908315565032,
-    "NbreFile": 192
-  },
-  {
-    "Name": "NEW-DATA-02",
-    "Source": "C:\\TEST-N1",
-    "Cible": "C:\\test",
-    "Type": "Differential",
-    "Status": "Terminer",
-    "Progression": 22.388059701492537,
-    "NbreFile": 211
   }
 ]
