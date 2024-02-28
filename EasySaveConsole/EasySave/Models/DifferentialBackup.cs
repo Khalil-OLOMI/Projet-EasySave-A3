@@ -13,7 +13,7 @@ namespace EasySave.Models
     {
         private bool isPaused;
         private bool isStopped;
-
+        private bool isBusinessSoftwareRunning;
         // Properties of the differential backup
         public string Name { get; set; }
         public string Source { get; set; }
@@ -21,6 +21,7 @@ namespace EasySave.Models
         public string Type { get; set; }
 
         private string _status;
+        private string LMProcessName;
 
         public string Status
         {
@@ -53,10 +54,17 @@ namespace EasySave.Models
         // Method to perform a differential backup
         public void Copy(string source, string cible)
         {
+
             Config config = Config.LoadConfig();
             List<string> PriorityExtensions = config.FichierPrioritaires;
+            LMProcessName = config.ProcessName;
             //int nbre_file = 0;
             string[] sourceFiles = Directory.GetFiles(source, "*", SearchOption.AllDirectories);
+
+            Thread monitorThread = new Thread(MonitorBusinessSoftware);
+            monitorThread.IsBackground = true;
+            monitorThread.Start();
+
             DecryptFilesInTarget(cible);
 
             foreach (string sourceFile in sourceFiles)
@@ -251,6 +259,7 @@ namespace EasySave.Models
         public void Pause()
         {
             isPaused = true;
+
         }
 
         public void Stop()
@@ -267,6 +276,36 @@ namespace EasySave.Models
         {
             isPaused = false;
         }
+
+        private void MonitorBusinessSoftware()
+        {
+            while (true)
+            {
+                // Check if the business software is running
+                bool isCurrentlyRunning = IsBusinessSoftwareRunning();
+
+                // Only update isPaused if the business software is currently running
+                if (isCurrentlyRunning)
+                {
+                    isPaused = true;
+                    OnPropertyChanged(nameof(IsPaused)); 
+                    MessageBox.Show($"Le processus {LMProcessName} est en cours d'exécution. Veuillez fermer toutes ses instances pour reprendre la sauvegarde.", "Processus en cours d'exécution", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+
+                Thread.Sleep(100);
+            }
+        }
+
+        // Method to check if the business software is running
+        private bool IsBusinessSoftwareRunning()
+        {
+            Process[] processes = Process.GetProcessesByName(LMProcessName);
+            return processes.Length > 0;
+        }
+
+
+
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)

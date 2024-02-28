@@ -56,51 +56,19 @@
     "Progression": 0.0
   },
   {
-    "Name": "Downloads",
-    "Source": "C:\\Users\\KHALIL\\Downloads",
-    "Cible": "C:\\test",
-    "Type": "Complet",
-    "Status": "Created",
-    "Progression": 0.0
-  },
-  {
     "Name": "NEW-TEST",
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\tesst",
     "Type": "Complet",
-    "Status": "Created",
-    "Progression": 0.0
+    "Status": "Terminer",
+    "Progression": 0.5553351844506148
   },
   {
-    "Name": "NEW-DIF-TEST",
+    "Name": "TEEEEEST",
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\test",
     "Type": "Differential",
-    "Status": "Created",
-    "Progression": 0.0
-  },
-  {
-    "Name": "NEW-DIF-TEST-2",
-    "Source": "C:\\Users\\KHALIL\\Downloads",
-    "Cible": "C:\\tesst",
-    "Type": "Differential",
-    "Status": "Created",
-    "Progression": 0.0
-  },
-  {
-    "Name": "DIF-TESSST",
-    "Source": "C:\\test",
-    "Cible": "C:\\test-2",
-    "Type": "Differential",
-    "Status": "Created",
-    "Progression": 0.0
-  },
-  {
-    "Name": "Testing",
-    "Source": "C:\\Users\\euphr\\Pictures\\Screenshots",
-    "Cible": "C:\\Users\\euphr\\Desktop\\Test",
-    "Type": "Differential",
     "Status": "Terminer",
-    "Progression": 97.05882352941177
+    "Progression": 0.31733439111463707
   }
 ]

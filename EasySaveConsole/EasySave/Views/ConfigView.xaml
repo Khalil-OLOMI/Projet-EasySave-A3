@@ -7,98 +7,73 @@
       mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ConfigView">
-    <Grid>
+    <ScrollViewer>
+        <Grid>
+            <!-- Header -->
+            <Border Background="#FF0F52BA" Height="50" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="{Binding SettingText}" Foreground="White" FontFamily="Bahnschrift Light" FontSize="20" Margin="10"/>
+                </StackPanel>
+            </Border>
 
+            <!-- Content -->
+            <StackPanel Margin="0,50,0,0" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+                <!-- Language Selection -->
+                <StackPanel Margin="10 10 10 0">
+                    <TextBlock Text="{Binding TargetLanguageText}" FontWeight="Bold"/>
+                    <WrapPanel>
+                        <RadioButton Content="English" IsChecked="{Binding IsEnglish, Mode=TwoWay}" GroupName="Language" Margin="0 10 0 0"/>
+                        <RadioButton Content="Français" IsChecked="{Binding IsFrench, Mode=TwoWay}" GroupName="Language" Margin="0 10 0 0"/>
+                        <RadioButton Content="Español" IsChecked="{Binding IsSpanish, Mode=TwoWay}" GroupName="Language" Margin="0 10 0 0"/>
+                    </WrapPanel>
+                </StackPanel>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0*"/>
-        </Grid.ColumnDefinitions>
-        <Border Background="#FF0F52BA" Height="41" VerticalAlignment="Top">
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding SettingText}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="10,0,0,0"/>
-            </StackPanel>
-        </Border>
-        <StackPanel Margin="0,41,0,0" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
-            <!-- Language Selection -->
-            <TextBlock Text="{Binding TargetLanguageText}" FontWeight="Bold" Margin="0 0 0 10"/>
-            <StackPanel Orientation="Horizontal" Margin="0 0 0 10" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
-                <RadioButton Content="English" IsChecked="{Binding IsEnglish, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
-                <RadioButton Content="Français" IsChecked="{Binding IsFrench, Mode=TwoWay}" GroupName="Language" Width="80" Margin="0 0 10 0"/>
-                <RadioButton Content="Español" IsChecked="{Binding IsSpanish, Mode=TwoWay}" GroupName="Language" Width="80"/>
-            </StackPanel>
-
-            <!-- Encrypted File Extensions with ScrollViewer -->
-            <TextBlock Text="{Binding Extension}" FontWeight="Bold" Margin="0 0 0 10"/>
-            <ScrollViewer Height="70" VerticalScrollBarVisibility="Visible" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}">
-
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <!-- Define as many rows as necessary -->
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-
-                    <DataGrid Grid.Row="0" ItemsSource="{Binding EncryptedFileExtensions}" AutoGenerateColumns="False" Background="White" Margin="0,0,0,-100" SelectionChanged="DataGrid_SelectionChanged" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+                <!-- Encrypted File Extensions -->
+                <StackPanel Margin="10 20 10 0">
+                    <TextBlock Text="{Binding Extension}" FontWeight="Bold"/>
+                    <DataGrid ItemsSource="{Binding EncryptedFileExtensions}" AutoGenerateColumns="False" Background="White" Height="100" Margin="0 0 0 10" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Binding="{Binding}" Width="*" />
+                            <DataGridTextColumn Binding="{Binding}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                </Grid>
-            </ScrollViewer>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Text="{Binding NewExtensionToAdd}" Width="200" Margin="0 0 10 0" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+                        <Button Content="{Binding AddText}" Command="{Binding AddExtensionCommand}" Width="100" Background="#FF262E32" Foreground="White"/>
+                    </StackPanel>
+                </StackPanel>
 
-            <!-- Add New Extension -->
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
-                <TextBox Text="{Binding NewExtensionToAdd}" Width="400" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
-                <Button Content="{Binding AddText}" Command="{Binding AddExtensionCommand}" Width="120" Margin="10 0 0 0" Background="#FF262E32" Foreground="White"/>
-            </StackPanel>
-            
-            <!-- LIST FichierPrioritaires -->
-            <TextBlock Text="{Binding GESText}" FontWeight="Bold" Margin="0 0 0 10"/>
-            <ScrollViewer Height="50" VerticalScrollBarVisibility="Visible" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}">
-
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <!-- Define as many rows as necessary -->
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-
-                    <DataGrid Grid.Row="0" ItemsSource="{Binding FichierPrioritaires}" AutoGenerateColumns="False" Background="White" Margin="0,0,0,-100" SelectionChanged="DataGrid_SelectionChanged" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+                <!-- List Fichier Prioritaires -->
+                <StackPanel Margin="10 20 10 0">
+                    <TextBlock Text="{Binding GESText}" FontWeight="Bold"/>
+                    <DataGrid ItemsSource="{Binding FichierPrioritaires}" AutoGenerateColumns="False" Background="White" Height="100" Margin="0 0 0 10" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Binding="{Binding}" Width="*" />
+                            <DataGridTextColumn Binding="{Binding}" Width="*"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                </Grid>
-            </ScrollViewer>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Text="{Binding NewFichierPrioritaireToAdd}" Width="200" Margin="0 0 10 0" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+                        <Button Content="{Binding AddText}" Command="{Binding AddFichierPrioritaireCommand}" Width="100" Background="#FF262E32" Foreground="White"/>
+                    </StackPanel>
+                </StackPanel>
 
+                <!-- Process Name -->
+                <StackPanel Margin="10 20 10 0">
+                    <TextBlock Text="{Binding Logi}" FontWeight="Bold"/>
+                    <TextBox Text="{Binding ProcessName}" Width="300" Margin="0 0 0 10" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+                </StackPanel>
 
-            <!-- Fichier Prioritaires -->
-            <TextBlock Text="{Binding FichierPrioritairesText}" FontWeight="Bold" Margin="0,5,0,0"/>
-            <StackPanel Orientation="Horizontal" Margin="0,1,0,10">
-                <TextBox Text="{Binding NewFichierPrioritaireToAdd, UpdateSourceTrigger=PropertyChanged}" Width="400" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
-                <Button Content="{Binding AddText}" Command="{Binding AddFichierPrioritaireCommand}" Width="120" Margin="10 0 0 0" Background="#FF262E32" Foreground="White"/>
+                <!-- Log Type -->
+                <StackPanel Margin="10 20 10 0">
+                    <TextBlock Text="{Binding Logtype}" FontWeight="Bold"/>
+                    <ComboBox SelectedItem="{Binding SelectedLogType, Mode=TwoWay}" Width="150" Margin="0 0 0 10">
+                        <ComboBoxItem Content="XML"/>
+                        <ComboBoxItem Content="JSON"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Save Button -->
+                <Button Content="{Binding SaveText}" Command="{Binding SaveCommand}" Width="100" Margin="10 20 10 0" Background="#FF262E32" Foreground="White"/>
             </StackPanel>
-
-            <!-- Process Name -->
-            <TextBlock Text="{Binding Logi}" FontWeight="Bold"/>
-            <TextBox Text="{Binding ProcessName}" Width="500" Margin="0 0 0 10" HorizontalAlignment="Left"/>
-
-            <!-- Log Type -->
-            <TextBlock Text="{Binding Logtype}" FontWeight="Bold"/>
-            <ComboBox SelectedItem="{Binding SelectedLogType, Mode=TwoWay}" Width="150" Margin="0 0 0 10" HorizontalAlignment="Left">
-                <ComboBoxItem Content="XML"/>
-                <ComboBoxItem Content="JSON"/>
-            </ComboBox>
-
-            <!-- Save Button -->
-            <Button Content="{Binding SaveText}" Command="{Binding SaveCommand}" Width="100" Background="#FF262E32" Foreground="White"/>
-        </StackPanel>
-    </Grid>
-
-
+        </Grid>
+    </ScrollViewer>
 </Page>

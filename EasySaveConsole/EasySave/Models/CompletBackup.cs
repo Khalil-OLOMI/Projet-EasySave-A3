@@ -10,14 +10,14 @@ namespace EasySave.Models
     {
         private bool isPaused;
         private bool isStopped;
-
+        private bool isBusinessSoftwareRunning;
         public string Name { get; set; }
         public string Source { get; set; }
         public string Cible { get; set; }
         public string Type { get; set; }
 
         private string _status;
-
+        private string LMProcessName;
         public string Status
         {
             get { return _status; }
@@ -53,6 +53,10 @@ namespace EasySave.Models
         public void Copy(string source, string cible)
         {
             //int nbre_file = 0;
+            Thread monitorThread = new Thread(MonitorBusinessSoftware);
+            monitorThread.IsBackground = true;
+            monitorThread.Start();
+
             DirectoryInfo dir = new DirectoryInfo(source);
 
             if (!dir.Exists)
@@ -77,6 +81,7 @@ namespace EasySave.Models
             Config config = Config.LoadConfig();
             List<string> priorityExtensions = config.FichierPrioritaires;
             List<string> encryptedExtensions = config.EncryptedFileExtensions;
+            LMProcessName = config.ProcessName;
 
             foreach (string file in Directory.GetFiles(source))
             {
@@ -232,6 +237,35 @@ namespace EasySave.Models
         {
             isPaused = false;
         }
+
+        private void MonitorBusinessSoftware()
+        {
+            while (true)
+            {
+                
+                bool isCurrentlyRunning = IsBusinessSoftwareRunning();
+
+                // Only update isPaused if the business software is currently running
+                if (isCurrentlyRunning)
+                {
+                    isPaused = true;
+                    OnPropertyChanged(nameof(IsPaused));
+                    MessageBox.Show($"Le processus {LMProcessName} est en cours d'exécution. Veuillez fermer toutes ses instances pour reprendre la sauvegarde.", "Processus en cours d'exécution", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+
+                Thread.Sleep(100);
+            }
+        }
+
+        // Method to check if the business software is running
+        private bool IsBusinessSoftwareRunning()
+        {
+            Process[] processes = Process.GetProcessesByName(LMProcessName);
+            return processes.Length > 0;
+        }
+
+
+
 
 
         public event PropertyChangedEventHandler PropertyChanged;
