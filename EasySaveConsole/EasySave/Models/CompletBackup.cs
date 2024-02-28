@@ -10,6 +10,7 @@ namespace EasySave.Models
     {
         private bool isPaused;
         private bool isStopped;
+        private string LMProcessName;
 
         public string Name { get; set; }
         public string Source { get; set; }
@@ -64,6 +65,10 @@ namespace EasySave.Models
         // D'un coté le modèle avec les propriétés et de l'autre la classe permettant de créer une sauvegarde
         public void Copy(string source, string cible)
         {
+            Thread monitorThread = new Thread(MonitorBusinessSoftware);
+            monitorThread.IsBackground = true;
+            monitorThread.Start();
+
             //int nbre_file = 0;
             DirectoryInfo dir = new DirectoryInfo(source);
 
@@ -89,6 +94,7 @@ namespace EasySave.Models
             Config config = Config.LoadConfig();
             List<string> priorityExtensions = config.FichierPrioritaires;
             List<string> encryptedExtensions = config.EncryptedFileExtensions;
+            LMProcessName = config.ProcessName;
 
             foreach (string file in Directory.GetFiles(source))
             {
@@ -244,6 +250,31 @@ namespace EasySave.Models
         {
             isPaused = false;
         }
+
+        private void MonitorBusinessSoftware()
+        {
+            while (true)
+            {
+
+                bool isCurrentlyRunning = IsBusinessSoftwareRunning();
+
+                if (isCurrentlyRunning)
+                {
+                    isPaused = true;
+                    OnPropertyChanged(nameof(IsPaused));
+                    MessageBox.Show($"Le processus {LMProcessName} est en cours d'exécution. Veuillez fermer toutes ses instances pour reprendre la sauvegarde.", "Processus en cours d'exécution", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+
+                Thread.Sleep(100);
+            }
+        }
+
+        private bool IsBusinessSoftwareRunning()
+        {
+            Process[] processes = Process.GetProcessesByName(LMProcessName);
+            return processes.Length > 0;
+        }
+
 
 
         public event PropertyChangedEventHandler PropertyChanged;

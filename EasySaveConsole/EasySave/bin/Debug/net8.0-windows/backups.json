@@ -4,9 +4,9 @@
     "Source": "C:\\Users\\euphr\\Pictures",
     "Cible": "C:\\ppp",
     "Type": "Complet",
-    "Status": "Terminer",
+    "Status": "Active",
     "Progression": 100.0,
-    "NbreFile": 352
+    "NbreFile": 0
   },
   {
     "Name": "test54",
@@ -49,7 +49,7 @@
     "Source": "C:\\test",
     "Cible": "C:\\tesst",
     "Type": "Complet",
-    "Status": "Created",
+    "Status": "Terminer",
     "Progression": 0.0,
     "NbreFile": 0
   },
@@ -85,27 +85,27 @@
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\test",
     "Type": "Differential",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
+    "Status": "Terminer",
+    "Progression": 0.07903576368306658,
+    "NbreFile": 5
   },
   {
     "Name": "NEW-DIF-TEST-2",
     "Source": "C:\\Users\\KHALIL\\Downloads",
     "Cible": "C:\\tesst",
     "Type": "Differential",
-    "Status": "Created",
-    "Progression": 0.0,
-    "NbreFile": 0
+    "Status": "Terminer",
+    "Progression": 0.4160887656033287,
+    "NbreFile": 22
   },
   {
     "Name": "DIF-TESSST",
     "Source": "C:\\test",
     "Cible": "C:\\test-2",
     "Type": "Differential",
-    "Status": "Created",
+    "Status": "Terminer",
     "Progression": 0.0,
-    "NbreFile": 0
+    "NbreFile": 1
   },
   {
     "Name": "Testing",
@@ -115,5 +115,23 @@
     "Status": "Terminer",
     "Progression": 197.05882352941177,
     "NbreFile": 0
+  },
+  {
+    "Name": "New-DATA",
+    "Source": "C:\\TEST-N1",
+    "Cible": "C:\\TEST-N2",
+    "Type": "Complet",
+    "Status": "Terminer",
+    "Progression": 20.46908315565032,
+    "NbreFile": 192
+  },
+  {
+    "Name": "NEW-DATA-02",
+    "Source": "C:\\TEST-N1",
+    "Cible": "C:\\test",
+    "Type": "Differential",
+    "Status": "Terminer",
+    "Progression": 22.388059701492537,
+    "NbreFile": 211
   }
 ]

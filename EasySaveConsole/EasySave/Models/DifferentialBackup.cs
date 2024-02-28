@@ -21,6 +21,7 @@ namespace EasySave.Models
         public string Type { get; set; }
 
         private string _status;
+        private string LMProcessName;
 
         public string Status
         {
@@ -67,6 +68,12 @@ namespace EasySave.Models
         {
             Config config = Config.LoadConfig();
             List<string> PriorityExtensions = config.FichierPrioritaires;
+            LMProcessName = config.ProcessName;
+
+            Thread monitorThread = new Thread(MonitorBusinessSoftware);
+            monitorThread.IsBackground = true;
+            monitorThread.Start();
+
             //int nbre_file = 0;
             string[] sourceFiles = Directory.GetFiles(source, "*", SearchOption.AllDirectories);
             DecryptFilesInTarget(cible);
@@ -279,6 +286,33 @@ namespace EasySave.Models
         {
             isPaused = false;
         }
+
+
+        private void MonitorBusinessSoftware()
+        {
+            while (true)
+            {
+                
+                bool isCurrentlyRunning = IsBusinessSoftwareRunning();
+
+                if (isCurrentlyRunning)
+                {
+                    isPaused = true;
+                    OnPropertyChanged(nameof(IsPaused));
+                    MessageBox.Show($"Le processus {LMProcessName} est en cours d'exécution. Veuillez fermer toutes ses instances pour reprendre la sauvegarde.", "Processus en cours d'exécution", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+
+                Thread.Sleep(100);
+            }
+        }
+
+        
+        private bool IsBusinessSoftwareRunning()
+        {
+            Process[] processes = Process.GetProcessesByName(LMProcessName);
+            return processes.Length > 0;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)
