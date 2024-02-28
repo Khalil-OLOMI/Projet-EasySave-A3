@@ -251,3 +251,5 @@ C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole
 C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CopyComplete
 C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.genruntimeconfig.cache
 C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ProgressView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ProgressView.baml

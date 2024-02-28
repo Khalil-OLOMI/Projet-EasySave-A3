@@ -48,7 +48,19 @@ namespace EasySave.Models
                 }
             }
         }
-        private int _nbreFile = 0;
+        private int _nbreFile;
+        public int NbreFile
+        {
+            get { return _nbreFile; }
+            set
+            {
+                if (_nbreFile != value)
+                {
+                    _nbreFile = value;
+                    OnPropertyChanged(nameof(NbreFile));
+                }
+            }
+        }
 
         // Method to perform a differential backup
         public void Copy(string source, string cible)

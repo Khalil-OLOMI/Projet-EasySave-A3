@@ -195,6 +195,7 @@ public class BackupViewModel : ObservableObject
     {
         if (SelectedBackup != null)
         {
+            ChangeBackupStatus(SelectedBackup, "Terminer");
             SelectedBackup.Stop();
         }
     }
@@ -256,6 +257,7 @@ public class BackupViewModel : ObservableObject
         {
             if (!SelectedBackup.IsPaused()) 
             {
+                SelectedBackup.NbreFile = 0;
                 await ChangeBackupStatus(SelectedBackup, "Active" );
 
                 await ExecuteBackupAsync(SelectedBackup);
@@ -399,6 +401,18 @@ public class BackupViewModel : ObservableObject
         if (backupToUpdate != null)
         {
             backupToUpdate.Status = status;
+            SaveBackup();
+            OnPropertyChanged(nameof(Backups));
+        }
+    }
+
+    private async Task InitializeProgress(IBackup backup)
+    {
+        var backupToUpdate = _backups.FirstOrDefault(b => b == backup);
+
+        if (backupToUpdate != null)
+        {
+            backupToUpdate.Progression = 0;
             SaveBackup();
             OnPropertyChanged(nameof(Backups));
         }

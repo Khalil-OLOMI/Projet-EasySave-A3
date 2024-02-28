@@ -46,6 +46,18 @@ namespace EasySave.Models
         }
 
         private int _nbreFile = 0;
+        public int NbreFile
+        {
+            get { return _nbreFile; }
+            set
+            {
+                if (_nbreFile != value)
+                {
+                    _nbreFile = value;
+                    OnPropertyChanged(nameof(NbreFile));
+                }
+            }
+        }
 
 
         // JB: Ici on a deux responsabilités qu'on pourrait séparer:

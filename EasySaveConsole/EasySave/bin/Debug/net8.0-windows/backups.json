@@ -5,7 +5,8 @@
     "Cible": "C:\\ppp",
     "Type": "Complet",
     "Status": "Terminer",
-    "Progression": 100.0
+    "Progression": 100.0,
+    "NbreFile": 352
   },
   {
     "Name": "test54",
@@ -13,7 +14,8 @@
     "Cible": "c:\\cible",
     "Type": "Complet",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "testtt",
@@ -21,7 +23,8 @@
     "Cible": "C:\\test-2",
     "Type": "Complet",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "ttetst",
@@ -29,7 +32,8 @@
     "Cible": "C:\\crypto",
     "Type": "Differential",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "check",
@@ -37,7 +41,8 @@
     "Cible": "C:\\test-2",
     "Type": "Differential",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "new",
@@ -45,7 +50,8 @@
     "Cible": "C:\\tesst",
     "Type": "Complet",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "TESTDIF",
@@ -53,7 +59,8 @@
     "Cible": "C:\\test",
     "Type": "Differential",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "Downloads",
@@ -61,7 +68,8 @@
     "Cible": "C:\\test",
     "Type": "Complet",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "NEW-TEST",
@@ -69,7 +77,8 @@
     "Cible": "C:\\tesst",
     "Type": "Complet",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "NEW-DIF-TEST",
@@ -77,7 +86,8 @@
     "Cible": "C:\\test",
     "Type": "Differential",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "NEW-DIF-TEST-2",
@@ -85,7 +95,8 @@
     "Cible": "C:\\tesst",
     "Type": "Differential",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "DIF-TESSST",
@@ -93,7 +104,8 @@
     "Cible": "C:\\test-2",
     "Type": "Differential",
     "Status": "Created",
-    "Progression": 0.0
+    "Progression": 0.0,
+    "NbreFile": 0
   },
   {
     "Name": "Testing",
@@ -101,6 +113,7 @@
     "Cible": "C:\\Users\\euphr\\Desktop\\Test",
     "Type": "Differential",
     "Status": "Terminer",
-    "Progression": 97.05882352941177
+    "Progression": 197.05882352941177,
+    "NbreFile": 0
   }
 ]

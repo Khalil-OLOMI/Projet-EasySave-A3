@@ -47,7 +47,20 @@ namespace EasySave.Views
 
         private void StateViewClick(object sender, MouseButtonEventArgs e)
         {
+            // Obtenez la sauvegarde sur laquelle le clic a été effectué
+            IBackup selectedBackup = (sender as DataGridCell)?.DataContext as IBackup;
 
+            if (selectedBackup != null)
+            {
+                // Implémentez la logique pour naviguer vers la page de progression (par exemple, en changeant le contenu de votre Frame)
+                Frame frame = Application.Current.MainWindow.FindName("MainFrame") as Frame;
+
+                if (frame != null)
+                {
+                    // Naviguer vers la page de progression en passant la sauvegarde en cours (selectedBackup)
+                    frame.Content = new ProgressView(selectedBackup);
+                }
+            }
         }
     }
 }
