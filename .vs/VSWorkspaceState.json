@@ -1,15 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\EasySaveConsole",
-    "\\EasySaveConsole\\EasySave",
-    "\\EasySaveConsole\\EasySaveConsole",
-    "\\EasySaveConsole\\EasySaveConsole\\Models",
-    "\\EasySaveConsole\\EasySaveConsole\\ViewModels",
-    "\\EasySaveConsole\\EasySave\\Services",
-    "\\EasySaveConsole\\EasySave\\ViewModels",
-    "\\EasySaveConsole\\EasySave\\Views"
+    ""
   ],
-  "SelectedNode": "\\EasySaveConsole\\EasySave\\Views\\BackupView.xaml",
   "PreviewInSolutionExplorer": false
 }
