@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasySave.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,23 @@ namespace EasySave.Views
         public DashboardView()
         {
             InitializeComponent();
+        }
+
+        private void AddBackupClick(object sender, RoutedEventArgs e)
+        {
+            AddbackupView addBackupView = new AddbackupView((BackupViewModel)DataContext);
+            addBackupView.ShowDialog();
+        }
+
+        private void BackupViewClick(object sender, RoutedEventArgs e)
+        {
+            Frame frame = Application.Current.MainWindow.FindName("MainFrame") as Frame;
+
+            if (frame != null)
+            {
+                // Naviguer vers la page de progression en passant la sauvegarde en cours (selectedBackup)
+                frame.Content = new BackupView();
+            }
         }
     }
 }

@@ -100,7 +100,7 @@ namespace EasySave.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EasySave;V1.0.0.0;component/views/addbackupview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EasySave;component/views/addbackupview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\AddbackupView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

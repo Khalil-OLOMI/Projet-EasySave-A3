@@ -7,20 +7,14 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="650">
 
-	<Grid>
-		<Border Background="#FF0F52BA" Height="41" VerticalAlignment="Top">
-			<StackPanel Orientation="Horizontal">
-				<TextBlock Text="Welcome" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="10,0,0,0"/>
-			</StackPanel>
-		</Border>
-		<StackPanel >
-			<Button x:Name="created" Content="Travaux de sauvegarde créés : " Margin="0,60,0,0" VerticalAlignment="Top" Height="94" Width="506" FontFamily="Times New Roman" FontSize="24" Background="#FF0F52BA" Foreground="White" HorizontalAlignment="Center"/>
-			<Button x:Name="active" Content="Travaux de sauvegarde en cours : " VerticalAlignment="Center" Height="94" Width="506" FontFamily="Times New Roman" FontSize="24" Background="#FF0F52BA" Foreground="White" HorizontalAlignment="Center" Margin="0,30,0,0"/>
-			<Button x:Name="end" Content="Travaux de sauvegarde terminés : " Margin="0,30,0,70" VerticalAlignment="Top" Height="94" Width="506" FontFamily="Times New Roman" FontSize="24" Background="#FF0F52BA" Foreground="White" HorizontalAlignment="Center"/>
-		</StackPanel>
-		<Label x:Name="Backup_created" Content="12" HorizontalAlignment="Left" Margin="474,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.345,0.065" Height="36" Width="55" FontFamily="Times New Roman" FontSize="24" Foreground="#FFFFFEFE"/>
-		<Label x:Name="Backup_active" Content="3" HorizontalAlignment="Left" Margin="484,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.345,0.065" Height="38" Width="55" FontFamily="Times New Roman" FontSize="24" Foreground="#FFFFFEFE"/>
-		<Label x:Name="Backup_end" Content="9" HorizontalAlignment="Left" Margin="484,337,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.345,0.065" Height="38" Width="55" FontFamily="Times New Roman" FontSize="24" Foreground="#FFFFFEFE"/>
-		<!-- Contenu principal -->
-	</Grid>
+    <Grid>
+        <Border Background="#FF0F52BA" Height="41" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Welcome" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+        <Button Content="Create backup task" Background="#FF0F52BA" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" HorizontalAlignment="Left" Height="168" Margin="88,130,0,0" VerticalAlignment="Top" Width="196" Click="AddBackupClick"/>
+        <Button Content="View backups" Background="#FF0F52BA" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" HorizontalAlignment="Left" Height="168" Margin="355,130,0,0" VerticalAlignment="Top" Width="196" Click="BackupViewClick"/>
+
+    </Grid>
 </Page>

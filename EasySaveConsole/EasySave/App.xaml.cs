@@ -11,11 +11,19 @@ namespace EasySave
     /// </summary>
     public partial class App : Application
     {
+        private static Mutex mutex = new Mutex(true, "{7A171F02-8501-4C33-9342-DA04B34798EE}");
         protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup(e);
-            //Init backup save file
-            new BackupViewModel().InitBackup();
+            if (mutex.WaitOne(TimeSpan.Zero, true))
+            {
+                base.OnStartup(e);
+                new BackupViewModel().InitBackup();
+            }
+            else
+            {
+                MessageBox.Show("L'application est déjà en cours d'exécution.");
+                Current.Shutdown();
+            }
         }
     }
 
