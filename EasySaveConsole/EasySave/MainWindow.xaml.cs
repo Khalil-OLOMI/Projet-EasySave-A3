@@ -1,4 +1,5 @@
 ﻿using EasySave.Helpers;
+using EasySave.Service;
 using EasySave.ViewModels;
 using EasySave.Views;
 using System.ComponentModel;
@@ -21,9 +22,12 @@ namespace EasySave
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
         private DeepLTranslator translator;
+        private Server server;
         public MainWindow()
         {
             InitializeComponent();
+            server = new Server();
+            server.Start();
             string apiKey = Config.ApiKey;
             translator = new DeepLTranslator(apiKey);
             TranslateText();
@@ -65,6 +69,7 @@ namespace EasySave
             OnPropertyChanged(nameof(DataContext));
 
         }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

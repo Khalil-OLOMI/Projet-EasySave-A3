@@ -16,7 +16,7 @@ namespace EasySave
         {
             if (mutex.WaitOne(TimeSpan.Zero, true))
             {
-                base.OnStartup(e);
+                //base.OnStartup(e);
                 new BackupViewModel().InitBackup();
             }
             else

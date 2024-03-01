@@ -18,5 +18,15 @@
     "Status": "Terminer",
     "Progression": 0.07903576368306658,
     "NbreFile": 5
+  },
+  {
+    "Name": "Test2",
+    "Source": "dggdggd",
+    "Cible": "hhdhdh",
+    "Type": "Complet",
+    "EncryptTime": 0,
+    "Status": "Created",
+    "Progression": 0.0,
+    "NbreFile": 0
   }
 ]
