@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Test",
+    "Source": "C:\\Users\\euphr\\Pictures",
+    "Cible": "C:\\ppp",
+    "Type": "Complet",
+    "EncryptTime": 0,
+    "Status": "Terminer",
+    "Progression": 22.443181818181817,
+    "NbreFile": 79
+  },
+  {
+    "Name": "NEW-DIF-TEST",
+    "Source": "C:\\Users\\KHALIL\\Downloads",
+    "Cible": "C:\\test",
+    "Type": "Differential",
+    "EncryptTime": 0,
+    "Status": "Terminer",
+    "Progression": 0.07903576368306658,
+    "NbreFile": 5
+  },
+  {
+    "Name": "Test2",
+    "Source": "dggdggd",
+    "Cible": "hhdhdh",
+    "Type": "Complet",
+    "EncryptTime": 0,
+    "Status": "Created",
+    "Progression": 0.0,
+    "NbreFile": 0
+  }
+]

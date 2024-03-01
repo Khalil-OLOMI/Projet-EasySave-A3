@@ -1,0 +1,1522 @@
+[
+  {
+    "Horodatage": "20/02/2024 09:53:29",
+    "XmlHorodatage": "20/02/2024 09:53:29",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 7381875,
+    "FileTransferTime": 2,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "23/02/2024 16:42:12",
+    "XmlHorodatage": "23/02/2024 16:42:12",
+    "Name": "ttetst",
+    "FileSource": "C:\\Check",
+    "FileTarget": "C:\\crypto",
+    "FileSize": 109123,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "23/02/2024 16:42:16",
+    "XmlHorodatage": "23/02/2024 16:42:16",
+    "Name": "ttetst",
+    "FileSource": "C:\\Check",
+    "FileTarget": "C:\\crypto",
+    "FileSize": 109123,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "23/02/2024 16:53:33",
+    "XmlHorodatage": "23/02/2024 16:53:33",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 2,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "23/02/2024 16:53:43",
+    "XmlHorodatage": "23/02/2024 16:53:43",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 3,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 17:35:03",
+    "XmlHorodatage": "24/02/2024 17:35:03",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 13,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 17:40:27",
+    "XmlHorodatage": "24/02/2024 17:40:27",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 17:43:25",
+    "XmlHorodatage": "24/02/2024 17:43:25",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 17:47:33",
+    "XmlHorodatage": "24/02/2024 17:47:33",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 17:50:31",
+    "XmlHorodatage": "24/02/2024 17:50:31",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 17:54:31",
+    "XmlHorodatage": "24/02/2024 17:54:31",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 17:59:21",
+    "XmlHorodatage": "24/02/2024 17:59:21",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:01:59",
+    "XmlHorodatage": "24/02/2024 18:01:59",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:05:13",
+    "XmlHorodatage": "24/02/2024 18:05:13",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:11:48",
+    "XmlHorodatage": "24/02/2024 18:11:48",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:12:39",
+    "XmlHorodatage": "24/02/2024 18:12:39",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:14:39",
+    "XmlHorodatage": "24/02/2024 18:14:39",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:17:44",
+    "XmlHorodatage": "24/02/2024 18:17:44",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:18:17",
+    "XmlHorodatage": "24/02/2024 18:18:17",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:18:22",
+    "XmlHorodatage": "24/02/2024 18:18:22",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 18:18:30",
+    "XmlHorodatage": "24/02/2024 18:18:30",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 19:56:45",
+    "XmlHorodatage": "24/02/2024 19:56:45",
+    "Name": "check",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 19:56:49",
+    "XmlHorodatage": "24/02/2024 19:56:49",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 800950,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 19:56:52",
+    "XmlHorodatage": "24/02/2024 19:56:52",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1086180,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 20:43:29",
+    "XmlHorodatage": "24/02/2024 20:43:29",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1086180,
+    "FileTransferTime": 2,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 20:43:30",
+    "XmlHorodatage": "24/02/2024 20:43:30",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1086180,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 20:44:18",
+    "XmlHorodatage": "24/02/2024 20:44:18",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 1706932536,
+    "FileTransferTime": 7,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 22:36:39",
+    "XmlHorodatage": "24/02/2024 22:36:39",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1703961443,
+    "FileTransferTime": 5,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "24/02/2024 23:44:56",
+    "XmlHorodatage": "24/02/2024 23:44:56",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 19,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 00:01:40",
+    "XmlHorodatage": "25/02/2024 00:01:40",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 2,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 00:05:12",
+    "XmlHorodatage": "25/02/2024 00:05:12",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 2,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 00:46:37",
+    "XmlHorodatage": "25/02/2024 00:46:37",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 9,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:03",
+    "XmlHorodatage": "25/02/2024 01:21:03",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 34,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:17",
+    "XmlHorodatage": "25/02/2024 01:21:17",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:20",
+    "XmlHorodatage": "25/02/2024 01:21:20",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:26",
+    "XmlHorodatage": "25/02/2024 01:21:26",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:21:35",
+    "XmlHorodatage": "25/02/2024 01:21:35",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1703961443,
+    "FileTransferTime": 5,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:22:15",
+    "XmlHorodatage": "25/02/2024 01:22:15",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:23:00",
+    "XmlHorodatage": "25/02/2024 01:23:00",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 19,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:23:04",
+    "XmlHorodatage": "25/02/2024 01:23:04",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:23:07",
+    "XmlHorodatage": "25/02/2024 01:23:07",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:26:20",
+    "XmlHorodatage": "25/02/2024 01:26:20",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 5,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:26:24",
+    "XmlHorodatage": "25/02/2024 01:26:24",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:26:26",
+    "XmlHorodatage": "25/02/2024 01:26:26",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:26:29",
+    "XmlHorodatage": "25/02/2024 01:26:29",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 01:27:02",
+    "XmlHorodatage": "25/02/2024 01:27:02",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 19,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:01:40",
+    "XmlHorodatage": "25/02/2024 02:01:40",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 33,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:01:44",
+    "XmlHorodatage": "25/02/2024 02:01:44",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:01:46",
+    "XmlHorodatage": "25/02/2024 02:01:46",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:02:28",
+    "XmlHorodatage": "25/02/2024 02:02:28",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 27,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:02:34",
+    "XmlHorodatage": "25/02/2024 02:02:34",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:13:17",
+    "XmlHorodatage": "25/02/2024 02:13:17",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 37,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 02:15:04",
+    "XmlHorodatage": "25/02/2024 02:15:04",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 15,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:25:11",
+    "XmlHorodatage": "25/02/2024 16:25:11",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 40,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:25:28",
+    "XmlHorodatage": "25/02/2024 16:25:28",
+    "Name": "TESTDIF",
+    "FileSource": "C:\\tesst",
+    "FileTarget": "C:\\test",
+    "FileSize": 1703961443,
+    "FileTransferTime": 11,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:39:06",
+    "XmlHorodatage": "25/02/2024 16:39:06",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 6646158,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:39:12",
+    "XmlHorodatage": "25/02/2024 16:39:12",
+    "Name": "new",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 6646158,
+    "FileTransferTime": 1,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:56:58",
+    "XmlHorodatage": "25/02/2024 16:56:58",
+    "Name": "NEW-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 39202461324,
+    "FileTransferTime": 134,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:57:16",
+    "XmlHorodatage": "25/02/2024 16:57:16",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 164,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:58:16",
+    "XmlHorodatage": "25/02/2024 16:58:16",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 52,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:58:16",
+    "XmlHorodatage": "25/02/2024 16:58:16",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 37,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 16:58:17",
+    "XmlHorodatage": "25/02/2024 16:58:17",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 38,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 17:17:52",
+    "XmlHorodatage": "25/02/2024 17:17:52",
+    "Name": "NEW-DIF-TEST-2",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 39202461324,
+    "FileTransferTime": 59,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 17:17:59",
+    "XmlHorodatage": "25/02/2024 17:17:59",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 87,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "25/02/2024 17:30:11",
+    "XmlHorodatage": "25/02/2024 17:30:11",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 33,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 10:53:28",
+    "XmlHorodatage": "26/02/2024 10:53:28",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 147,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 13:59:19",
+    "XmlHorodatage": "26/02/2024 13:59:19",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202461324,
+    "FileTransferTime": 236,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 16:28:22",
+    "XmlHorodatage": "26/02/2024 16:28:22",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 94,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 16:28:28",
+    "XmlHorodatage": "26/02/2024 16:28:28",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 4,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 16:33:39",
+    "XmlHorodatage": "26/02/2024 16:33:39",
+    "Name": "Downloads",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 20,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 16:42:08",
+    "XmlHorodatage": "26/02/2024 16:42:08",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 13,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 16:43:32",
+    "XmlHorodatage": "26/02/2024 16:43:32",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 5,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 16:54:05",
+    "XmlHorodatage": "26/02/2024 16:54:05",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 16,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 20:42:11",
+    "XmlHorodatage": "26/02/2024 20:42:11",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39202460098,
+    "FileTransferTime": 30,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:04:14",
+    "XmlHorodatage": "26/02/2024 21:04:14",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39204831145,
+    "FileTransferTime": 36,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:09:10",
+    "XmlHorodatage": "26/02/2024 21:09:10",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 6,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:16:03",
+    "XmlHorodatage": "26/02/2024 21:16:03",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 10,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:17:11",
+    "XmlHorodatage": "26/02/2024 21:17:11",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 9,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:22:54",
+    "XmlHorodatage": "26/02/2024 21:22:54",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 6,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:23:54",
+    "XmlHorodatage": "26/02/2024 21:23:54",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 9,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:24:08",
+    "XmlHorodatage": "26/02/2024 21:24:08",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 9,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:25:03",
+    "XmlHorodatage": "26/02/2024 21:25:03",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 7,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:25:28",
+    "XmlHorodatage": "26/02/2024 21:25:28",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 36726451,
+    "FileTransferTime": 9,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:35:15",
+    "XmlHorodatage": "26/02/2024 21:35:15",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39204831145,
+    "FileTransferTime": 496,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "26/02/2024 21:35:52",
+    "XmlHorodatage": "26/02/2024 21:35:52",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 39204831145,
+    "FileTransferTime": 16,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 09:30:04",
+    "XmlHorodatage": "27/02/2024 09:30:04",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 33,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 09:31:14",
+    "XmlHorodatage": "27/02/2024 09:31:14",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 50,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 09:38:36",
+    "XmlHorodatage": "27/02/2024 09:38:36",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 41,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 09:44:29",
+    "XmlHorodatage": "27/02/2024 09:44:29",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 49,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 09:48:28",
+    "XmlHorodatage": "27/02/2024 09:48:28",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 54,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 10:08:14",
+    "XmlHorodatage": "27/02/2024 10:08:14",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 57,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 10:09:56",
+    "XmlHorodatage": "27/02/2024 10:09:56",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 60,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 10:14:29",
+    "XmlHorodatage": "27/02/2024 10:14:29",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 5,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 10:14:30",
+    "XmlHorodatage": "27/02/2024 10:14:30",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 21,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 11:46:54",
+    "XmlHorodatage": "27/02/2024 11:46:54",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 6,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 11:46:54",
+    "XmlHorodatage": "27/02/2024 11:46:54",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 3,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 11:46:55",
+    "XmlHorodatage": "27/02/2024 11:46:55",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 10,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 11:46:56",
+    "XmlHorodatage": "27/02/2024 11:46:56",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 10,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 14:06:07",
+    "XmlHorodatage": "27/02/2024 14:06:07",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 41,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 14:08:16",
+    "XmlHorodatage": "27/02/2024 14:08:16",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 44,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 14:19:44",
+    "XmlHorodatage": "27/02/2024 14:19:44",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 49,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 14:21:12",
+    "XmlHorodatage": "27/02/2024 14:21:12",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 5,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 17:03:39",
+    "XmlHorodatage": "27/02/2024 17:03:39",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 51,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:22:45",
+    "XmlHorodatage": "27/02/2024 19:22:45",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 84,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:23:30",
+    "XmlHorodatage": "27/02/2024 19:23:30",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 90,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:25:02",
+    "XmlHorodatage": "27/02/2024 19:25:02",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 61,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:25:19",
+    "XmlHorodatage": "27/02/2024 19:25:19",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 6,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:25:39",
+    "XmlHorodatage": "27/02/2024 19:25:39",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 6,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:40:41",
+    "XmlHorodatage": "27/02/2024 19:40:41",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 12,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:41:12",
+    "XmlHorodatage": "27/02/2024 19:41:12",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 70,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:42:49",
+    "XmlHorodatage": "27/02/2024 19:42:49",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 14,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:42:54",
+    "XmlHorodatage": "27/02/2024 19:42:54",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 80,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:44:55",
+    "XmlHorodatage": "27/02/2024 19:44:55",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 8,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:45:09",
+    "XmlHorodatage": "27/02/2024 19:45:09",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 7,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:47:53",
+    "XmlHorodatage": "27/02/2024 19:47:53",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 152,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:47:55",
+    "XmlHorodatage": "27/02/2024 19:47:55",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 152,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:56:48",
+    "XmlHorodatage": "27/02/2024 19:56:48",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 8,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:57:06",
+    "XmlHorodatage": "27/02/2024 19:57:06",
+    "Name": "Testing",
+    "FileSource": "C:\\Users\\euphr\\Pictures\\Screenshots",
+    "FileTarget": "C:\\Users\\euphr\\Desktop\\Test",
+    "FileSize": 3458947,
+    "FileTransferTime": 8,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 19:58:38",
+    "XmlHorodatage": "27/02/2024 19:58:38",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 83,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 20:12:39",
+    "XmlHorodatage": "27/02/2024 20:12:39",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 62,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 20:13:52",
+    "XmlHorodatage": "27/02/2024 20:13:52",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 63,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 20:25:49",
+    "XmlHorodatage": "27/02/2024 20:25:49",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 117,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "27/02/2024 20:25:53",
+    "XmlHorodatage": "27/02/2024 20:25:53",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 118,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 09:08:22",
+    "XmlHorodatage": "28/02/2024 09:08:22",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 76,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 10:03:00",
+    "XmlHorodatage": "28/02/2024 10:03:00",
+    "Name": "NEW-DIF-TEST-2",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 33915286721,
+    "FileTransferTime": 76,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 10:03:08",
+    "XmlHorodatage": "28/02/2024 10:03:08",
+    "Name": "NEW-DIF-TEST-2",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 33915286721,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 10:03:10",
+    "XmlHorodatage": "28/02/2024 10:03:10",
+    "Name": "NEW-DIF-TEST-2",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 33915286721,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 10:03:53",
+    "XmlHorodatage": "28/02/2024 10:03:53",
+    "Name": "NEW-DIF-TEST-2",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 33915286721,
+    "FileTransferTime": 29,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 10:07:47",
+    "XmlHorodatage": "28/02/2024 10:07:47",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 33915286721,
+    "FileTransferTime": 14,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 10:12:02",
+    "XmlHorodatage": "28/02/2024 10:12:02",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 33915286721,
+    "FileTransferTime": 80,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 10:54:17",
+    "XmlHorodatage": "28/02/2024 10:54:17",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 33915362800,
+    "FileTransferTime": 74,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 10:58:42",
+    "XmlHorodatage": "28/02/2024 10:58:42",
+    "Name": "NEW-DIF-TEST-2",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 33915362800,
+    "FileTransferTime": 45,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 11:10:55",
+    "XmlHorodatage": "28/02/2024 11:10:55",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 33915362800,
+    "FileTransferTime": 16,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 11:16:56",
+    "XmlHorodatage": "28/02/2024 11:16:56",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 33915362800,
+    "FileTransferTime": 47,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 13:27:13",
+    "XmlHorodatage": "28/02/2024 13:27:13",
+    "Name": "NEW-DIF-TEST-2",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\tesst",
+    "FileSize": 33915362800,
+    "FileTransferTime": 18,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 14:29:10",
+    "XmlHorodatage": "28/02/2024 14:29:10",
+    "Name": "NEW-DATA-02",
+    "FileSource": "C:\\TEST-N1",
+    "FileTarget": "C:\\test",
+    "FileSize": 15868345334,
+    "FileTransferTime": 85,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 14:29:20",
+    "XmlHorodatage": "28/02/2024 14:29:20",
+    "Name": "New-DATA",
+    "FileSource": "C:\\TEST-N1",
+    "FileTarget": "C:\\TEST-N2",
+    "FileSize": 15868345334,
+    "FileTransferTime": 96,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 14:32:29",
+    "XmlHorodatage": "28/02/2024 14:32:29",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 282,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 14:32:36",
+    "XmlHorodatage": "28/02/2024 14:32:36",
+    "Name": "DIF-TESSST",
+    "FileSource": "C:\\test",
+    "FileTarget": "C:\\test-2",
+    "FileSize": 282,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 14:33:03",
+    "XmlHorodatage": "28/02/2024 14:33:03",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 33915694020,
+    "FileTransferTime": 25,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 14:46:25",
+    "XmlHorodatage": "28/02/2024 14:46:25",
+    "Name": "NEW-DIF-TEST",
+    "FileSource": "C:\\Users\\KHALIL\\Downloads",
+    "FileTarget": "C:\\test",
+    "FileSize": 33915990902,
+    "FileTransferTime": 10,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:25:58",
+    "XmlHorodatage": "28/02/2024 15:25:58",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 81,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:40:52",
+    "XmlHorodatage": "28/02/2024 15:40:52",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 104,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:44:28",
+    "XmlHorodatage": "28/02/2024 15:44:28",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 105,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:55:23",
+    "XmlHorodatage": "28/02/2024 15:55:23",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 15,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:57:56",
+    "XmlHorodatage": "28/02/2024 15:57:56",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 17,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:05",
+    "XmlHorodatage": "28/02/2024 15:58:05",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:08",
+    "XmlHorodatage": "28/02/2024 15:58:08",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:13",
+    "XmlHorodatage": "28/02/2024 15:58:13",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:32",
+    "XmlHorodatage": "28/02/2024 15:58:32",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 9,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:58:36",
+    "XmlHorodatage": "28/02/2024 15:58:36",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 0,
+    "FileEncryptTime": 0
+  },
+  {
+    "Horodatage": "28/02/2024 15:59:11",
+    "XmlHorodatage": "28/02/2024 15:59:11",
+    "Name": "Test",
+    "FileSource": "C:\\Users\\euphr\\Pictures",
+    "FileTarget": "C:\\ppp",
+    "FileSize": 31860911,
+    "FileTransferTime": 24,
+    "FileEncryptTime": 0
+  }
+]

@@ -8,6 +8,73 @@
       d:DesignHeight="450" d:DesignWidth="650">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Background="#FF0F52BA" Grid.Row="0" Height="40">
+            <!-- Header content goes here -->
+            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,0" Orientation="Horizontal">
+                <TextBlock Text="{Binding LogHeaderText}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0"/>
+            </StackPanel>
+        </Border>
+        <!-- Main Content Area -->
+        <Border Background="White" Grid.Row="1">
+            <DataGrid
+            x:Name="Logs"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding Logs, Mode=TwoWay}"
+            Margin="10" Background="White"
+            MouseDoubleClick="DetailLogClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Horodatage}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.DateHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Name}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.NameText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding FileSize}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.FIlesizeText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding FileTransferTime}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.TimeText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
     </Grid>
 </Page>

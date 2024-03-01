@@ -6,8 +6,101 @@
       xmlns:local="clr-namespace:EasySave.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="650">
-
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Background="#FF0F52BA" Grid.Row="0" Height="40">
+            <!-- Header content goes here -->
+            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,0" Orientation="Horizontal">
+                <TextBlock Text="{Binding BackupListHeaderText}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="20,5,0,0" Width="350"/>
+                <Button Content="{Binding AddBackupButtonText}" Height="24" Width="160" Background="White" Click="AddBackupForm" Margin="100,0,0,0"/>
+            </StackPanel>
+        </Border>
+        <!-- Main Content Area -->
+        <Border Background="White" Grid.Row="1">
+
+            <DataGrid
+                x:Name="Backups"
+                AutoGenerateColumns="False"
+                ItemsSource="{Binding Backups, Mode=TwoWay}"
+                SelectedItem="{Binding SelectedBackup, Mode=TwoWay}"
+                Margin="10" Background="White">
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Name}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.NameHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <EventSetter Event="MouseDoubleClick" Handler="DetailBackupClick"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
+
+                    <DataGridTextColumn
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Type}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.TypeHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                    </DataGridTextColumn>
+
+                    <DataGridTextColumn
+                        MinWidth="100"
+                        Width="*"
+                        Binding="{Binding Status}"
+                        IsReadOnly="True">
+                        <DataGridTextColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DataContext.StatusHeaderText, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"/>
+                            </DataTemplate>
+                        </DataGridTextColumn.HeaderTemplate>
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <EventSetter Event="MouseDoubleClick" Handler="StateViewClick"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
+                    <DataGridTemplateColumn Header="Actions" MinWidth="100" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Button Command="{Binding DataContext.PlayCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Ressources/118621_play_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                    <Button Command="{Binding DataContext.PauseCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Ressources/pause_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                    <Button Command="{Binding DataContext.ResumeCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Ressources/resume_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                    <Button Command="{Binding DataContext.StopCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Ressources/stop_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                    <Button Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" Margin="2" Foreground="Black">
+                                        <Image Source="/Ressources/trash_icon.png" Width="16" Height="16"/>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
     </Grid>
 </Page>

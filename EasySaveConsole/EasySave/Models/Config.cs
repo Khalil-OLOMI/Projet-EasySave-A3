@@ -1,41 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using Newtonsoft.Json;  // Importe de bibliothèque pour la sérialisation et la désérialisation JSON.
-
 public class Config
 {
-    public string TargetLanguage { get; set; }  // Déclare une propriété publique de type chaîne appelée TargetLanguage.
+    private const string ConfigFilePath = "config.json";
+    public const string ApiKey = "2f5fbc6f-3655-48de-898e-e443eae45379:fx";
 
-    public const string ApiKey = "3fc80bc6-26a9-9365-86c0-ddd544f23524:fx";  // Clé Api Deepl.
-
-    private const string ConfigFilePath = "Language-config.json";
-
-    public Config()  // Déclare un constructeur par défaut de la classe Config.
-    {
-        // JB: on peut mettre string? ligne 10
-        TargetLanguage = null; // Initialisez la langue cible à null par défaut.
-    }
+    public string TargetLanguage { get; set; } = null;
+    public List<string> EncryptedFileExtensions { get; set; } = new List<string>();
+    public List<string> FichierPrioritaires { get; set; } = new List<string>();
+    public string ProcessName { get; set; } = null;
+    public string LogType { get; set; } = null;
 
     public void SaveConfig()
     {
         string json = JsonConvert.SerializeObject(this);
-        File.WriteAllText(ConfigFilePath, json);  // Écrit le contenu JSON sérialisé dans un fichier spécifié par ConfigFilePath.
+
+        File.WriteAllText(ConfigFilePath, json);
     }
 
     public static Config LoadConfig()
     {
-        if (File.Exists(ConfigFilePath))  // Vérifie si le fichier de configuration existe.
+        if (File.Exists(ConfigFilePath))
         {
-            string json = File.ReadAllText(ConfigFilePath);  // Lit le contenu JSON à partir du fichier de configuration.
-            return JsonConvert.DeserializeObject<Config>(json);  // Désérialise le contenu JSON en un objet Config à l'aide de la bibliothèque Newtonsoft.Json.
+            string json = File.ReadAllText(ConfigFilePath);
+
+            return JsonConvert.DeserializeObject<Config>(json);
         }
         else
         {
-            // Créez un nouvel objet Config si le fichier n'existe pas.
             return new Config();
         }
     }

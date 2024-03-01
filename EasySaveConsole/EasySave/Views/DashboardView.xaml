@@ -8,7 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="650">
 
     <Grid>
-        <Label Content="Dashboard"/>
+        <Border Background="#FF0F52BA" Height="41" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Welcome" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+        <Button Content="Create backup task" Background="#FF0F52BA" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" HorizontalAlignment="Left" Height="168" Margin="88,130,0,0" VerticalAlignment="Top" Width="196" Click="AddBackupClick"/>
+        <Button Content="View backups" Background="#FF0F52BA" Foreground="White" FontFamily="Bahnschrift Light" FontSize="18" HorizontalAlignment="Left" Height="168" Margin="355,130,0,0" VerticalAlignment="Top" Width="196" Click="BackupViewClick"/>
 
     </Grid>
 </Page>

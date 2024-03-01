@@ -7,7 +7,6 @@ C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
-C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\SettingView.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
@@ -20,7 +19,6 @@ C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\bin
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
-C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\SettingView.baml
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
@@ -35,3 +33,261 @@ C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
 C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.exe
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.deps.json
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.runtimeconfig.json
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.pdb
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.AssemblyReference.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfo.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.sourcelink.json
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CopyComplete
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\refint\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.pdb
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.genruntimeconfig.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.exe
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.deps.json
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.runtimeconfig.json
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.dll
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.pdb
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.AssemblyReference.cache
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfo.cs
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.sourcelink.json
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CopyComplete
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.dll
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\refint\EasySave.dll
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.pdb
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.genruntimeconfig.cache
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\euphr\Music\DEV\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.exe
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.deps.json
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.runtimeconfig.json
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.pdb
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.AssemblyReference.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfo.cs
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.sourcelink.json
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CopyComplete
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\refint\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.pdb
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.genruntimeconfig.cache
+C:\Users\KHALIL\source\repos\EasySAVE-2-0-NEW\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.exe
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.deps.json
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.runtimeconfig.json
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.dll
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.pdb
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.AssemblyReference.cache
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.g.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.baml
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfo.cs
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.sourcelink.json
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CopyComplete
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.dll
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\refint\EasySave.dll
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.pdb
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.genruntimeconfig.cache
+C:\Users\euphr\Documents\Projets\Programmation\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.exe
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.deps.json
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.runtimeconfig.json
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.dll
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.pdb
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.AssemblyReference.cache
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.g.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.baml
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfo.cs
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.sourcelink.json
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CopyComplete
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.dll
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\refint\EasySave.dll
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.pdb
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.genruntimeconfig.cache
+C:\Users\Rock BAMENOU\Source\Repos\Khalil-OLOMI\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.dll
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\refint\EasySave.dll
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.pdb
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.AssemblyReference.cache
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.g.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfo.cs
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.sourcelink.json
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.exe
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.deps.json
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.runtimeconfig.json
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.dll
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.pdb
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.baml
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CopyComplete
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.genruntimeconfig.cache
+C:\Users\KHALIL\source\repos\NEW-EASY-SAVE-02\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ProgressView.g.cs
+C:\Users\euphr\Documents\Projets\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ProgressView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.exe
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.deps.json
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.runtimeconfig.json
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\EasySave.pdb
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.AssemblyReference.cache
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\AddbackupView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ProgressView.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.cache
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave_MarkupCompile.lref
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\BackupView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ConfigView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DashboardView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\DocView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\LogView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\Views\ProgressView.baml
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.g.resources
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfoInputs.cache
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.AssemblyInfo.cs
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.sourcelink.json
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.csproj.CopyComplete
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\refint\EasySave.dll
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.pdb
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\EasySave.genruntimeconfig.cache
+C:\Users\KHALIL\source\repos\EasySAVE-3.0\Projet-EasySave-A3\EasySaveConsole\EasySave\obj\Debug\net8.0-windows\ref\EasySave.dll
